@@ -29,7 +29,7 @@ De acuerdo con Yang *et al.* (2018) el ITS2 en hongos tiene una longitud promedi
 **Explicación de los resultados de diversidad**
 Ascomycota y Basidiomycota son los Phyla predominantes tanto en sitios mixtos como nativos (Figura 1). En los sitios nativos *Juniperus* presenta una mayor abundancia de Ascomycota, en comparación con el sitio mixto. Mientras que en sitios mixtos *Quercus* tiene una mayor abundancia de Basidiomycota. Los resultados de la prueba de ANOVA nos indican que no hay diferencias significativas en la abundancia ni por hospedero (0.221), ni por tratamiento (0.797), ni en su interacción (0.262).
 
-En cuanto al NMDS de la diversidad beta se observó que en el bosque nativo la diversidad se agrupa por el tipo de hospedero, mientras que en el bosque mixto no se observa una separación (Figura 2). Al incluir ambos factores en el test de Adonis se observa que existen diferencias significativas para el hospedero (0.026), para el tratamiento (0.022), pero no para su interacción (0.100).
+En cuanto al NMDS de la diversidad beta, se observó que en el bosque nativo la diversidad se agrupa por el tipo de hospedero, mientras que en el bosque mixto no se observa una separación (Figura 2). Al incluir ambos factores en el test de Adonis se observa que existen diferencias significativas para el hospedero (0.026), para el tratamiento (0.022), pero no para su interacción (0.100).
 
 **Referencias**
 
