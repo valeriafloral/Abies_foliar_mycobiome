@@ -1,0 +1,148 @@
+---
+title: 'Tarea 8.2'
+author: Valeria Flores
+date: (11/05/2020)
+output: html_document
+
+---
+
+# Análisis de diversidad de muestras secuenciadas con Illumina MiSeq
+
+Este script utiliza de input el archivo `.biom` generado con el programa AMPtk y almacenado en la carpeta *data*
+
+# El directorio de trabajo debe ser la carpeta bin
+
+#Cargar las librerías
+
+```{r eval=TRUE}
+library(phyloseq)
+library(vegan)
+library(ggplot2)
+```
+
+
+#Importar los datos
+
+```{r eval=TRUE}
+suelo <- import_biom("../data/taxonomy200.biom")
+```
+
+#Visualizar datos
+
+```{r eval=TRUE}
+head(tax_table(suelo))
+```
+
+```{r eval=TRUE}
+sample_data(suelo)
+```
+
+#Cambiar el nombre a las columnas
+```{r eval=TRUE}
+colnames(tax_table(suelo)) <- c("Domain", "Phylum", "Class", "Order", "Family", "Genus", "Species")
+```
+
+#Transformar y verificar los datos
+#Contaminación: eliminar los reads del control negativo en cada muestra (dypr)
+
+#Todas las muestras tienen que tener el mismo número de reads
+#Rarefy
+```{r eval=TRUE}
+no.reads = sort(sample_sums(suelo))
+no.reads
+```
+
+
+####1. Crear una tabla binomial (presencia/ausencia) usando la función decostand del paquete vegan
+```{r eval=TRUE}
+otu <-as.data.frame(otu_table(suelo)) #Convertir la tabla de OTU a data.frame
+binomial <- decostand(otu, method="pa") #Crea una tabla binomial con method= "pa"
+```
+
+
+#Acceder a la abundancia de OTU
+```{r eval=TRUE}
+otu_t <-phyloseq(otu_table(binomial, taxa_are_rows= TRUE)) #Método utilizado por phyloseq para 
+tax <- suelo@tax_table #Extraer la taxonomy table
+sam <-suelo@sam_data #Extraer el sample data
+```
+
+
+#Combinar objetos creados 
+```{r eval=TRUE}
+suelo_bin <-merge_phyloseq(otu_t, tax, sam)
+```
+
+
+
+#### 2. Realizar un plot_bar de la abundancia de OTUs por phylum en cada hospedero (host) y tratamiento (treatment) usando facet_wrap
+
+```{r eval=TRUE}
+p <- plot_bar(suelo,"Host", fill="Phylum") + 
+     geom_bar (aes(color=Phylum,fill=Phylum), stat = "identity", position = "stack") +
+     facet_wrap("Treatment")+
+     theme_bw()
+p
+```
+
+#### **Figura 1** Gráfica de la abundancia de Phylum en un sitio mixto y nativo
+
+
+
+#### 3. Hacer un ANOVA de la riqueza observada ("Observed") por hospedero y tratamiento (two-way)
+
+# Índices de diversidad 
+```{r eval=TRUE}
+#Diversidad alfa
+diversity <- estimate_richness(suelo_bin,measures = c("Observed", "Fisher"))
+diversity
+#Agregar los resultados de índices diversidad a sample_data
+data <- cbind(sample_data(suelo_bin),diversity)
+data
+```
+
+#### Two-way ANOVA
+```{r eval=TRUE}
+anova <- aov(Observed ~ Host * Treatment, data= data)
+summary(anova)
+```
+
+#### Cálculo de diversidad beta 
+#### 4. Desde una matriz de distancia de Raup-Crick ("raup"), realizar una ordinación NMDS, 
+
+#Ordinacion usando NMDS basado en matriz de disimilitud
+```{r eval=TRUE}
+rc <- distance(suelo,method = "raup") #Matriz de distancia de Raup-Crick 
+rc
+```
+
+```{r eval=TRUE}
+NMDS = ordinate(suelo_bin, method = "NMDS", distance = rc, color = "Host", shape = "Treatment")
+NMDS
+```
+
+#Visualización por hospedero 
+```{r eval=TRUE}
+b<- plot_ordination(suelo_bin, NMDS , color = "Host", shape = "Treatment") + geom_point(size=3) +
+  facet_wrap(~Treatment) +
+  theme_bw()
+b
+```
+
+#### **Figura 2** Graficación de la ordinación de las muestras por tratamiento y hospedero. 
+
+
+#### 5. Hacer un test de adonis de la composición de la comunidad por hospedero y tratamiento
+
+
+```{r eval=TRUE}
+adonis (rc ~ Host, data=data) #Test adonis por hospedero
+adonis (rc ~ Treatment, data=data) #Test adonis por tratamiento
+adonis (rc ~ Host * Treatment, data=data) #Test adonis por hospedero y tratamiento 
+
+```
+
+
+
+
+
