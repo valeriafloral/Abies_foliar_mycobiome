@@ -1,6 +1,6 @@
-Metagenómica
+**Metagenómica**
 
-Introducción a la bioinformática e investigación reproducible para análisis genómicos
+**Introducción a la bioinformática e investigación reproducible para análisis genómicos**
 
 En este repositorio se encuentran los análisis metagenómicos de 24 muestras de suelo rizosférico en sitios de bosque nativo (**N**) y mixto (**M**) de Quercus (**Q**) y Juniperus (**J**).
 
