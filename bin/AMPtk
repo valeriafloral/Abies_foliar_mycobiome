@@ -1,1 +1,24 @@
+#### Tutorial AMPtk con datos ITS2 generados por Illumina MiSeq
 
+### Valeria Flores 2020
+
+###Entrar al cluster de la CONABIO
+
+#### En el cluster dirigirse al directorio personal
+
+#### En el directorio personal
+
+#Ensamble de los reads forward y reverse y eliminación de primers y secuencias cortas
+
+amptk illumina -i ../metagenomica/fastq -o amptk/ -f GTGARTCATCRARTYTTTG -r CCTSCSCTTANTDATATGC -l 300 --min_len 200 --full_length --cleanup
+
+#Filtrado de calidad y agrupamiento en OTUs
+
+amptk cluster -i amptk.demux.fq.gz -o cluster -m 2 --uchime_ref ITS
+
+#Filtrar la tabla de OTUs
+amptk filter -i cluster.otu_table.txt -o filter -f cluster.cluster.otus.fa -p 0.005 --min_reads_otu 2
+
+
+#Asignar taxon a cada OTU
+amptk taxonomy -i filter.final.txt -o taxonomy -f filter.filtered.otus.fa -m ../metagenomica/amptk.mapping_file.txt -d ITS2 --tax_filter Fungi
