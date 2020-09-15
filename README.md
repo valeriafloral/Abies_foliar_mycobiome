@@ -1,6 +1,3 @@
-# **Role of endophytic fungi in the resistance of sacred fir (*Abies religiosa*) to air pollution**
-
-
 # **Role of endophytic fungi in the resistance of sacred fir (Abies religiosa) to air pollution**
 
 This repository contains the data and the scripts used to in the present project.
@@ -8,11 +5,9 @@ This repository contains the data and the scripts used to in the present project
 
 **Aims**
 
-To characterize the fungal communities present inside the leaves of healthy and damaged fir individuals
-
-To compare if there are differences in diversity and community composition related to air pollution. 
-
-To search for fungal transcript in RNA-Seq transcriptomic data from healthy and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
+1. To characterize the fungal communities present inside the leaves of healthy and damaged fir individuals 
+2. To compare if there are differences in diversity and community composition related to air pollution. 
+3. To search for fungal transcript in RNA-Seq transcriptomic data from healthy and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
 
 
 **Repository structure**
