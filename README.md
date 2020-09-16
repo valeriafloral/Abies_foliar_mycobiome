@@ -21,7 +21,7 @@ This repository contains the folders **bin**, **data**, **metadata** and **figur
 
 **Data**
 
-The data comes from Veronica Reyes Galindo's project [*Abies* vs ozone](https://github.com/VeroIarrachtai/Abies_vs_ozone). 64 libraries were sequenced, resulting libraries were quality filtered. For more information about the samples see the folder **metadata**.
+The data comes from Veronica Reyes Galindo's project [*Abies* vs ozone](https://github.com/VeroIarrachtai/Abies_vs_ozone). 64 libraries were sequenced, resulting libraries were quality filtered. For more information about the samples see the folder [**metadata*](https://github.com/valeriafloral/Abies_fungal_endophytes/tree/master/metadata).
 
 For this project 18 samples in total were used:
 
