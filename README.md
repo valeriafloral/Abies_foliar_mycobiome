@@ -28,7 +28,7 @@ For this project 18 samples in total were used:
 * **12** samples were obtained during the contingency season.
 * **6** samples were obtained during the middle concentration season.
 
-Of this samples
+Of these samples
 
 * **9** samples were tolerant.
 * **9** samples were damaged.  
