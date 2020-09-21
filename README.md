@@ -32,4 +32,4 @@ Of these samples:
 
 * **9** samples were tolerant.
 * **9** samples were damaged.  
->>>>>>> 38ade6a95d745e05796fc61cba94729181b04d6d
+
