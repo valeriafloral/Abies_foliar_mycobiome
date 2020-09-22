@@ -2,11 +2,18 @@
 
 This repository contains the data and the scripts used to in the present project.
 
+**Problem**
+
+Air pollution by tropospheric ozone (O3) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City. However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to O3. Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution.
+
 
 **Aims**
 
-1. To characterize the fungal communities present inside the leaves of healthy and damaged fir individuals 
-2. To compare if there are differences in diversity and community composition related to air pollution. 
+**General:** To characterize the fungal communities present inside the leaves of fir individuals exposed to high tropospheric ozone concentration.
+
+**Particular:**
+
+1. To characterize the diversity of fungal endophytes within the leaves of health and damaged fir individuals through isolate in culture, Sanger sequencing and meta-barcoding.
 3. To search for fungal transcript in RNA-Seq transcriptomic data from healthy and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
 
 
