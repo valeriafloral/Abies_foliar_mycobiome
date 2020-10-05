@@ -11,11 +11,8 @@ Air pollution by tropospheric ozone (O3) is causing the strong decline of sacred
 
 **General** 
 
-To characterize the fungal communities present inside the leaves of fir individuals exposed to high tropospheric ozone concentration.
-
-**Particular**
-
-1. To characterize the diversity of fungal endophytes within the leaves of health and damaged fir individuals through isolate in culture, Sanger sequencing and meta-barcoding.
+1. To characterize the diversity of fungal endophytes inside the leaves of health and damaged fir individuals through isolate in culture and Sanger sequencing.
+2. To characterize the diversity of fungal endophytes inside the leaves of health and damaged fir individuals through metatranscriptomic analysis.
 3. To search for fungal transcript in RNA-Seq transcriptomic data from healthy and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
 
 
