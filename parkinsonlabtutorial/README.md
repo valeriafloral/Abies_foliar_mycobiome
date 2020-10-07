@@ -38,9 +38,7 @@ docker run -v --rm /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay
 
 ERROR:
 
-![Image of Docker error]
-(https://github.com/valeriafloral/Abies_fungal_endophytes/blob/master/parkinsonlabtutorial/error.png)
-
+![Error](error.png)
 
 
 So I used conda to download **vsearch**
