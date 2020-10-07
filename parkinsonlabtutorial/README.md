@@ -39,7 +39,8 @@ docker run -v --rm /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay
 ERROR:
 
 ![Image of Docker error]
-(https://github.com/valeriafloral/Abies_fungal_endophytes/blob/master/parkinsonlabtutorial/Screenshot%202020-10-06%20at%2022.25.32.png?raw=true)
+(https://github.com/valeriafloral/Abies_fungal_endophytes/blob/master/parkinsonlabtutorial/error.png)
+
 
 
 So I used conda to download **vsearch**
@@ -90,3 +91,4 @@ cd-hit-dup -i ../data/mouse1_qual.fastq -o data/mouse1_unique.fastq
 ```
 
 ##Step 3: **Remove vector contamination**
+
