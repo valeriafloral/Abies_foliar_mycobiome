@@ -64,7 +64,7 @@ I had an error trying to run this code for using **vsearch** in Docker:
 docker run -v --rm /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/comp-bio-aging/vsearch vsearch --fastq_filter /data/mouse1_trim.fastq --fastq_maxee 2.0 --fastqout mouse1_qual.fastq   
 ```
 
-ERROR:
+**ERROR:**
 
 ![Error](error.png)
 
