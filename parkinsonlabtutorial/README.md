@@ -49,7 +49,7 @@ Check the quality of the trimmed sequences:
 ```
 docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/biocontainers/fastqc:0.11.7--4 fastqc /data/mouse1_trimmed.fastq
 ```
-[Trimmed sequences](https://drive.google.com/file/d/1N6L854lkK5eCffXEOUw927d6fnUQcpW7/view?usp=sharing)
+[Trimmed FASTQC report](https://drive.google.com/file/d/1N6L854lkK5eCffXEOUw927d6fnUQcpW7/view?usp=sharing)
 
 **vsearch** is used to impose an overall read quality threshold to ensure that all reads being used in our analyses are of sufficiently error-free
 
@@ -90,6 +90,8 @@ Then check the quality with **fastqc**:
 docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/biocontainers/fastqc:0.11.7--4 fastqc /data/mouse1_qual.fastq
 ```
 
+[vsearch quality report](https://drive.google.com/file/d/1mm-aPyjpKWfMb7OMmn1ISDh2yUNBZ9bJ/view?usp=sharing)
+ 
 ##Step 2: **Remove duplicate reads**
 
 Install the CD-HIT-Auxtools using bioconda 
