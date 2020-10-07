@@ -15,19 +15,23 @@ To install the **FASTQC** image:
 docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/biocontainers/fastqc:0.11.7--4 fastqc /data/mouse1.fastq
 ```
 
+[Raw FastQC report](https://drive.google.com/file/d/1yyU2otzkEU3lirDo-03fotXScnYWdTuM/view?usp=sharing)
 
-Install **Trimmomatic** image:
+Install **Trimmomatic** image to remove the adapters and low quality sequences:
 
 
 ```
 docker run --rm -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/biocontainers/trimmomatic:0.39--1 trimmomatic SE /data/mouse1.fastq /data/mouse1_trimmed.fastq ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:50
 ```
 
-Check the quality of the trimmed data:
+Check the quality of the trimmed sequences:
 
 ```
 docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/biocontainers/fastqc:0.11.7--4 fastqc /data/mouse1_trimmed.fastq
 ```
+[Trimmed sequences](https://drive.google.com/file/d/1N6L854lkK5eCffXEOUw927d6fnUQcpW7/view?usp=sharing)
+
+**vsearch** is used to impose an overall read quality threshold to ensure that all reads being used in our analyses are of sufficiently error-free
 
 I had an error trying to run this code for using **vsearch** in Docker:
 
@@ -53,14 +57,14 @@ And then:
 conda install -c bioconda/label/cf201901 vsearch
 ```
 
-Once **vsearch** was installaded, the code is:
+Once **vsearch** was installaded, I used the code below: 
 
 ```
 vsearch --fastq_filter mouse1_trim.fastq --fastq_maxee 2.0 --fastqout mouse1_qual.fastq
 ```
 
 
-The check the quality with **fastqc**:
+Then check the quality with **fastqc**:
 
 ```
 docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/biocontainers/fastqc:0.11.7--4 fastqc /data/mouse1_qual.fastq
