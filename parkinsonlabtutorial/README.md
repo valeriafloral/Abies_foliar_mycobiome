@@ -35,9 +35,9 @@ docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/b
 
 [Raw FastQC report](https://drive.google.com/file/d/1yyU2otzkEU3lirDo-03fotXScnYWdTuM/view?usp=sharing)
 
-![](raw_fastq_1)
-![](raw_fastq_2)
-![](raw_fastq_3)
+![](raw_fastq_1.png)
+![](raw_fastq_2.png)
+![](raw_fastq_3.png)
 
 
 
