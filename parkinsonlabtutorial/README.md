@@ -1,3 +1,23 @@
+#Metatranscriptomics [tutorial from Parkinson’s Lab](https://github.com/ParkinsonLab/Metatranscriptome-Workshop)
+
+
+
+**Valeria Flores Almaraz**
+
+Software:
+
+* **Docker**
+* **Conda**
+* **FastQC**
+* **Trimmomatic**
+* **vsearch**
+* **CD-HIT-Auxtools**
+* **BWA**
+* **Blat**
+* **Samtools**
+* **blast+**
+
+
 ## Step 1: **Processing the reads**
 
 Download the scripts:
