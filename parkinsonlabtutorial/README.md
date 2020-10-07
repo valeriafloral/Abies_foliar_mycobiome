@@ -27,8 +27,6 @@ tar -xvf precomputed_files.tar '*.py' > bin
 ``
 
 
-Then I moved manually to the folder `bin`so I need to find a way to dot it since `tar`step.
-
 To install the **FASTQC** image: 
 
 ```
@@ -36,6 +34,12 @@ docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/b
 ```
 
 [Raw FastQC report](https://drive.google.com/file/d/1yyU2otzkEU3lirDo-03fotXScnYWdTuM/view?usp=sharing)
+
+![](raw_fastq_1)
+![](raw_fastq_2)
+![](raw_fastq_3)
+
+
 
 Install **Trimmomatic** image to remove the adapters and low quality sequences:
 
