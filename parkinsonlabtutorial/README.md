@@ -96,7 +96,7 @@ docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/b
 
 [vsearch quality report](https://drive.google.com/file/d/1mm-aPyjpKWfMb7OMmn1ISDh2yUNBZ9bJ/view?usp=sharing)
  
-##Step 2: **Remove duplicate reads**
+## Step 2: **Remove duplicate reads**
 
 Install the CD-HIT-Auxtools using bioconda 
 
@@ -118,5 +118,5 @@ Then run
 cd-hit-dup -i ../data/mouse1_qual.fastq -o data/mouse1_unique.fastq
 ```
 
-##Step 3: **Remove vector contamination**
+## Step 3: **Remove vector contamination**
 
