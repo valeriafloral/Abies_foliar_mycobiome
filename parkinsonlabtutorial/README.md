@@ -1,8 +1,17 @@
-# Metatranscriptomics [tutorial from Parkinson’s Lab](https://github.com/ParkinsonLab/Metatranscriptome-Workshop)
+# Metatranscriptomics [tutorial from Parkinson's Lab](https://github.com/ParkinsonLab/Metatranscriptome-Workshop)
 
 
 
 **Valeria Flores Almaraz**
+
+## **Prerequisites*
+
+Download the precomputed files from Parkinson's lab repository:
+
+```
+curl https://github.com/ParkinsonLab/2017-Microbiome-Workshop/releases/download/Extra/precomputed_files.tar.gz > precomputed_files.tar.gzcurl https://github.com/ParkinsonLab/2017-Microbiome-Workshop/releases/download/Extra/precomputed_files.tar.gz > precomputed_files.tar.gz
+```
+
 
 Software:
 
