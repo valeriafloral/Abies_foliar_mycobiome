@@ -44,9 +44,9 @@ docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/b
 
 [Raw FastQC report](https://drive.google.com/file/d/1yyU2otzkEU3lirDo-03fotXScnYWdTuM/view?usp=sharing)
 
-![](raw_fastq_1)
-![](raw_fastq_2)
-![](raw_fastq_3)
+![](raw_fastq_1.png)
+![](raw_fastq_2.png)
+![](raw_fastq_3.png)
 
 
 
@@ -73,7 +73,7 @@ I had an error trying to run this code for using **vsearch** in Docker:
 docker run -v --rm /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/comp-bio-aging/vsearch vsearch --fastq_filter /data/mouse1_trim.fastq --fastq_maxee 2.0 --fastqout mouse1_qual.fastq   
 ```
 
-ERROR:
+**ERROR:**
 
 ![Error](error.png)
 
@@ -105,7 +105,7 @@ docker run -v /Users/valfloral/Desktop/metatranscriptomics/data/:/data quay.io/b
 
 [vsearch quality report](https://drive.google.com/file/d/1mm-aPyjpKWfMb7OMmn1ISDh2yUNBZ9bJ/view?usp=sharing)
  
-##Step 2: **Remove duplicate reads**
+## Step 2: **Remove duplicate reads**
 
 Install the CD-HIT-Auxtools using bioconda 
 
@@ -127,5 +127,5 @@ Then run
 cd-hit-dup -i ../data/mouse1_qual.fastq -o data/mouse1_unique.fastq
 ```
 
-##Step 3: **Remove vector contamination**
+## Step 3: **Remove vector contamination**
 
