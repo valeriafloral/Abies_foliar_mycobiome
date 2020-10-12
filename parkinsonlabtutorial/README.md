@@ -27,21 +27,23 @@ Software:
 * **blast+**
 
 **Start**
+
 ```
 conda activate
 ```
 
-## Processing the reads**
+## **Processing the reads**
 
 Extract the python scripts and save it in data/pyton_scripts folder
 
 ```
 tar -xvf precomputed_files.tar '*.py'
-``
+```
 
 Check the quality of raw data, use trimmomatic to remove the low quality sequences
 
-#Copy adapters to data folder
+Copy adapters to data folder
+
 ```
 cp /Users/valfloral/opt/anaconda3/pkgs/trimmomatic-0.39-1/share/trimmomatic-0.39-1/adapters/TruSeq2-SE.fa ../../data/adapters 
 ```
