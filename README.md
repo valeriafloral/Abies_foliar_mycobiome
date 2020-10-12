@@ -27,15 +27,12 @@ This repository contains the folders **bin**, **data**, **metadata** and **figur
 
 The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). 64 libraries were sequenced, resulting libraries were quality filtered. For more information about the samples see the folder [**metadata**](https://github.com/valeriafloral/Abies_fungal_endophytes/tree/master/metadata).
 
-For this project 18 samples in total were used:
-
-* **12** samples were obtained during the contingency season.
-* **6** samples were obtained during the middle concentration season.
+For this project 16 samples in total were used:
 
 Of these samples:
 
-* **9** samples were tolerant.
-* **9** samples were damaged.  
+* **8** samples were tolerant.
+* **8** samples were damaged.  
 
 
 ## **Workflow**
