@@ -26,7 +26,34 @@ For this project **16** samples in total were used:
 
 ## **Repository structure**
 
-This repository contains the folders **bin**, **data**, **metadata** and **figures**.
+This repository contains the folders
+
+>### /bin/
+
+Contains scripts to perfrom the analysis
+
+* /shell_scripts/
+
+  1. **masterscript.sh**
+ Contains the pipeline in detail and specifies the order in which each script must be called.
+  2. **0_quality.sh**
+ Performs quality analysis with FastQC, adapters deletion and paired-end read merging with trimmomatic, and a set a quality          treshold with vsearch.
+  3. **1_abundantrrna.sh**
+  Delete abundant rRNA with sormeRNA.
+  4. **2_removehost.sh**
+  Delete host reads (*A. religiosa*) with BWA by mapping to a Reference transcriptomic (*A. balsamea).
+  5. **3_taxonomy.sh**
+  Assign taxonomy using kaiju.
+  6. **4_assembly.sh**
+  Permorms a *de novo* assambly using MetaSPAdes
+  7. **5_annotation.sh**
+  Assing function to assembled contigs. 
+  
+ 
+
+
+>### /data/
+>### /metadata/
 
 * The folder **bin** contains the scripts divided in subfolders which contains the scripts for each step of the transcriptomic analysis. 
 * The folder **data** contains the data used.
