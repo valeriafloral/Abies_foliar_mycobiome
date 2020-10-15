@@ -32,7 +32,7 @@ This repository contains the folders
 
 Contains scripts to perfrom the analysis
 
-* /shell_scripts/
+#### /shell_scripts/
 
   * **masterscript.sh**
  Contains the pipeline in detail and specifies the order in which each script must be called.
