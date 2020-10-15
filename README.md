@@ -34,19 +34,19 @@ Contains scripts to perfrom the analysis
 
 * /shell_scripts/
 
-  1. **masterscript.sh**
+  * **masterscript.sh**
  Contains the pipeline in detail and specifies the order in which each script must be called.
-  2. **0_quality.sh**
+  * **0_quality.sh**
  Performs quality analysis with FastQC, adapters deletion and paired-end read merging with trimmomatic, and a set a quality          treshold with vsearch.
-  3. **1_abundantrrna.sh**
+  * **1_abundantrrna.sh**
   Delete abundant rRNA with sormeRNA.
-  4. **2_removehost.sh**
+  * **2_removehost.sh**
   Delete host reads (*A. religiosa*) with BWA by mapping to a Reference transcriptomic (*A. balsamea).
-  5. **3_taxonomy.sh**
+  * **3_taxonomy.sh**
   Assign taxonomy using kaiju.
-  6. **4_assembly.sh**
+  * **4_assembly.sh**
   Permorms a *de novo* assambly using MetaSPAdes
-  7. **5_annotation.sh**
+  * **5_annotation.sh**
   Assing function to assembled contigs. 
   
  
