@@ -3,16 +3,16 @@
 
 Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City. However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to (O<sub>3</sub>). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution.
 
+In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high (O<sub>3</sub>) concentrations and showed 2 different phenotypes (tolerant and damaged). 
 
 ## **Aims**
 
-1. To characterize the diversity of fungal endophytes inside the leaves of health and damaged fir individuals through isolate in culture and Sanger sequencing.
-2. To characterize the diversity of fungal endophytes inside the leaves of health and damaged fir individuals through metatranscriptomic analysis.
-3. To search for fungal transcript in RNA-Seq transcriptomic data from healthy and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
+1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir individuals through metatranscriptomic analysis.
+2. To search for fungal transcript in RNA-Seq transcriptomic data from tolerant and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
 
 ## **Data**
 
-The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). 64 libraries were sequenced, resulting libraries were quality filtered. For more information about the samples see the folder [**metadata**](https://github.com/valeriafloral/Abies_fungal_endophytes/tree/master/metadata).
+The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). For more information about the samples see the folder [**metadata**](https://github.com/valeriafloral/Abies_fungal_endophytes/tree/master/metadata).
 
 For this project **16** samples in total were used:
 
