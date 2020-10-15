@@ -53,9 +53,17 @@ Contains scripts to perfrom the analysis
 
 
 >### /data/
->### /metadata/
+Contains subfolders:
 
-* The folder **bin** contains the scripts divided in subfolders which contains the scripts for each step of the transcriptomic analysis. 
-* The folder **data** contains the data used.
-* The folder **metadata** contains the information about the samples.
-* The folder **figures** contains the    results of the analysis organized in figures.  
+#### /raw/
+(`.fq.gzip`)
+#### /trimmed/
+(`.fq.gzip`) Trimmomatic output
+#### /filtered/
+sortmeRNA output and unmaped reads to reference transcriptomic
+#### /assembled/
+metaSPADES output
+
+
+>### /metadata/
+Contains information about the samples and the reference transcriptomic
