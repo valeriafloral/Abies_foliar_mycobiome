@@ -14,12 +14,10 @@ Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong declin
 
 The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). 64 libraries were sequenced, resulting libraries were quality filtered. For more information about the samples see the folder [**metadata**](https://github.com/valeriafloral/Abies_fungal_endophytes/tree/master/metadata).
 
-For this project 16 samples in total were used:
+For this project **16** samples in total were used:
 
-Of these samples:
-
-* **8** samples were tolerant.
-* **8** samples were damaged.  
+* **8** samples **tolerant**.
+* **8** samples **damaged**.  
 
 
 ## **Workflow**
