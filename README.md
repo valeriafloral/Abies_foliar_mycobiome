@@ -39,15 +39,15 @@ Contains scripts to perfrom the analysis
   * **0_quality.sh**
  Performs quality analysis with FastQC, adapters deletion and paired-end read merging with trimmomatic, and a set a quality          treshold with vsearch.
   * **1_abundantrrna.sh**
-  Delete abundant rRNA with sormeRNA.
+  Deletes abundant rRNA with sormeRNA.
   * **2_removehost.sh**
-  Delete host reads (*A. religiosa*) with BWA by mapping to a Reference transcriptomic (*A. balsamea).
+  Deletes host reads (*A. religiosa*) with BWA by mapping to a Reference transcriptomic (*A. balsamea).
   * **3_taxonomy.sh**
-  Assign taxonomy using kaiju.
+  Assigns taxonomy to reads using kaiju.
   * **4_assembly.sh**
-  Permorms a *de novo* assambly using MetaSPAdes
+  Permorms an assembly into contigs using MetaSPAdes
   * **5_annotation.sh**
-  Assing function to assembled contigs. 
+  Assigns function to assembled contigs. 
   
  
 
