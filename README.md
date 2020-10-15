@@ -30,22 +30,22 @@ This repository contains the folders
 
 >### /bin/
 
-Contains scripts to perfrom the analysis
+Contains scripts to perform the analysis
 
 #### /shell_scripts/
 
   * **masterscript.sh**
  Contains the pipeline in detail and specifies the order in which each script must be called.
   * **0_quality.sh**
- Performs quality analysis with FastQC, adapters deletion and paired-end read merging with trimmomatic, and a set a quality          treshold with vsearch.
+ Performs quality analysis with FastQC, adapters deletion and paired-end read merging with trimmomatic, and a set a quality treshold with vsearch.
   * **1_abundantrrna.sh**
-  Deletes abundant rRNA with sormeRNA.
+  Deletes abundant rRNA with sortmeRNA.
   * **2_removehost.sh**
-  Deletes host reads (*A. religiosa*) with BWA by mapping to a Reference transcriptomic (*A. balsamea).
+  Deletes host reads (*A. religiosa*) with BWA by mapping to a Reference transcriptomic (*A. balsamea*).
   * **3_taxonomy.sh**
   Assigns taxonomy to reads using kaiju.
   * **4_assembly.sh**
-  Permorms an assembly into contigs using MetaSPAdes
+  Performs an assembly into contigs using MetaSPAdes
   * **5_annotation.sh**
   Assigns function to assembled contigs. 
   
@@ -67,3 +67,6 @@ metaSPADES output
 
 >### /metadata/
 Contains information about the samples and the reference transcriptomic
+
+>### /parkinsonlabtutorial/
+This directory refers to ...
