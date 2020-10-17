@@ -1,6 +1,6 @@
 # **Role of endophytic fungi in the resistance of sacred fir (*Abies religiosa*) to air pollution**
 
-
+========= REPOSITORY UNDER CONSTRUCTION ============
 Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City. However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to (O<sub>3</sub>). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution.
 
 In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high (O<sub>3</sub>) concentrations and showed 2 different phenotypes (tolerant and damaged). 
