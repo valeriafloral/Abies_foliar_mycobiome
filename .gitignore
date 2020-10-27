@@ -2,9 +2,11 @@
 
 /parkinsonlabtutorial/data/raw
 /parkinsonlabtutorial/data/trimmed
-/parkinsonlabtutorial/data/adapters
+/parkinsonlabtutorial/metadata/adapters
 /parkinsonlabtutorial/data/qual
 /parkinsonlabtutorial/precomputed
+/parkinsonlabtutorial/metadata/index
+
 
 
 
