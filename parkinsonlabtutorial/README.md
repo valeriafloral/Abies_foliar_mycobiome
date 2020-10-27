@@ -65,7 +65,7 @@ sh 1_duplicate
 Download the dataset for identifying contaminating vector and adapter sequences
 
 ```
-curl -L ftp://ftp.ncbi.nih.gov/pub/UniVec/UniVec_Core -o ../../data/UniVec_Core
+curl -L ftp://ftp.ncbi.nih.gov/pub/UniVec/UniVec_Core -o ../../metadata/index/vector_contamination/UniVec_Core
 ```
 
 Generate an index of these sequences for BWA an BLAT
