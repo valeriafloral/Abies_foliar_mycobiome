@@ -71,8 +71,9 @@ curl -L ftp://ftp.ncbi.nih.gov/pub/UniVec/UniVec_Core -o ../../metadata/index/ve
 Generate an index of these sequences for BWA an BLAT
 
 ```
-bwa index -a bwtsw ../../data/UniVec_Core
-samtools faidx ../../data/UniVec_Core
-makeblastdb -in ../../data/UniVec_Core -dbtype nucl
+bwa index -a bwtsw ../../metadata/index/vector_contamination/UniVec_Core
+samtools faidx ../../metadata/index/vector_contamination/UniVec_Core
+makeblastdb -in ../../metadata/index/vector_contamination/UniVec_Core -dbtype nucl
 ```
+
 
