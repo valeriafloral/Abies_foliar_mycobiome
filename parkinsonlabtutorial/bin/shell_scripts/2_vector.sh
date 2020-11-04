@@ -20,5 +20,5 @@ vsearch --fastq_filter ../../data/trimmed/mouse1_univec_bwa.fastq --fastaout ../
 blat -noHead -minIdentity=90 -minScore=65  ../../metadata/index/vector_contamination/UniVec_Core ../../data/trimmed/mouse1_univec_bwa.fasta -fine -q=rna -t=dna -out=blast8 ../../data/trimmed/mouse1_univec.blatout
 
 #Run a small python script to filter the reads that BLAT does not confidently align to any sequences from our vector_contamination database
-##It is necessary to modify the ../python_scripts/1_BLAT_Filter.py because of error message
+##It is necessary to modify the ../python_scripts/1_BLAT_Filter.py because of error message (DON'T WORK)
 ../python_scripts/1_BLAT_Filter.py ../../data/trimmed/mouse1_univec_bwa.fastq ../../data/trimmed/mouse1_univec.blatout ../../data/trimmed/mouse1_univec_blat.fastq ../../data/trimmed/mouse1_univec_blat_contaminats.fastq

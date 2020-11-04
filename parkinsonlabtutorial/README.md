@@ -45,7 +45,7 @@ Check the quality of raw data, use trimmomatic to remove the low quality sequenc
 Copy adapters to data folder
 
 ```
-cp /Users/valfloral/opt/anaconda3/pkgs/trimmomatic-0.39-1/share/trimmomatic-0.39-1/adapters/TruSeq2-SE.fa ../../data/adapters 
+cp /Users/valfloral/opt/anaconda3/pkgs/trimmomatic-0.39-1/share/trimmomatic-0.39-1/adapters/TruSeq2-SE.fa ../../data/adapters
 ```
 
 Run the script for fastqc, trimmomatic and vsearch
@@ -80,4 +80,33 @@ Run the script for remove vector contamination
 
 ```
 sh 2_vector.sh
+```
 
+## Step 3: **Remove host reads**
+
+Download a mouse genome database from Ensembl
+
+```
+curl -L ftp://ftp.ensembl.org/pub/current_fasta/mus_musculus/cds/Mus_musculus.GRCm38.cds.all.fa.gz -o ../../metadata/Mmusculus_genome/Mus_musculus.GRCm38.cds.all.fa.gz
+gzip -d ../../metadata/Mmusculus_genome/Mus_musculus.GRCm38.cds.all.fa.gz
+mv ../../metadata/Mmusculus_genome/Mus_musculus.GRCm38.cds.all.fa ../../metadata/Mmusculus_genome/mouse_cds.fa
+```
+
+Repeat the steps above used to generate an index for these sequences for BWA an BLAT
+
+Make index:
+
+```
+bwa index -a bwtsw ../../metadata/Mmusculus_genome/mouse_cds.fa
+samtools faidx ../../metadata/Mmusculus_genome/mouse_cds.fa
+makeblastdb -in ../../metadata/Mmusculus_genome/mouse_cds.fa -dbtype nucl
+```
+
+## Step 4: **Remove abundant rRNA sequences**
+
+rRNA genes must be screened out to avoid lengthy downstream processing times for assembly and annotations
+On a single core, infernal can take as much as 4 hours for ~100,000 reads. This step was skipped and use a precomputed file `mouse1_rRNA.infernalout`from the `tar` file precomputed_files.tar.gz`
+
+```
+tar -xzf ../../precomputed/precomputed_files.tar.gz mouse1_rRNA.infernalout > ../../data/qual/mouse1_rRNA.infernalout
+```
