@@ -75,4 +75,5 @@ metaSPADES output
 Contains information about the samples and the reference transcriptomic
 
 >### /parkinsonlabtutorial/
-This directory refers to ...
+This folder was made to follow the [**Parkinson's Lab tutorial**](https://github.com/ParkinsonLab/Metatranscriptome-Workshop) that I'm following because I' gonna use some of it scripts in my project. This folder is gonna be deleted when I finish adapting my scripts.
+I structured the folder with subfolders in which I gonna organize my project.
