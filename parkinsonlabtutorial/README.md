@@ -76,4 +76,8 @@ samtools faidx ../../metadata/index/vector_contamination/UniVec_Core
 makeblastdb -in ../../metadata/index/vector_contamination/UniVec_Core -dbtype nucl
 ```
 
+Run the script for remove vector contamination
+
+```
+sh 2_vector.sh
 
