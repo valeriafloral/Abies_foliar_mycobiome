@@ -18,7 +18,7 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Data**
 
-The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). For more information about the samples see the folder [**metadata**](https://github.com/valeriafloral/Abies_fungal_endophytes/tree/master/metadata).
+The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). For more information about the samples see the folder [**metadata**](https://github.com/VeroIarrachtai/Abies_vs_ozone/blob/master/4_Transcriptomics/metadata/RNA_sacredfir.csv).
 
 For this project **16** samples in total were used:
 
