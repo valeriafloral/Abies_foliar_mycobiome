@@ -10,3 +10,8 @@ samtools view -bS ../../data/trimmed/mouse1_univec_bwa.sam > ../../data/trimmed/
 #Generate fastq outputs for all reads that mapped to the vector contaminant database (-F 4) and all reads that did not map to the vector contaminant database (-f 4)
 samtools fastq -n -F 4 -0 ../../data/trimmed/mouse1_univec_bwa_contaminats.fastq ../../data/trimmed/mouse1_univec_bwa.bam
 samtools fastq -n -f 4 -0 ../../data/trimmed/mouse1_univec_bwa.fastq ../../data/trimmed/mouse1_univec_bwa.bam
+
+#Perform additional alignments wit BLAT to filter any remaining reads that align to vector_contamination database
+
+#Convert from fastq to fasta to use BLAT using VSEARCH
+vsearch --fastq_filter ../../data/trimmed/mouse1_univec_bwa.fastq --fastaout ../../data/trimmed/mouse1_univec_bwa.fasta
