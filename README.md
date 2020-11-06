@@ -75,5 +75,8 @@ metaSPADES output
 Contains information about the samples and the reference transcriptomic
 
 >### /parkinsonlabtutorial/
-This folder was made to follow the [**Parkinson's Lab tutorial**](https://github.com/ParkinsonLab/Metatranscriptome-Workshop) that I'm following because I' gonna use some of it scripts in my project. This folder is gonna be deleted when I finish adapting my scripts.
-I structured the folder with subfolders in which I gonna organize my project.
+This folder was made to follow the [**Parkinson's Lab tutorial**](https://github.com/ParkinsonLab/Metatranscriptome-Workshop) Some of the steps of the tutorial are gonna be adapted. This folder will be deleted when scripts are adapted.
+
+>### /parkinsonlabtutorial/
+Contains the presentation for methodological topic seminar were I speak about the approaches to look for fungal signals in RNA-Seq data.  
+
