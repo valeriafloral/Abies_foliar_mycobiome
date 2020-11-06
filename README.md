@@ -13,8 +13,10 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Aims**
 
-1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir individuals through metatranscriptomic analysis.
-2. To search for fungal transcript in RNA-Seq transcriptomic data from tolerant and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
+1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir individuals.
+2. To detect differential expression of fungal genes from tolerant and damaged fir individuals. 
+3. To identify fungal genes putitive involved in the resistance of air pollution caused by (O<sub>3</sub>).
+
 
 ## **Data**
 
