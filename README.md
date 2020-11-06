@@ -78,5 +78,5 @@ Contains information about the samples and the reference transcriptomic
 This folder was made to follow the [**Parkinson's Lab tutorial**](https://github.com/ParkinsonLab/Metatranscriptome-Workshop) Some of the steps of the tutorial are gonna be adapted. This folder will be deleted when scripts are adapted.
 
 >### /archive/
-Contains the presentation for methodological topic seminar were I speak about the approaches to look for fungal signals in RNA-Seq data.  
+Contains the presentation for methodological topic seminar were I spoke about the approaches to look for fungal signals in RNA-Seq data.  
 
