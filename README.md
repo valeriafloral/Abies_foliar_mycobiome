@@ -1,4 +1,4 @@
-# ** <div align="center"> Role of endophytic fungi in the resistance of sacred fir (*Abies religiosa*) to air pollution </div> **
+# <div align="center"> Role of endophytic fungi in the resistance of sacred fir (*Abies religiosa*) to air pollution </div>
 
 ## <div align="center">  ===== REPOSITORY UNDER CONSTRUCTION ===== </div>
 
