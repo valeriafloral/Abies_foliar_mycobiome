@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/share/apps/anaconda/bin/python
 
 import sys
 import os
@@ -38,29 +38,29 @@ with open(BLAT_tab_file, "r") as tabfile:
             output_seqs.append(input_seqs[seq])
             if len(output_seqs) > 100000:
             	output_count += len(output_seqs)
-            if not output_file_made:
-                output_file_made = True
-                with open(output_file, "w") as outfile:
-                    SeqIO.write(output_seqs, outfile, "fastq")
-        else:
+                if not output_file_made:
+                    output_file_made = True
+                    with open(output_file, "w") as outfile:
+                        SeqIO.write(output_seqs, outfile, "fastq")
+                else:
                     with open(output_file, "a") as outfile:
                         SeqIO.write(output_seqs, outfile, "fastq")
-output_seqs = []
+                output_seqs = []
         else:
             contaminat_output_seqs.append(input_seqs[seq])
             if len(contaminat_output_seqs) > 100000:
             	contaminat_output_count += len(contaminat_output_seqs)
-            if not contaminat_output_file_made:
+                if not contaminat_output_file_made:
                     contaminat_output_file_made = True
-                with open(contaminat_output_file, "w") as outfile:
+                    with open(contaminat_output_file, "w") as outfile:
                         SeqIO.write(contaminat_output_seqs, outfile, "fastq")
-            else:
-                with open(contaminat_output_file, "a") as outfile:
+                else:
+                    with open(contaminat_output_file, "a") as outfile:
                         SeqIO.write(contaminat_output_seqs, outfile, "fastq")
                 contaminat_output_seqs = []
     if len(output_seqs) > 0:
     	output_count += len(output_seqs)
-    if not output_file_made:
+        if not output_file_made:
             output_file_made = True
             with open(output_file, "w") as outfile:
                 SeqIO.write(output_seqs, outfile, "fastq")
@@ -69,7 +69,7 @@ output_seqs = []
                 SeqIO.write(output_seqs, outfile, "fastq")
     if len(contaminat_output_seqs) > 0:
     	contaminat_output_count += len(contaminat_output_seqs)
-    if not contaminat_output_file_made:
+        if not contaminat_output_file_made:
             contaminat_output_file_made = True
             with open(contaminat_output_file, "w") as outfile:
                 SeqIO.write(contaminat_output_seqs, outfile, "fastq")

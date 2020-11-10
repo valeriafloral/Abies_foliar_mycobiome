@@ -44,4 +44,5 @@ reduplicated_seqs = [reference_sequences[seq_id] for seq_id in sorted(reduplicat
 with open(reduplicated_file, "w") as out:
     SeqIO.write(reduplicated_seqs, out, "fastq")
 
-print str(len(dedeplicated_sequences)) + " dereplicated reads produce " + str(len(reduplicated_seqs)) + " rereplicated reads."
+print (str(len(dedeplicated_sequences)) + " dereplicated reads produce ")
+print (str(len(reduplicated_seqs)) + " rereplicated reads ")

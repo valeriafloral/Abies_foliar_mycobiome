@@ -46,6 +46,8 @@ for x in range((len(sys.argv) - 5) / 3):
     unmapped_seqs = []
 
     def gene_map(tsv, unmapped):
+	print "TSV: " + str(tsv)
+	print "Unmapped: " + str(unmapped) 
         with open(tsv, "r") as tabfile:
             query = ""
             identity_cutoff = 85
@@ -72,34 +74,40 @@ for x in range((len(sys.argv) - 5) / 3):
                     align_len = line[3]
                     score = line[11]
                 if float(seq_identity) > float(identity_cutoff):
-                    if align_len > len(read_seqs[query].seq) * length_cutoff:
-                        if float(score) > float(score_cutoff):
-                            if db_match in gene2read_map:
-                                if contig:
-                                    for read in contig2read_map[query]:
-                                        if read not in gene2read_map[db_match]:
+                    try:
+                        print "seq:  " + query + " \n " + str(read_seqs[query].seq)
+                        if align_len > len(read_seqs[query].seq) * length_cutoff:
+                            if float(score) > float(score_cutoff):
+                                if db_match in gene2read_map:
+                                    if contig:
+                                        for read in contig2read_map[query]:
+                                            if read not in gene2read_map[db_match]:
+                                                if read not in mapped_reads:
+                                                    gene2read_map[db_match].append(read)
+                                                    mapped_reads.add(read)
+                                    elif not contig:
+                                        if query not in gene2read_map[db_match]:
+                                            gene2read_map[db_match].append(query)
+                                            mapped_reads.add(query)
+                                else:
+                                    if contig:
+                                        read_count = 0
+                                        for read in contig2read_map[query]:
                                             if read not in mapped_reads:
-                                                gene2read_map[db_match].append(read)
                                                 mapped_reads.add(read)
-                                elif not contig:
-                                    if query not in gene2read_map[db_match]:
-                                        gene2read_map[db_match].append(query)
+                                                read_count += 1
+                                                if read_count == 1:
+                                                    gene2read_map[db_match] = [read]
+                                                elif read_count > 1:
+                                                    gene2read_map[db_match].append(read)
+                                    elif not contig:
+                                        gene2read_map[db_match] = [query]
                                         mapped_reads.add(query)
-                            else:
-                                if contig:
-                                    read_count = 0
-                                    for read in contig2read_map[query]:
-                                        if read not in mapped_reads:
-                                            mapped_reads.add(read)
-                                            read_count += 1
-                                            if read_count == 1:
-                                                gene2read_map[db_match] = [read]
-                                            elif read_count > 1:
-                                                gene2read_map[db_match].append(read)
-                                elif not contig:
-                                    gene2read_map[db_match] = [query]
-                                    mapped_reads.add(query)
-                            continue
+                                continue
+                    except KeyError, e:
+                        print 'I got a KeyError - reason "%s"' % str(e)
+                    except IndexError, e:
+                        print 'I got an IndexError - reason "%s"' % str(e)
                 unmapped.add(query)
 
     gene_map(DMND_tab_file, unmapped_reads)
@@ -113,7 +121,12 @@ for x in range((len(sys.argv) - 5) / 3):
                 unmapped_reads.add(read)
 
     for read in unmapped_reads:
-        unmapped_seqs.append(read_seqs[read])
+        try:
+            unmapped_seqs.append(read_seqs[read])
+        except KeyError, e:
+                print 'I got a KeyError - reason "%s"' % str(e)
+        except IndexError, e:
+            print 'I got an IndexError - reason "%s"' % str(e)
     with open(output_file, "w") as outfile:
         SeqIO.write(unmapped_seqs, outfile, "fasta")
 

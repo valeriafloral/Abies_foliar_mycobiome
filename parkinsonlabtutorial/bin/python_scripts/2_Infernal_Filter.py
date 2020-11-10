@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/share/apps/anaconda/bin/python
 
 import sys
 import os
@@ -19,24 +19,38 @@ Infernal_rRNA_IDs = set()
 mRNA_seqs = set()
 rRNA_seqs = set()
 
+# Original implementation had a bug, may be it was implemented for a previous version.
+# Declare these lists just for testing proposses
+# FIXME: Implement a more efficient method to avoid search on a list each time an insertion occur.
+mRNA_list = list()
+rRNA_list = list()
+rRNA_IDs= list()
+
 with open(Infernal_out, "r") as infile_read:
     for line in infile_read:
         if not line.startswith("#") and len(line) > 10:
             Infernal_rRNA_IDs.add(line[:line.find(" ")].strip())
 
-mRNA_seqs = set()
+
 
 for sequence in sequences:
     if sequence.id in Infernal_rRNA_IDs:
-        rRNA_seqs.add(sequence)
+        if sequence.id not in rRNA_IDs:
+            rRNA_IDs.append(sequence.id)
+            rRNA_list.append(sequence)	
+            #rRNA_seqs.add(sequence)
     else:
-        mRNA_seqs.add(sequence)
+        mRNA_list.append(sequence)
+        #mRNA_seqs.add(sequence)
+
+#print "IDs comparison"
+#print rRNA_IDs
 
 with open(mRNA_file, "w") as out:
-    SeqIO.write(list(mRNA_seqs), out, "fastq")
+    SeqIO.write(list(mRNA_list), out, "fastq")
 
 with open(rRNA_file, "w") as out:
-    SeqIO.write(list(rRNA_seqs), out, "fastq")
+    SeqIO.write(list(rRNA_list), out, "fastq")
 
-print str(len(rRNA_seqs)) + " reads were aligned to the rRNA database"
-print str(len(mRNA_seqs)) +  " reads were not aligned to the rRNA database"
+print (str(len(rRNA_list)) + " reads were aligned to the rRNA database")
+print (str(len(mRNA_list)) +  " reads were not aligned to the rRNA database")

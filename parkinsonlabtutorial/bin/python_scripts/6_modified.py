@@ -18,6 +18,13 @@ contig2read_map = {}
 contig2read_map_full = {}
 contig_reads = []
 
+print "number of arguments: " + str(argv)
+
+for i in sys.argv:
+    print str(i) + "\n"
+
+sys.exit()
+
 with open(contig2read_file, "r") as mapping:
     for line in mapping:
         if len(line) > 5:
