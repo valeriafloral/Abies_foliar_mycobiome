@@ -1,6 +1,6 @@
-# **Role of endophytic fungi in the resistance of sacred fir (*Abies religiosa*) to air pollution**
+# <div align="center"> Role of endophytic fungi in the resistance of sacred fir (*Abies religiosa*) to air pollution </div>
 
-## ========= REPOSITORY UNDER CONSTRUCTION ============
+### <div align="center">  :construction::construction::construction::construction: REPOSITORY UNDER CONSTRUCTION :construction::construction::construction::construction: </div>
 
 
 
@@ -13,8 +13,10 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Aims**
 
-1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir individuals through metatranscriptomic analysis.
-2. To search for fungal transcript in RNA-Seq transcriptomic data from tolerant and damaged fir individuals to detect signals of differential expression and identify fungal genes involved in the resistance of tolerant individuals.
+1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir individuals.
+2. To detect differential expression of fungal genes from tolerant and damaged fir individuals. 
+3. To identify fungal genes putitive involved in the resistance of air pollution caused by (O<sub>3</sub>).
+
 
 ## **Data**
 
@@ -75,5 +77,8 @@ metaSPADES output
 Contains information about the samples and the reference transcriptomic
 
 >### /parkinsonlabtutorial/
-This folder was made to follow the [**Parkinson's Lab tutorial**](https://github.com/ParkinsonLab/Metatranscriptome-Workshop) that I'm following because I' gonna use some of it scripts in my project. This folder is gonna be deleted when I finish adapting my scripts.
-I structured the folder with subfolders in which I gonna organize my project.
+This folder was made to follow the [**Parkinson's Lab tutorial**](https://github.com/ParkinsonLab/Metatranscriptome-Workshop) Some of the steps of the tutorial are gonna be adapted. This folder will be deleted when scripts are adapted.
+
+>### /archive/
+Contains the presentation for methodological topic seminar were I spoke about the approaches to look for fungal signals in RNA-Seq data.  
+
