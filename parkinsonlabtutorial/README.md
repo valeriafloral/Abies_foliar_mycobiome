@@ -102,6 +102,12 @@ samtools faidx ../../metadata/Mmusculus_genome/mouse_cds.fa
 makeblastdb -in ../../metadata/Mmusculus_genome/mouse_cds.fa -dbtype nucl
 ```
 
+Run the script for remove host reads:
+
+```
+sh 3_host.sh
+```
+
 ## Step 4: **Remove abundant rRNA sequences**
 
 rRNA genes must be screened out to avoid lengthy downstream processing times for assembly and annotations
@@ -110,3 +116,18 @@ On a single core, infernal can take as much as 4 hours for ~100,000 reads. This 
 ```
 tar -xzf ../../precomputed/precomputed_files.tar.gz mouse1_rRNA.infernalout > ../../data/qual/mouse1_rRNA.infernalout
 ```
+
+Then run the script that uses Infernal precomputed output
+
+```
+sh 4_removerrna.sh
+```
+
+## Step 5: **Remove abundant rRNA sequences**
+
+After removing contaminants, host sequences, and rRNA, we need to replace the previously removed replicate reads back in our data set:
+
+```
+sh 5_rereplication.sh
+```
+
