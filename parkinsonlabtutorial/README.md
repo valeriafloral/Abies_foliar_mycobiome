@@ -75,14 +75,6 @@ Download the dataset for identifying contaminating vector and adapter sequences
 curl -L ftp://ftp.ncbi.nih.gov/pub/UniVec/UniVec_Core -o ../../metadata/index/vector_contamination/UniVec_Core
 ```
 
-Generate an index of these sequences for BWA an BLAT
-
-```
-bwa index -a bwtsw ../../metadata/index/vector_contamination/UniVec_Core
-samtools faidx ../../metadata/index/vector_contamination/UniVec_Core
-makeblastdb -in ../../metadata/index/vector_contamination/UniVec_Core -dbtype nucl
-```
-
 Run the script for remove vector contamination
 
 ```
@@ -98,17 +90,6 @@ curl -L ftp://ftp.ensembl.org/pub/current_fasta/mus_musculus/cds/Mus_musculus.GR
 gzip -d ../../metadata/Mmusculus_genome/Mus_musculus.GRCm38.cds.all.fa.gz
 mv ../../metadata/Mmusculus_genome/Mus_musculus.GRCm38.cds.all.fa ../../metadata/Mmusculus_genome/mouse_cds.fa
 ```
-
-Repeat the steps above used to generate an index for these sequences for BWA an BLAT
-
-Make index:
-
-```
-bwa index -a bwtsw ../../metadata/Mmusculus_genome/mouse_cds.fa
-samtools faidx ../../metadata/Mmusculus_genome/mouse_cds.fa
-makeblastdb -in ../../metadata/Mmusculus_genome/mouse_cds.fa -dbtype nucl
-```
-
 Run the script for remove host reads:
 
 ```
