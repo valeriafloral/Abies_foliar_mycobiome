@@ -43,16 +43,22 @@ tar -xvf precomputed_files.tar '*.py'
 
 Check the quality of raw data, use trimmomatic to remove the low quality sequences
 
-Copy adapters to data folder
+Copy adapters to metadata folder
 
 ```
-cp /Users/valfloral/opt/anaconda3/pkgs/trimmomatic-0.39-1/share/trimmomatic-0.39-1/adapters/TruSeq2-SE.fa ../../data/adapters
+cp /Users/valfloral/opt/anaconda3/pkgs/trimmomatic-0.39-1/share/trimmomatic-0.39-1/adapters/TruSeq3-SE.fa ../../metadata/adapters
+```
+
+Create a log file for the trimming report:
+
+```
+touch ../../data/reports/trimming.log
 ```
 
 Run the script for fastqc, trimmomatic and vsearch
 
 ```
-sh 0_processing.sh
+sh 0_quality.sh
 ```
 
 ## Step 1: **Remove duplicate reads**
