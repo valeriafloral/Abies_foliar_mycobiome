@@ -21,11 +21,8 @@
 El ozono troposférico (**O<sub>3</sub>**) es un contaminante del aire cuyas concentraciones se incrementaron drásticamente a partir de la Revolución Industrial, debido a que las intensas actividades productivas y el crecimiento de la población aumenta las emisiones de sus precursores, como los óxidos de nitrógeno (**NO<sub>x</sub>**) y los compuestos orgánicos volátiles (**VOCs**) (Cho *et al.*, 2011; Saxena *et al.*, 2019).
 
 
-<div align=“center”>
-<div markdown=“1”>
-![](ozonecycle.png) 
-</div>
-</div>
-
+<p align="center">
+  <img width="460" height="300" src=“zonecycle.png”>
+</p>
 
 **Figura 1.** Fuentes del ozono troposférico. 
