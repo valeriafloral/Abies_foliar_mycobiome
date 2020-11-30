@@ -88,9 +88,8 @@ Contains the following subfolders:
  
  
 2. **/adapters/:** with a symbolic link to the adapters folder from Trimmomatic data.
-3. **/reference/:** with the *A. balsamea* reference transcriptome in `.fa`files.
-4. **/index/:** with the *A. balsamea* transcriptome index generated with bwa.
-  
+3. **/reference/:** with the *A. balsamea* reference transcriptome in `.fa`files also it contains de index files made wit *BWA*.
+
 
 #### /assembly/
 Contains subfolders with metaSPADES outputs from every sample (Every subfolder is called: `samplename_assembly`).
