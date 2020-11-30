@@ -78,18 +78,18 @@ Contains the following subfolders:
 
 ##### * **/outputs/:** with the outputs from the filtering process (trimming with *Trimmomatic* and host reads remotion with *BWA* and *samtools*):
 
-     * Paired reads (in `.fq.gzip`)
-     * Unpaired reads (in `.fq.gzip`)
-     * Mapped paired host reads (in `.sam`, `.bam` and `.fastq`)
-     * Mapped unpaired host reads (in `.sam`, `.bam` and `.fastq`)
-     * Unmapped paired reads (in `.sam`, `.bam` and `.fastq`)
-     * Unmapped unpaired host reads (in `.sam`, `.bam` and `.fastq`)
-     * Concatenated paired and unpaired unmapped reads (in `.fastq`, `.fasta` and `.sam`)
+* Paired reads (in `.fq.gzip`)
+* Unpaired reads (in `.fq.gzip`)
+* Mapped paired host reads (in `.sam`, `.bam` and `.fastq`)
+* Mapped unpaired host reads (in `.sam`, `.bam` and `.fastq`)
+* Unmapped paired reads (in `.sam`, `.bam` and `.fastq`)
+* Unmapped unpaired host reads (in `.sam`, `.bam` and `.fastq`)
+* Concatenated paired and unpaired unmapped reads (in `.fastq`, `.fasta` and `.sam`)
  
  
-##### * **/adapters/:** with a symbolic link to the adapters folder from Trimmomatic data.
-##### * **/reference/:** with the *A. balsamea* reference transcriptome in `.fa`files.
-##### * **/index/:** with the *A. balsamea* transcriptome index generated with bwa.
+* ##### **/adapters/:** with a symbolic link to the adapters folder from Trimmomatic data.
+* ##### **/reference/:** with the *A. balsamea* reference transcriptome in `.fa`files.
+* ##### **/index/:** with the *A. balsamea* transcriptome index generated with bwa.
   
 
 #### /assembly/
