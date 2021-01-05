@@ -104,6 +104,9 @@ Contains the subfolders `/kraken/` and `/kaiju/` with every software output from
 #### /function/
 Contains the subfolders `/prediction/`and `/annotation/`with every output from *Prodigal* and *Diamond* respectively.
 
+#### /assembly/
+Contains the report of every step in txt or .log file
+
 >### /metadata/
 
 Contains the subfolder `reports` with the output report from *fastqc*, *Trimmomatic*, *BWA* and *SPADES* in `.log` or .`txt`. 
