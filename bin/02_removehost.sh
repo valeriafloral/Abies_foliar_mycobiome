@@ -26,7 +26,7 @@ done
 
 #Statistics
 for f in for f in DPVR1_S179 DPVR2_S180 DPVR3_S181 DPVR4_S182 DPVR5_S183 DPVR6_S184 DPVR7_S185 DPVR8_S186 DPVR9_S187 DPVR10_S188 DPVR11_S189 DPVR12_S190 DPVR13_S191 DPVR14_S192 DPVR15_S193 DPVR16_S194;
-do samtools flagstat ../data/filter/outputs/${f}_paired.bam > ../../data/reports/${f}_hostmap_paired.txt;
+do samtools flagstat ../data/filter/outputs/${f}_paired.bam > ../data/reports/mapping/${f}_hostmap_paired.txt;
 done
 
 ###################### UNPAIRED DATA ######################
@@ -66,10 +66,10 @@ done
 
 #R1_unpaired Statistics
 for f in DPVR1_S179 DPVR2_S180 DPVR3_S181 DPVR4_S182 DPVR5_S183 DPVR6_S184 DPVR7_S185 DPVR8_S186 DPVR9_S187 DPVR10_S188 DPVR11_S189 DPVR12_S190 DPVR13_S191 DPVR14_S192 DPVR15_S193 DPVR16_S194;
-do samtools flagstat ../data/filter/outputs/${f}_R1_unpaired.bam > ../../data/reports/hostmap_R1_unpaired.txt;
+do samtools flagstat ../data/filter/outputs/${f}_R1_unpaired.bam > ../data/reports/mapping/${f}_hostmap_R1_unpaired.txt;
 done
 
 #R2_unpaired Statistics
 for f in DPVR1_S179 DPVR2_S180 DPVR3_S181 DPVR4_S182 DPVR5_S183 DPVR6_S184 DPVR7_S185 DPVR8_S186 DPVR9_S187 DPVR10_S188 DPVR11_S189 DPVR12_S190 DPVR13_S191 DPVR14_S192 DPVR15_S193 DPVR16_S194;
-do samtools flagstat ../data/filter/outputs/${f}_R2_unpaired.bam > ../../data/reports/hostmap_R2_unpaired.txt;
+do samtools flagstat ../data/filter/outputs/${f}_R2_unpaired.bam > ../data/reports/mapping/${f}_hostmap_R2_unpaired.txt;
 done
