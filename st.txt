@@ -1,0 +1,80 @@
+.
+├── README.md
+├── archive
+│   ├── Tutorales
+│   │   └── 0_Tutoral.pdf
+│   ├── findfungi.pdf
+│   └── metawf.png
+├── bin
+│   ├── 01_quality.sh
+│   ├── 02_removehost.sh
+│   ├── 03_assembly.sh
+│   ├── 04_binning.sh
+│   ├── 05_kraken.sh
+│   ├── 06__kaiju.sh
+│   ├── 07_prediction.sh
+│   ├── 08_annotation.sh
+│   └── README.md
+├── data
+│   ├── filter
+│   │   ├── README
+│   │   └── outputs
+│   │       ├── DPVR1_S179_L007_R1_001_paired.bam
+│   │       ├── DPVR1_S179_L007_R1_001_paired.fq.gz
+│   │       ├── DPVR1_S179_L007_R1_001_unpaired.bam
+│   │       ├── DPVR1_S179_L007_R1_001_unpaired.fq.gz
+│   │       ├── DPVR2_S180_L007_R1_001_paired.bam
+│   │       ├── DPVR2_S180_L007_R1_001_paired.fq.gz
+│   │       ├── DPVR2_S180_L007_R1_001_unpaired.bam
+│   │       ├── DPVR2_S180_L007_R1_001_unpaired.fq.gz
+│   │       ├── DPVR3_S181_L007_R2_001_paired.bam
+│   │       ├── DPVR3_S181_L007_R2_001_paired.fq.gz
+│   │       ├── DPVR3_S181_L007_R2_001_unpaired.bam
+│   │       ├── DPVR5_S183_L007_R2_001_paired.bam
+│   │       ├── DPVR5_S183_L007_R2_001_unpaired.bam
+│   │       └── DPVR5_S183_L007_R2_001_unpaired.fq.gz
+│   └── raw
+│       ├── DPVR1_S179_R1.txt
+│       ├── DPVR1_S179_R2.txt
+│       ├── DPVR2_S180_R1.txt
+│       ├── DPVR2_S180_R2.txt
+│       ├── DPVR3_S181_R1.txt
+│       ├── DPVR3_S181_R2.txt
+│       ├── README
+│       └── samples
+├── metadata
+│   └── Filterfiles.csv
+├── parkinsonlabtutorial
+│   ├── README.md
+│   ├── bin
+│   │   ├── python_scripts
+│   │   │   ├── 1_BLAT_Filter.py
+│   │   │   ├── 2_Infernal_Filter.py
+│   │   │   ├── 3_Reduplicate.py
+│   │   │   ├── 4_Constrain_Classification.py
+│   │   │   ├── 5_Contig_Map.py
+│   │   │   ├── 6_BWA_Gene_Map.py
+│   │   │   ├── 6_modified.py
+│   │   │   ├── 7_Diamond_Protein_Map.py
+│   │   │   ├── 8_Gene_EC_Map.py
+│   │   │   └── 9_RPKM.py
+│   │   └── shell_scripts
+│   │       ├── 0_quality.sh
+│   │       ├── 1_duplicate.sh
+│   │       ├── 2_vector.sh
+│   │       ├── 3_host.sh
+│   │       ├── 4_removerrna.sh
+│   │       ├── 5_rereplication.sh
+│   │       └── unpaired.sh
+│   └── metadata
+│       └── fastqc
+│           ├── mouse1_fastqc.html
+│           ├── mouse1_fastqc.zip
+│           ├── mouse1_mRNA_fastqc.html
+│           ├── mouse1_mRNA_fastqc.zip
+│           ├── mouse1_trimmed_fastqc.html
+│           └── mouse1_trimmed_fastqc.zip
+├── st.txt
+└── workflow.png
+
+14 directories, 63 files
