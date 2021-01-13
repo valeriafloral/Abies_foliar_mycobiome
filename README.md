@@ -7,7 +7,7 @@
 
 
 
-Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City. However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to (O<sub>3</sub>). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution.
+Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City (). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to (O<sub>3</sub>) (). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution ().
 
 In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high (O<sub>3</sub>) concentrations and showed 2 different phenotypes (tolerant and damaged). 
 
@@ -49,7 +49,7 @@ For this project **16** samples in total were used:
 
 This repository contains the following folders:
 
->### /bin/
+# `/bin`
 
 Contains scripts to perform the analysis
 
@@ -64,58 +64,46 @@ Contains scripts to perform the analysis
 * **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database.
   
   
->### /data/
+# `/data`
 
-Contains the raw data and each analysis output. The folder contains the subfolders:
+This folder should contain the raw data and the subsequent outputs. The content will remain hidden until publication. To run the analysis it is suggested to subdivide this folder into the following subfolders:
 
-#### /raw/
-Contains each file in (`.fq.gzip`) format from the 16 samples.
+### `/raw/`
+Must contain the raw reads.
 
-#### /filter/
+### `/filter/`
 
 
 Contains the following subfolders:
 
-1. **/outputs/:** with the outputs from the filtering process (trimming with *Trimmomatic* and host reads remotion with *BWA* and *samtools*):
-
-* Paired reads (in `.fq.gzip`)
-* Unpaired reads (in `.fq.gzip`)
-* Mapped paired host reads (in `.sam`, `.bam` and `.fastq`)
-* Mapped unpaired host reads (in `.sam`, `.bam` and `.fastq`)
-* Unmapped paired reads (in `.sam`, `.bam` and `.fastq`)
-* Unmapped unpaired host reads (in `.sam`, `.bam` and `.fastq`)
-* Concatenated paired and unpaired unmapped reads (in `.fastq`, `.fasta` and `.sam`)
- 
- 
-2. **/adapters/:** with a symbolic link to the adapters folder from Trimmomatic data.
-3. **/reference/:** with the *A. balsamea* reference transcriptome in `.fa`files also it contains de index files made wit *BWA*.
+1. **`/outputs`:** with the outputs from the filtering process (trimming with *Trimmomatic* and host reads remotion with *BWA* and *samtools*): 
+2. **`/adapters/`:** with a symbolic link to the adapters folder from Trimmomatic data.
+3. **`/reference/`:** with the *A. balsamea* reference transcriptome in `.fa`files also it contains de index files made wit *BWA*.
 
 
-#### /assembly/
+### `/assembly/`
 Contains subfolders with metaSPADES outputs from every sample (Every subfolder is called: `samplename_assembly`).
 
-#### /binning/
+### `/binning/`
 Contains the output from MaxBin.
 
-#### /taxonomy/
+### `/taxonomy/`
 Contains the subfolders `/kraken/` and `/kaiju/` with every software output from reads and bins. 
 
 
-#### /function/
+### `/function/`
 Contains the subfolders `/prediction/`and `/annotation/`with every output from *Prodigal* and *Diamond* respectively.
 
-#### /assembly/
-Contains the report of every step in txt or .log file
 
->### /metadata/
+# `/metadata`
 
 Contains the subfolder `reports` with the output report from *fastqc*, *Trimmomatic*, *BWA* and *SPADES* in `.log` or .`txt`. 
 
->### /parkinsonlabtutorial/
+# `/parkinsonlabtutorial`
 
 This folder was made to follow the Parkinson's Lab tutorial Some of the steps of the tutorial are gonna be adapted. This folder will be deleted once the scripts are adapted.
 
->### /archive/
+# `/archive/`
 
 Contains the presentation for methodological topic seminar were I spoke about the approaches to look for fungal signals in RNA-Seq data.
 
