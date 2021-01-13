@@ -1,6 +1,8 @@
 ### Ignore all large files
 
-/data/RAW
+
+/data/RAW/
+data/filter/
 /parkinsonlabtutorial/data/raw
 /parkinsonlabtutorial/data/trimmed
 /parkinsonlabtutorial/metadata/adapters
