@@ -15,13 +15,4 @@ do trimmomatic PE -threads 4 -phred33 \
 ../data/filter/outputs/${f}_L007_R1_001_paired.fq.gz ../data/filter/outputs/${f}_L007_R1_001_unpaired.fq.gz \
 ../data/filter/outputs/${f}_L007_R2_001_paired.fq.gz ../data/filter/outputs/${f}_L007_R2_001_unpaired.fq.gz \
 ILLUMINACLIP:../data/filter/adapters/TruSeq3-PE-2.fa:2:30:10 SLIDINGWINDOW:10:28 LEADING:28 TRAILING:28 MINLEN:50 HEADCROP:13;
-done > ../../data/reports/Trimmomatic.txt
-
-#Trimmed data fastQC analysis
-for f in ../data/filter/outputs/DP*.fastq.gz;
-do fastqc $f --outdir=../data/reports/trimmomatic;
-done
-
-
-#Group the quality analysis with MultiQC
-multiqc ../data/reports/trimmomatic
+done > ../data/reports/Trimmomatic.txt
