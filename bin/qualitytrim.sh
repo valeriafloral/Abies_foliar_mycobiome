@@ -8,7 +8,7 @@
 #Quality analysis and Trimming with FastQC, multiQC and Trimmomatic
 
 #Trimmed data quality with fastQC
-for f in ../../data/filter/outputs/*.fastq.gz;
+for f in ../data/filter/outputs/*.fastq.gz;
 do fastqc $f --outdir=../data/reports/trimmed;
 done
 
