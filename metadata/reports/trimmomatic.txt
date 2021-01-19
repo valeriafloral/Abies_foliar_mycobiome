@@ -178,20 +178,3 @@ Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
 ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
 Input Read Pairs: 19753142 Both Surviving: 16822858 (85.17%) Forward Only Surviving: 2272090 (11.50%) Reverse Only Surviving: 271006 (1.37%) Dropped: 387188 (1.96%)
 TrimmomaticPE: Completed successfully
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-Specified output directory '../data/reports/trimmed' does not exist
-/LUSTRE/Genetica/valeria/miniconda3/envs/multiqc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc/utils/config.py:44: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
-  configs = yaml.load(f)
-/LUSTRE/Genetica/valeria/miniconda3/envs/multiqc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc/utils/config.py:50: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
-  sp = yaml.load(f)
-Usage: multiqc [OPTIONS] <analysis directory>
-Try 'multiqc -h' for help.
-
-Error: Invalid value for '<analysis directory>': Path '../data/reports/trimmed' does not exist.
