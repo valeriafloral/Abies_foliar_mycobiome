@@ -3,18 +3,18 @@
 **author:** Valeria Flores
 **date:** 19/01/2021
 
-
+In order to keep as much information as possible for the metatranscriptomi analysis, it was proposed to use the unpaired data that result from the quality filter process. But first, it is important to know how many reads remained. 
 
 I used the script **[../bin/01_quality.sh](../bin/01_quality.sh)** to remove low quality reads.
 
-I wanted to know how much reads remained, so, to extract the information  from the trimmomatic report, I used the **[bin/extract_trimmomatic.sh](./bin/extract_trimmomatic.sh)** script. Then, to make a ggplotable file I used the **[bin/cleanreadstable.R](./bin/cleanreadstable.R)**. Finally I used the **[bin/quality_barplot.sh](./bin/quality_barplot.R)**.
+To extract the information from the trimmomatic report, I used the **[bin/extract_trimmomatic.sh](./bin/extract_trimmomatic.sh)** script. Then, to make a ggplotable file I used the **[bin/cleanreadstable.R](./bin/cleanreadstable.R)**. Finally I used the **[bin/quality_barplot.sh](./bin/quality_barplot.R)**.
 
 The resulting plot was:
 
 ![](01_filteredreads.jpeg)
 **Figure 1:** Number of reads after trimming process.
 
-In the **Figure 1** we can see that the rnumber of reads are heterogeneous, but the sample DPVR11_S189 has visibly more number of reads.
+In the **Figure 1** we can see that the number of reads among samples are heterogeneous, but the sample DPVR11_S189 has visibly more number of reads.
 
 To clearly visualize the percentage of each category I made an percent stacked barchart included in the **[bin/quality_barplot.sh](./bin/quality_barplot.R)** script:
 
