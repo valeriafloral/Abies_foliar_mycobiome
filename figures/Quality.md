@@ -1,6 +1,7 @@
 
 ## Quality filter
 **author:** Valeria Flores
+
 **date:** 19/01/2021
 
 In order to keep as much information as possible for the metatranscriptomi analysis, it was proposed to use the unpaired data that result from the quality filter process. But first, it is important to know how many reads remained. 
