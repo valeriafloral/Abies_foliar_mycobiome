@@ -16,7 +16,7 @@ The resulting plot was:
 
 In the **Figure 1** we can see that the rnumber of reads are heterogeneous, but the sample DPVR11_S189 has visibly more number of reads.
 
-To clearly visualize the percentage of each category I mad an percent stacked barchart included in the **[bin/quality_barplot.sh](./bin/quality_barplot.R)** script:
+To clearly visualize the percentage of each category I made an percent stacked barchart included in the **[bin/quality_barplot.sh](./bin/quality_barplot.R)** script:
 
 ![](02_filteredreads.jpeg)
 **Figure 2:** Percentage of paired, unpaired and dropped reads after trimming process.
