@@ -1,7 +1,6 @@
 
-##Quality filter
+## Quality filter
 **author:** Valeria Flores
-
 **date:** 19/01/2021
 
 
