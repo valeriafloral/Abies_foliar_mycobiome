@@ -6,7 +6,2161 @@ perl: warning: Please check that your locale settings:
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-Skipping '../data/filter/outputs/*.fastq.gz' which didn't exist, or couldn't be read
+Started analysis of DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR10_S188_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR10_S188_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR10_S188_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR10_S188_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR11_S189_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR11_S189_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR11_S189_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR11_S189_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR12_S190_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR12_S190_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR12_S190_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR12_S190_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR13_S191_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR13_S191_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR13_S191_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR13_S191_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR14_S192_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR14_S192_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR14_S192_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Approx 100% complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR14_S192_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR15_S193_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR15_S193_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR15_S193_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR15_S193_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR16_S194_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR16_S194_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR16_S194_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR16_S194_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR17_S195_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR17_S195_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR17_S195_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR17_S195_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR18_S196_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR18_S196_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR18_S196_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR18_S196_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR1_S179_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR1_S179_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR1_S179_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR1_S179_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR2_S180_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR2_S180_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR2_S180_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR2_S180_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR3_S181_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR3_S181_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR3_S181_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR3_S181_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR4_S182_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR4_S182_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR4_S182_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR4_S182_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR5_S183_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR5_S183_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR5_S183_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR5_S183_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR6_S184_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR6_S184_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR6_S184_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR6_S184_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR7_S185_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR7_S185_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR7_S185_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR7_S185_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR8_S186_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR8_S186_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR8_S186_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR8_S186_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 5% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 10% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 15% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 20% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 25% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 30% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 35% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 40% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 45% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 50% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 55% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 60% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 65% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 70% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 75% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 80% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 85% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 90% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Approx 95% complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Analysis complete for DPVR9_S187_L007_R1_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 5% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 10% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 15% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 20% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 25% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 30% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 35% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 40% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 45% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 50% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 55% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 60% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 65% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 70% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 75% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 80% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 85% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 90% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Approx 95% complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Analysis complete for DPVR9_S187_L007_R1_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 5% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 10% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 15% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 20% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 25% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 30% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 35% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 40% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 45% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 50% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 55% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 60% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 65% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 70% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 75% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 80% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 85% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 90% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Approx 95% complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Analysis complete for DPVR9_S187_L007_R2_001_paired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Started analysis of DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 5% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 10% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 15% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 20% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 25% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 30% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 35% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 40% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 45% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 50% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 55% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 60% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 65% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 70% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 75% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 80% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 85% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 90% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 95% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Approx 100% complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Analysis complete for DPVR9_S187_L007_R2_001_unpaired.fq.gz
+Fontconfig warning: ignoring UTF-8: not a valid region tag
 /LUSTRE/Genetica/valeria/miniconda3/envs/multiqc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc/utils/config.py:44: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
   configs = yaml.load(f)
 /LUSTRE/Genetica/valeria/miniconda3/envs/multiqc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc/utils/config.py:50: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
@@ -14,5 +2168,7 @@ Skipping '../data/filter/outputs/*.fastq.gz' which didn't exist, or couldn't be 
 [INFO   ]         multiqc : This is MultiQC v1.0.dev0
 [INFO   ]         multiqc : Template    : default
 [INFO   ]         multiqc : Searching '../data/reports/trimmed'
-[WARNING]         multiqc : No analysis results found. Cleaning up..
+[INFO   ]          fastqc : Found 72 reports
+[INFO   ]         multiqc : Report      : ../data/reports/trimmed/multiqc_report.html
+[INFO   ]         multiqc : Data        : ../data/reports/trimmed/multiqc_data
 [INFO   ]         multiqc : MultiQC complete
