@@ -33,7 +33,8 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Data**
 
-The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). For more information about the samples see the folder [**metadata**](https://github.com/VeroIarrachtai/Abies_vs_ozone/blob/master/4_Transcriptomics/metadata/RNA_sacredfir.csv).
+The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). For more information about the samples see the file [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv).
+Where the first column is the **Sample_name**, the second column stipulates the tree **Condition:** (tolerant or damaged), the **Seasson:** specifies if the sample was collected in high O<sub>3</sub> concentration (*Contingency*) or middle O<sub>3</sub> concentration. And finally, the last column gives information about the **Year** in which the sample was collected.
 
 For this project **16** samples in total were used:
 
