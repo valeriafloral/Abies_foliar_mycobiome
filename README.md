@@ -7,7 +7,7 @@
 
 
 
-Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City (de Bauer y Hernández-Tejeda, 2007). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to (O<sub>3</sub>) (Reyes-Galindo, 2019). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution (Pan et al. 2017).
+Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City (de Bauer y Hernández-Tejeda, 2007). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to (O<sub>3</sub>) (Reyes-Galindo, 2019). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution (Pan *et al.* 2017).
 
 In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high (O<sub>3</sub>) concentrations and showed 2 different phenotypes (tolerant and damaged). 
 
@@ -51,22 +51,44 @@ This repository contains the following folders:
 
 # `/bin`
 
-Contains scripts to perform the analysis
+Folder with the scripts to perform the analysis:
 
-* **README.md**: Contains the pipeline in detail and specifies the order in which each script must be called.
+* **README.md**: Every step of the analysis detaily explained.
 * **01_filter.sh:** Performs quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
-* **02_removehost.sh:** Deletes host reads (*A. religiosa*) with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_assembly.sh:** Performs the reads assembly into contigs using *metaSPADES*.
-* **04_binning.sh:** Group the contigs into bins with *MaxBin*.
-* **05_kraken.sh:** Performs a taxonomic profile to reads and bins using *Kraken*.
-* **06_kaiju.sh:** Performs a taxonomic profile ro reads and bins using *Kaiju*.
-* **07_prediction.sh:** Performs the genes prediction from the bins using *Prodigal*.
-* **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database.
+* **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
+* **03_assembly.sh:** Performs the reads assembly into contigs using *metaSPADES*. **Work in progress**
+* **04_binning.sh:** Group the contigs into bins with *MaxBin*. **Work in progress**
+* **05_kraken.sh:** Performs a taxonomic profile to reads and bins using *Kraken*. **Work in progress**
+* **06_kaiju.sh:** Performs a taxonomic profile ro reads and bins using *Kaiju*. **Work in progress**
+* **07_prediction.sh:** Performs the genes prediction from the bins using *Prodigal*. **Work in progress**
+* **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. **Work in progress**
   
-  
+# `/metadata`
+
+Contains the subfolder `reports` with the output report from *fastqc*, *Trimmomatic*, *BWA* and *SPADES* in `.log` or .`txt`. 
+
+# `/parkinsonlabtutorial`
+
+This folder was made to follow the Parkinson's Lab tutorial Some of the steps of the tutorial are gonna be adapted. This folder will be deleted once the scripts are adapted.
+
+# `/archive/`
+
+Contains the slides for methodological topic seminar were I spoke about the approaches to look for fungal signals in RNA-Seq data.
+
+Also it contains the subfolder `tutorales` with each of the 5 tutoral presentations.  
+
+
+
 # `/data`
 
-This folder should contain the raw data and the subsequent outputs. The content will remain hidden until publication. To run the analysis it is suggested to subdivide this folder into the following subfolders:
+This folder should contain the raw data and the subsequent analysis outputs. The content will remain hidden until publication. Once published the data will be available on OSF.
+
+
+
+
+<details>
+<summary>To run the analysis it is suggested to subdivide this folder into the following subfolders:</summary>
+<br>
 
 ### `/raw/`
 Must contain the raw reads.
@@ -94,20 +116,9 @@ Contains the subfolders `/kraken/` and `/kaiju/` with every software output from
 ### `/function/`
 Contains the subfolders `/prediction/`and `/annotation/`with every output from *Prodigal* and *Diamond* respectively.
 
+</details>
 
-# `/metadata`
 
-Contains the subfolder `reports` with the output report from *fastqc*, *Trimmomatic*, *BWA* and *SPADES* in `.log` or .`txt`. 
-
-# `/parkinsonlabtutorial`
-
-This folder was made to follow the Parkinson's Lab tutorial Some of the steps of the tutorial are gonna be adapted. This folder will be deleted once the scripts are adapted.
-
-# `/archive/`
-
-Contains the presentation for methodological topic seminar were I spoke about the approaches to look for fungal signals in RNA-Seq data.
-
-Alson contains the subfolder `tutorales` with each of the 5 tutoral presentations.  
 
 ## **References**
 
