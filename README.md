@@ -65,7 +65,8 @@ Folder with the scripts to perform the analysis:
   
 # `/metadata`
 
-Contains the subfolder `reports` with the output report from *fastqc*, *Trimmomatic*, *BWA* and *SPADES* in `.log` or .`txt`. 
+
+Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output report from *fastqc* and *multiqc* analyses. 
 
 # `/parkinsonlabtutorial`
 
