@@ -4,6 +4,7 @@
 data/RAW/
 data/
 data/filter/
+bin/cluster/
 /parkinsonlabtutorial/data/raw
 /parkinsonlabtutorial/data/trimmed
 /parkinsonlabtutorial/metadata/adapters
