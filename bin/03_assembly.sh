@@ -16,3 +16,4 @@ do grep -c '>' ${f}_assembly/contigs.fasta
 done
 
 #move contigs to reports or save contigs directly in reports (?) ../data/reports/Assembly/
+###Work in progess
