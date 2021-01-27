@@ -1,4 +1,4 @@
-## Metatranscriptomic fungal analysis of *Abies religiosa* exposed to an elevated tropospheric ozone concentration
+# Metatranscriptomic fungal analysis of *Abies religiosa* exposed to an elevated tropospheric ozone concentration
 Valeria Flores Almaraz
 
 
@@ -7,7 +7,7 @@ Valeria Flores Almaraz
 In the folder `data/raw` make symbolic links to the common folder where the files are
 
 
-### **Processing the reads** 
+## **Processing the reads** 
 
 The [01_quality.sh](./01_quality,sh)script performs the quality analysis of the raw reads with **FastQC** then groups the results from quality analysis across all the samples into a single report  with **MultiQC**, does the trimming process with **Trimomatic** and once again, runs the quality analysis of the trimmed reads with **FastQC** and **multiQC**.
 
@@ -45,7 +45,7 @@ Open the `(base)`conda environment
 conda activate
 ```
 
-### **Remove the host reads** 
+## **Remove the host reads** 
 
 The [02_removehost.sh](./02_removehost.sh) script maps the reads across the *Abies balsamea* transcriptome using the software **BWA**. The reference transcriptome has to be downloaded from NCBI. 
 
@@ -55,18 +55,18 @@ The [02_removehost.sh](./02_removehost.sh) script first make an index with the r
 sh 02_removehost.sh
 ```
 
-### **Assign taxonomy using the reads**
+## **Assign taxonomy using the reads**
 
 #### KRAKEN :construction:Work in progress:construction:
 #### KAIJU :construction:Work in progress:construction:
 
-### **Assign taxonomy using contigs**
+## **Assign taxonomy using contigs**
 #### Assembly :construction:Work in progress:construction:
 #### Binning :construction:Work in progress:construction:
 #### KRAKEN (contigs) :construction:Work in progress:construction:
 #### KAIJU (contigs) :construction:Work in progress:construction:
 
-### **Function**
+## **Function**
 #### Gene prediction :construction:Work in progress:construction:
 #### Gene annotation :construction:Work in progress:construction:
 
