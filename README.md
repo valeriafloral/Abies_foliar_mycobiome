@@ -64,12 +64,12 @@ Folder with the scripts to perform the analysis:
 * **README.md**: Every step of the analysis detaily explained.
 * **01_filter.sh:** Performs the quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. **Work in progress**
-* **04_binning.sh:** Groups the contigs into bins with *MaxBin*. **Work in progress**
-* **05_kraken.sh:** Assigns taxonomic profile to reads and bins using *Kraken*. **Work in progress**
-* **06_kaiju.sh:** Makes a taxonomic profile from reads and bins using *Kaiju*. **Work in progress**
-* **07_prediction.sh:** Predicts the genes using *Prodigal*. **Work in progress**
-* **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. **Work in progress**
+* **03_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
+* **04_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
+* **05_kraken.sh:** Assigns taxonomic profile to reads and bins using *Kraken*. :construction:**Work in progress**:construction:
+* **06_kaiju.sh:** Makes a taxonomic profile from reads and bins using *Kaiju*. :construction:**Work in progress**:construction:
+* **07_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
+* **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
   
 ### `/metadata`
 
