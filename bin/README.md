@@ -4,12 +4,12 @@ Valeria Flores Almaraz
 
 ### **Symbolic links to the comun folder wich contains RAW reads**
 
-In the folder `data/raw` make symbolic links to the common folder where the files are
+In the folder `data/raw` make symbolic links to the files.
 
 
 ## **Processing the reads** 
 
-The [01_quality.sh](./01_quality,sh)script performs the quality analysis of the raw reads with **FastQC** then groups the results from quality analysis across all the samples into a single report  with **MultiQC**, does the trimming process with **Trimomatic** and once again, runs the quality analysis of the trimmed reads with **FastQC** and **multiQC**.
+The [01_quality.sh](./01_quality,sh) script performs the quality analysis of the raw reads with **FastQC** then groups the results from quality analysis across all the samples into a single report  with **MultiQC**, does the trimming process with **Trimomatic** and once again, runs the quality analysis of the trimmed reads with **FastQC** and **multiQC**.
 
 **MultiQC** needs **Python 2.7**, so a new environment should be made and activate it. In order to use the same environment with the script, **FastQC**, **multiQC** and **Trimmomatic** sould be downloaded in the same environment:
 
