@@ -87,14 +87,13 @@ Also it contains the subfolder `tutorales` with each of the 5 tutoral presentati
 
 This folder should contain the raw data and the subsequent analysis outputs. The content will remain hidden until publication. Once published the data will be available on OSF.
 
-
-
-
 <details>
-<summary>To run the analysis it is suggested to subdivide this folder into the following structure:</summary>
+<summary><b>To run the complete analysis I suggest you to subdivide this folder into the following structure:</b></summary>
 <br>
-```  
-  data
+<pre>
+  
+
+data
 ├── assembly
 ├── binning
 ├── filter
@@ -115,9 +114,9 @@ This folder should contain the raw data and the subsequent analysis outputs. The
     └── kraken
         ├── contigs
         └── reads
-```
-</details>
 
+</pre>
+</details>
 
 
 ## **References**
