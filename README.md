@@ -55,7 +55,82 @@ Where the columns:
 
 ## **Repository structure**
 
-This repository contains the following folders:
+This repository has the following structure:
+
+
+```
+
+Abies_fungal_endophytes-master
+├── LICENSE
+├── README.md
+├── archive
+│   ├── Tutorales
+│   │   └── 0_Tutoral.pdf
+│   ├── findfungi.pdf
+│   └── metawf.png
+├── bin
+│   ├── 01_quality.sh
+│   ├── 02_removehost.sh
+│   ├── 03_assembly.sh
+│   ├── 04_binning.sh
+│   ├── 05_kraken.sh
+│   ├── 06_kaiju.sh
+│   ├── 07_prediction.sh
+│   ├── 08_annotation.sh
+│   ├── README.md
+│   └── bwatest.sh
+├── figures
+│   ├── 01_filteredreads.jpeg
+│   ├── 02_filteredreads.jpeg
+│   ├── Quality.md
+│   └── bin
+│       ├── cleanreadstable.R
+│       ├── extract_trimmomatic.sh
+│       └── quality_barplot.R
+├── metadata
+│   ├── RNA_sacredfir.csv
+│   └── reports
+│       ├── R1_paired_multiqc_report.html
+│       ├── R1_unpaired_multiqc_report.html
+│       ├── R2_paired_multiqc_report.html
+│       ├── R2_unpaired_multiqc_report.html
+│       ├── raw_multiqc_report.html
+│       └── trimmomatic.txt
+├── parkinsonlabtutorial
+│   ├── README.md
+│   ├── bin
+│   │   ├── python_scripts
+│   │   │   ├── 1_BLAT_Filter.py
+│   │   │   ├── 2_Infernal_Filter.py
+│   │   │   ├── 3_Reduplicate.py
+│   │   │   ├── 4_Constrain_Classification.py
+│   │   │   ├── 5_Contig_Map.py
+│   │   │   ├── 6_BWA_Gene_Map.py
+│   │   │   ├── 6_modified.py
+│   │   │   ├── 7_Diamond_Protein_Map.py
+│   │   │   ├── 8_Gene_EC_Map.py
+│   │   │   └── 9_RPKM.py
+│   │   └── shell_scripts
+│   │       ├── 0_quality.sh
+│   │       ├── 1_duplicate.sh
+│   │       ├── 2_vector.sh
+│   │       ├── 3_host.sh
+│   │       ├── 4_removerrna.sh
+│   │       ├── 5_rereplication.sh
+│   │       └── unpaired.sh
+│   └── metadata
+│       └── fastqc
+│           ├── mouse1_fastqc.html
+│           ├── mouse1_fastqc.zip
+│           ├── mouse1_mRNA_fastqc.html
+│           ├── mouse1_mRNA_fastqc.zip
+│           ├── mouse1_trimmed_fastqc.html
+│           └── mouse1_trimmed_fastqc.zip
+└── workflow.png
+
+```
+
+
 
 ### `/bin`
 
@@ -74,7 +149,7 @@ Folder with the scripts to perform the analysis:
 ### `/metadata`
 
 
-Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output reports from *fastqc* and *multiqc* analyses. 
+Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output reports from *Trimmomatic* and *multiqc* analyses. 
 
 ### `/parkinsonlabtutorial`
 
