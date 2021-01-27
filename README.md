@@ -52,40 +52,49 @@ Where the first column is the **Sample_name**, the second column stipulates the 
 
 This repository contains the following folders:
 
-# `/bin`
+### `/bin`
 
 Folder with the scripts to perform the analysis:
 
 * **README.md**: Every step of the analysis detaily explained.
-* **01_filter.sh:** Performs quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
+* **01_filter.sh:** Performs the quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_assembly.sh:** Performs the reads assembly into contigs using *metaSPADES*. **Work in progress**
-* **04_binning.sh:** Group the contigs into bins with *MaxBin*. **Work in progress**
-* **05_kraken.sh:** Performs a taxonomic profile to reads and bins using *Kraken*. **Work in progress**
-* **06_kaiju.sh:** Performs a taxonomic profile ro reads and bins using *Kaiju*. **Work in progress**
-* **07_prediction.sh:** Performs the genes prediction from the bins using *Prodigal*. **Work in progress**
+* **03_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. **Work in progress**
+* **04_binning.sh:** Groups the contigs into bins with *MaxBin*. **Work in progress**
+* **05_kraken.sh:** Assigns taxonomic profile to reads and bins using *Kraken*. **Work in progress**
+* **06_kaiju.sh:** Makes a taxonomic profile from reads and bins using *Kaiju*. **Work in progress**
+* **07_prediction.sh:** Predicts the genes using *Prodigal*. **Work in progress**
 * **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. **Work in progress**
   
-# `/metadata`
+### `/metadata`
 
 
-Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output report from *fastqc* and *multiqc* analyses. 
+Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output reports from *fastqc* and *multiqc* analyses. 
 
-# `/parkinsonlabtutorial`
+### `/parkinsonlabtutorial`
 
-This folder was made to follow the Parkinson's Lab tutorial Some of the steps of the tutorial are gonna be adapted. This folder will be deleted once the scripts are adapted.
+This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in my analyses. This folder will be deleted once the scripts are fully adapted.
 
-# `/archive/`
+### `/archive/`
 
-Contains the slides for methodological topic seminar were I spoke about the approaches to look for fungal signals in RNA-Seq data.
+Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
 
-Also it contains the subfolder `tutorales` with each of the 5 tutoral presentations.  
+Also it contains the subfolder `tutorales` with the slides from each of the Master Project evaluations. **26/01/2020** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
+
+### `/figures/`
+
+This folder was made to enclose the `.jpeg` or `.tiff` images that result from each step of the analysis. 
+
+It is subgrouped in folders:
+* `bin` with the scripts that allow to make the figures. 
+* `data` contains the information to make the figures as processed standard outputs, intermediate and final tables. 
+
+The figures discussion will be put it in `.md` files. But until now, **26/01/2020** there is only one file ([Quality.md])(figures/Quality.md) file with the `01_filteredreads.jpeg` and `02_filteredreads.jpeg` discussion. 
 
 
+### `/data`
 
-# `/data`
-
-This folder should contain the raw data and the subsequent analysis outputs. The content will remain hidden until publication. Once published the data will be available on OSF.
+This folder is in the `.gitignore` file, so it is not visible in this repository. This folder should contain the raw data and the subsequent analysis outputs. The content will remain hidden until publication. Once published the data will be available on [**OSF**](https://osf.io/xur7g/)(**PRIVATE PROJECT TEMPORARELY!!!!**).
 
 <details>
 <summary><b>To run the complete analysis I suggest you to subdivide this folder into the following structure:</b></summary>
