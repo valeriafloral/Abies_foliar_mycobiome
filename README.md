@@ -33,13 +33,15 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Data**
 
-The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). For more information about the samples see the file [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv).
-Where the first column is the **Sample_name**, the second column stipulates the tree **Condition** (tolerant or damaged), the column **Seasson** specifies if the sample was collected in high O<sub>3</sub> concentration (*Contingency*) or middle O<sub>3</sub> concentration. And finally, the last column gives information about the **Year** in which the sample was collected.
+The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](https://github.com/VeroIarrachtai/Abies_vs_ozone). 
 
-For this project **16** samples in total were used:
+In this project **16** samples in total were used:
 
 * **8** samples **tolerant**.
 * **8** samples **damaged**.  
+
+For more information about the samples see the file [**metadata/RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv).
+Where the first column is the **Sample_name**, the second column stipulates the tree **Condition** (tolerant or damaged), the column **Seasson** specifies if the sample was collected in high O<sub>3</sub> concentration (*Contingency*) or middle O<sub>3</sub> concentration. And finally, the last column gives information about the **Year** in which the sample was collected.
 
 
 ## **Workflow**
@@ -89,35 +91,31 @@ This folder should contain the raw data and the subsequent analysis outputs. The
 
 
 <details>
-<summary>To run the analysis it is suggested to subdivide this folder into the following subfolders:</summary>
+<summary>To run the analysis it is suggested to subdivide this folder into the following structure:</summary>
 <br>
-
-### `/raw/`
-Must contain the raw reads.
-
-### `/filter/`
-
-
-Contains the following subfolders:
-
-1. **`/outputs`:** with the outputs from the filtering process (trimming with *Trimmomatic* and host reads remotion with *BWA* and *samtools*): 
-2. **`/adapters/`:** with a symbolic link to the adapters folder from Trimmomatic data.
-3. **`/reference/`:** with the *A. balsamea* reference transcriptome in `.fa`files also it contains de index files made wit *BWA*.
-
-
-### `/assembly/`
-Contains subfolders with metaSPADES outputs from every sample (Every subfolder is called: `samplename_assembly`).
-
-### `/binning/`
-Contains the output from MaxBin.
-
-### `/taxonomy/`
-Contains the subfolders `/kraken/` and `/kaiju/` with every software output from reads and bins. 
-
-
-### `/function/`
-Contains the subfolders `/prediction/`and `/annotation/`with every output from *Prodigal* and *Diamond* respectively.
-
+```  
+  data
+├── assembly
+├── binning
+├── filter
+│   ├── adapters
+│   ├── outputs
+│   └── reference
+├── function
+│   ├── annotation
+│   └── prediction
+├── raw
+├── reports
+│   ├── mapped
+│   └── trimmed
+└── taxonomy
+    ├── kaiju
+    │   ├── contigs
+    │   └── reads
+    └── kraken
+        ├── contigs
+        └── reads
+```
 </details>
 
 
