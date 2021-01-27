@@ -84,7 +84,7 @@ This folder was made to follow the [Parkinson's Lab tutorial](https://github.com
 
 Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
 
-Also it contains the subfolder `tutorales` with the slides from each of the Master Project evaluations. **26/01/2020** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
+Also it contains the subfolder `tutorales` with the slides from each of the Master Project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
 
 ### `/figures/`
 
@@ -94,7 +94,7 @@ It is subgrouped in folders:
 * `bin` with the scripts that allow to make the figures. 
 * `data` contains the information to make the figures as processed standard outputs, intermediate and final tables. 
 
-The figures discussion will be put it in `.md` files. But until now, **26/01/2020** there is only one file ([Quality.md])(figures/Quality.md) file with the `01_filteredreads.jpeg` and `02_filteredreads.jpeg` discussion. 
+The figures discussion will be put it in `.md` files. But until now, **26/01/2021** there is only one file ([Quality.md])(figures/Quality.md) file with the `01_filteredreads.jpeg` and `02_filteredreads.jpeg` discussion. 
 
 
 ### `/data`
