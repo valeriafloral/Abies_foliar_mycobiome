@@ -4,7 +4,7 @@
 
 **date:** 19/01/2021
 
-In order to keep as much information as possible for the metatranscriptomi analysis, it was proposed to use the unpaired data that result from the quality filter process. But first, it is important to know how many reads remained. 
+In order to keep as much information as possible in the metatranscriptomic analysis, it was proposed to use the unpaired data that resulted from the quality filter process. But first, it is important to know how many reads remained. 
 
 I used the script **[../bin/01_quality.sh](../bin/01_quality.sh)** to remove low quality reads.
 
@@ -15,14 +15,14 @@ The resulting plot was:
 ![](01_filteredreads.jpeg)
 **Figure 1:** Number of reads after trimming process.
 
-In the **Figure 1** we can see that the number of reads among samples are heterogeneous, but the sample DPVR11_S189 has visibly more number of reads.
+In the **Figure 1** we can see that the number of reads among samples are heterogeneous, but the sample DPVR11_S189 has visibly more number of reads. This sample will continue to be used, but it is important to keep in mind the number of reads bias if this sample shows different results in the following analyses.
 
 To clearly visualize the percentage of each category I made an percent stacked barchart included in the **[bin/quality_barplot.sh](./bin/quality_barplot.R)** script:
 
 ![](02_filteredreads.jpeg)
 **Figure 2:** Percentage of paired, unpaired and dropped reads after trimming process.
 
-In the **Figure 2** we can see that, after the trimming process,  the most of the reads in all samples are paired reads. There are still a portion of R1 unpaired reads. The R2 unpaired reads (in pink) can be discarded.
+In the **Figure 2** we can see that, after the trimming process,  the most of the reads in all samples are paired reads. There are still a big portion of R1 unpaired reads (in dark brown). The R2 unpaired reads (in pink) are less in comparison with R1, but it can still be used in posterior analyses. 
 
 
 
