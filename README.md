@@ -41,7 +41,12 @@ In this project **16** samples in total were used:
 * **8** samples **damaged**.  
 
 For more information about the samples see the file [**metadata/RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv).
-Where the first column is the **Sample_name**, the second column stipulates the tree **Condition** (tolerant or damaged), the column **Seasson** specifies if the sample was collected in high O<sub>3</sub> concentration (*Contingency*) or middle O<sub>3</sub> concentration. And finally, the last column gives information about the **Year** in which the sample was collected.
+Where the columns:
+
+* **Sample_name:** name with which the samples are identified. 
+* **Condition:** tree condition(tolerant or damaged).
+* **Seasson:** seasson in which the sample was collected (high O<sub>3</sub> concentration (*Contingency*) or middle O<sub>3</sub> concentration).
+* **Year:** year of sample collection.
 
 
 ## **Workflow**
