@@ -47,15 +47,19 @@ conda activate
 
 ## **Remove the host reads** 
 
-The [02_removehost.sh](./02_removehost.sh) script maps the reads across the *Abies balsamea* transcriptome using the software **BWA**. The reference transcriptome has to be downloaded from NCBI. 
+The [02_removehost.sh](./02_removehost.sh) script maps the reads across the *Abies balsamea* transcriptome using the software **BWA**. The reference transcriptome has to be downloaded from NCBI (**Accession:** GGJG00000000 **Bioproject:** PRJNA437248). 
 
-The [02_removehost.sh](./02_removehost.sh) script first make an index with the reference (**NAME**), then maps the paired, the R1_unpaired and the R2_unpaired reads. The reads that don't map to the reference are saved in files with the termination (**bulk**). Finally, the script make a file that contains information about the reads that mapped and the reads that map and did not map to the reference.
+The [02_removehost.sh](./02_removehost.sh) script first make an index with the reference (**GGJG01.1.fasta**), then maps the paired, the R1_unpaired and the R2_unpaired reads. The reads that don't map to the reference are saved in files with the termination (**bulk**). Finally, the script make a file that contains information about the reads that mapped and the reads that map and did not map to the reference.
 
 ```
 sh 02_removehost.sh
 ```
+# Currently I'am working on the following steps, so the scripts 03-08 haven't been started, concluded, tested or approved.
+
 
 ## **Assign taxonomy using the reads**
+
+
 
 #### KRAKEN :construction:Work in progress:construction:
 #### KAIJU :construction:Work in progress:construction:
