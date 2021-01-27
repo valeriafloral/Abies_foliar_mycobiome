@@ -77,8 +77,7 @@ Abies_fungal_endophytes-master
 │   ├── 06_kaiju.sh
 │   ├── 07_prediction.sh
 │   ├── 08_annotation.sh
-│   ├── README.md
-│   └── bwatest.sh
+│   └── README.md
 ├── figures
 │   ├── 01_filteredreads.jpeg
 │   ├── 02_filteredreads.jpeg
