@@ -4,7 +4,7 @@
 
 **date:** 19/01/2021
 
-In order to keep as much information as possible for the metatranscriptomic analysis, it was proposed to use the unpaired data that resulted from the quality filter process. But first, it is important to know how many reads remained. 
+In order to keep as much information as possible in the metatranscriptomic analysis, it was proposed to use the unpaired data that resulted from the quality filter process. But first, it is important to know how many reads remained. 
 
 I used the script **[../bin/01_quality.sh](../bin/01_quality.sh)** to remove low quality reads.
 
