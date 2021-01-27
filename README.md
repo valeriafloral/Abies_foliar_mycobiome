@@ -130,7 +130,7 @@ Abies_fungal_endophytes-master
 
 ```
 
-### `/archive/`
+### `/archive`
 
 Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
 
