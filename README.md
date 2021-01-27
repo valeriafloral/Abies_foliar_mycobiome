@@ -130,7 +130,11 @@ Abies_fungal_endophytes-master
 
 ```
 
+### `/archive/`
 
+Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
+
+Also it contains the subfolder `tutorales` with the slides from each of the Master Project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
 
 ### `/bin`
 
@@ -145,21 +149,6 @@ Folder with the scripts to perform the analysis:
 * **06_kaiju.sh:** Makes a taxonomic profile from reads and bins using *Kaiju*. :construction:**Work in progress**:construction:
 * **07_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
 * **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
-  
-### `/metadata`
-
-
-Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output reports from *Trimmomatic* and *multiqc* analyses. 
-
-### `/parkinsonlabtutorial`
-
-This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in my analyses. This folder will be deleted once the scripts are fully adapted.
-
-### `/archive/`
-
-Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
-
-Also it contains the subfolder `tutorales` with the slides from each of the Master Project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
 
 ### `/figures/`
 
@@ -170,6 +159,15 @@ It is subgrouped in folders:
 * `data` contains the information to make the figures as processed standard outputs, intermediate and final tables. 
 
 The figures discussion will be put it in `.md` files. But until now, **26/01/2021** there is only one file ([Quality.md])(figures/Quality.md) file with the `01_filteredreads.jpeg` and `02_filteredreads.jpeg` discussion. 
+  
+### `/metadata`
+
+
+Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output reports from *Trimmomatic* and *multiqc* analyses. 
+
+### `/parkinsonlabtutorial`
+
+This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in my analyses. This folder will be deleted once the scripts are fully adapted.
 
 
 ### `/data`
