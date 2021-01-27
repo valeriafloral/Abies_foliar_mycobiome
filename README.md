@@ -150,7 +150,7 @@ Folder with the scripts to perform the analysis:
 * **07_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
 * **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
 
-### `/figures/`
+### `/figures`
 
 This folder was made to enclose the `.jpeg` or `.tiff` images that result from each step of the analysis. 
 
@@ -163,7 +163,7 @@ The figures discussion will be put it in `.md` files. But until now, **26/01/202
 ### `/metadata`
 
 
-Contains the **RNA_sacredfir.csv** file with information about the samples, and the subfolder `reports` with the output reports from *Trimmomatic* and *multiqc* analyses. 
+Contains the [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv) table with information about the samples, and the subfolder `reports` with the output reports from *Trimmomatic* and *multiqc* analyses. 
 
 ### `/parkinsonlabtutorial`
 
