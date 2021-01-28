@@ -34,7 +34,7 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 * [Diamond-2.0.5](https://github.com/bbuchfink/diamond)	
 
 
-**R Libraries*
+**R Libraries**
 
 * [tidyverse](https://www.tidyverse.org)
 
