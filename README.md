@@ -19,6 +19,8 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Prerequisites**
 
+**SOFTWARE**
+
 * [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * [Trimmomatic-0.39](http://www.usadellab.org/cms/?page=trimmomatic)
 * [BWA-0.7.17](http://bio-bwa.sourceforge.net)
@@ -31,6 +33,10 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 * [Prodigal-2.6.3](https://github.com/hyattpd/Prodigal)
 * [Diamond-2.0.5](https://github.com/bbuchfink/diamond)	
 
+
+**R Libraries*
+
+* [tidyverse](https://www.tidyverse.org)
 
 ## **Data**
 
