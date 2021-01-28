@@ -9,13 +9,13 @@
 
 Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City (de Bauer y Hernández-Tejeda, 2007). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to O<sub>3</sub> (Reyes-Galindo, 2019). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution (Pan *et al.* 2017).
 
-In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high O<sub>3</sub> concentrations and showed 2 different phenotypes (tolerant and damaged). 
+In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high O<sub>3</sub> concentrations that showed 2 different phenotypes (tolerant and damaged). 
 
 ## **Aims**
 
 1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir trees.
 2. To detect differential expression of fungal genes from tolerant and damaged fir trees. 
-3. To identify fungal genes putitive involved in the resistance to air pollution caused by (O<sub>3</sub>).
+3. To identify fungal genes putitive involved in the resistance to air pollution caused by O<sub>3</sub>.
 
 ## **Prerequisites**
 
@@ -47,7 +47,8 @@ In this project **16** samples in total were used:
 * **8** samples **tolerant**.
 * **8** samples **damaged**.  
 
-For more information about the samples see the file [**metadata/RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv).
+For more information about the samples see the file [**metadata/RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv)(modified from Veronica's repository).
+
 Where the columns:
 
 * **Sample_name:** name with which the samples are identified. 
@@ -142,16 +143,16 @@ Abies_fungal_endophytes-master
 
 Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
 
-Also it contains the subfolder `tutorales` with the slides from each of the Master Project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
+Also it contains the subfolder `tutorales` with the slides from each Master project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
 
 ### `/bin`
 
 Folder with the scripts to perform the analysis:
 
-* **README.md**: Every step of the analysis detaily explained.
+* **README.md**: Every step of the analysis explained and details extra steps as conda environments creation and databases preparation.
 * **01_filter.sh:** Performs the quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_krakenreads.sh:** Makes a taxonomic profile to reads using *Kraken*. :construction:**Work in progress**:construction:
+* **03_krakenreads.sh:** Makes a taxonomic profile from reads using *Kraken*. :construction:**Work in progress**:construction:
 * **04_kaijureads.sh:** Makes a taxonomic profile from reads using *Kaiju*. :construction:**Work in progress**:construction:
 * **05_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
 * **06_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
