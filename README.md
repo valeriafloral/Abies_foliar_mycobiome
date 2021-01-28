@@ -26,6 +26,7 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 * [SPADES-3.14.1](https://cab.spbu.ru/software/spades/)
 * [MaxBin2-2.2.4-1](https://sourceforge.net/projects/maxbin2/)
 * [Kraken2](https://ccb.jhu.edu/software/kraken2/)
+* [krona 2.7.1](https://github.com/marbl/Krona/wiki)
 * [Kaiju-1.7.3](http://kaiju.binf.ku.dk)
 * [Prodigal-2.6.3](https://github.com/hyattpd/Prodigal)
 * [Diamond-2.0.5](https://github.com/bbuchfink/diamond)	
@@ -71,12 +72,14 @@ Abies_fungal_endophytes-master
 ├── bin
 │   ├── 01_quality.sh
 │   ├── 02_removehost.sh
-│   ├── 03_assembly.sh
-│   ├── 04_binning.sh
-│   ├── 05_kraken.sh
-│   ├── 06_kaiju.sh
-│   ├── 07_prediction.sh
-│   ├── 08_annotation.sh
+│   ├── 03_krakenreads.sh
+│   ├── 04_kaijureads.sh
+│   ├── 05_assembly.sh
+│   ├── 06_binning.sh
+│   ├── 07_krakencontigs.sh
+│   ├── 08_kaijucontigs.sh
+│   ├── 09_prediction.sh
+│   ├── 10_annotation.sh
 │   └── README.md
 ├── figures
 │   ├── 01_filteredreads.jpeg
