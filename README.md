@@ -145,12 +145,14 @@ Folder with the scripts to perform the analysis:
 * **README.md**: Every step of the analysis detaily explained.
 * **01_filter.sh:** Performs the quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
-* **04_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
-* **05_kraken.sh:** Assigns taxonomic profile to reads and bins using *Kraken*. :construction:**Work in progress**:construction:
-* **06_kaiju.sh:** Makes a taxonomic profile from reads and bins using *Kaiju*. :construction:**Work in progress**:construction:
-* **07_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
-* **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
+* **03_krakenreads.sh:** Makes a taxonomic profile to reads using *Kraken*. :construction:**Work in progress**:construction:
+* **04_kaijureads.sh:** Makes a taxonomic profile from reads using *Kaiju*. :construction:**Work in progress**:construction:
+* **05_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
+* **06_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
+* **07_krakencontigs.sh:** Makes a taxonomic profile from bins using *Kraken*. :construction:**Work in progress**:construction:
+* **08_kaijucontigs.sh:** Makes a taxonomic profile from bins using *Kaiju*. :construction:**Work in progress**:construction:
+* **09_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
+* **10_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
 
 ### `/figures`
 
@@ -169,8 +171,7 @@ Contains the [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv) table with in
 
 ### `/parkinsonlabtutorial`
 
-This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in this work. This folder will be deleted once the scripts are fully adapted.
-
+This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in this work. This folder will be deleted once the scripts are fully adapted. The tutorial has a README file that explain each step of the analysis, but it is not finished yet. The `/bin` folder has the phyton (made by the author) and adapted shell scripts. In the `/metadata` folder there are the *trimmomatic* reports.
 
 ### `/data`
 
