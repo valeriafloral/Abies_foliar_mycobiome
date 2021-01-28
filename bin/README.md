@@ -54,7 +54,7 @@ The [02_removehost.sh](./02_removehost.sh) script first make an index with the r
 ```
 sh 02_removehost.sh
 ```
-# Currently I'am working on the following steps, so the scripts 03-08 haven't been started, concluded, tested or approved.
+# Currently I'am working on the following steps, so the scripts 03-10 haven't been started, concluded, tested or approved.
 
 
 ## **Assign taxonomy using the reads**
@@ -102,4 +102,5 @@ ktImportTaxonomy -o m26_s6_kraken.krona.html -t 7 -s 6 REPORTFILE.tsv
 
 # References
 
+*  Paolinelli, M., Escoriaza, G., Cesari, C., Garcia-Lampasona, S., & Hernandez-Martinez, R. (2020). Metatranscriptomic approach for microbiome characterization and host gene expression evaluation for “Hoja de malvón” disease in Vitis vinifera cv. Malbec.
 
