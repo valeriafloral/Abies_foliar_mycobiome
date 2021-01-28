@@ -62,7 +62,7 @@ sh 02_removehost.sh
 
 
 #### KRAKEN :construction:Work in progress:construction:
-For this part of tha analysis I used part of the Paolinelli *et al.* 2020 code that can be foun in [**this**](https://bitbucket.org/quetjaune/rnaseq_malbec_082018/src/master/Malbec_metatranscriptomic_analysis.md) repository
+For this part of tha analysis I used part of the Paolinelli *et al.* 2020 code that can be found in [**this**](https://bitbucket.org/quetjaune/rnaseq_malbec_082018/src/master/Malbec_metatranscriptomic_analysis.md) repository
 
 Download the indexed database containing all the NCBI genomes from archeas, bacteria, virus and fungi in NT DB. 
 
