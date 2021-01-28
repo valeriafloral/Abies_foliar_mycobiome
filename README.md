@@ -77,8 +77,7 @@ Abies_fungal_endophytes-master
 │   ├── 06_kaiju.sh
 │   ├── 07_prediction.sh
 │   ├── 08_annotation.sh
-│   ├── README.md
-│   └── bwatest.sh
+│   └── README.md
 ├── figures
 │   ├── 01_filteredreads.jpeg
 │   ├── 02_filteredreads.jpeg
@@ -158,16 +157,16 @@ It is subgrouped in folders:
 * `bin` with the scripts that allow to make the figures. 
 * `data` contains the information to make the figures as processed standard outputs, intermediate and final tables. 
 
-The figures discussion will be put it in `.md` files. But until now, **26/01/2021** there is only one file ([Quality.md])(figures/Quality.md) file with the `01_filteredreads.jpeg` and `02_filteredreads.jpeg` discussion. 
+The figures discussion will be put it in `.md` files. But until now, **26/01/2021** there is only one file ([Quality.md](figures/Quality.md)) with the `01_filteredreads.jpeg` and `02_filteredreads.jpeg` discussion. 
   
 ### `/metadata`
 
 
-Contains the [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv) table with information about the samples, and the subfolder `reports` with the output reports from *Trimmomatic* and *multiqc* analyses. 
+Contains the [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv) table with information about the samples, and the subfolder `reports` with the reports from *Trimmomatic* and *multiqc* analyses. 
 
 ### `/parkinsonlabtutorial`
 
-This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in my analyses. This folder will be deleted once the scripts are fully adapted.
+This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in this work. This folder will be deleted once the scripts are fully adapted.
 
 
 ### `/data`
