@@ -15,7 +15,7 @@ The resulting plot was:
 ![](01_filteredreads.jpeg)
 **Figure 1:** Number of reads after trimming process.
 
-In the **Figure 1** we can see that the number of reads among samples are heterogeneous, but the sample DPVR11_S189 has visibly more number of reads. This sample will continue to be used, but it is important to keep in mind the number of reads bias if this sample shows different results in the following analyses.
+In the **Figure 1** we can see that the number of reads among samples are heterogeneous, but the sample DPVR11_S189 has visibly more number of reads. This sample will continue to be used, but it is important to keep in mind the number of reads bias if this sample shows different results in the following analyses. This sample could have more reads due to errors in sequetiation process as more sample could have been loaded in the NGS instrument or PCR bias in library preparation.
 
 To clearly visualize the percentage of each category I made an percent stacked barchart included in the **[bin/quality_barplot.sh](./bin/quality_barplot.R)** script:
 
