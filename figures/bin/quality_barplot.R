@@ -23,7 +23,18 @@ quality$category <- factor(quality$category, levels = c('dropped', 'unpaired', '
 as.factor(quality$category)
 quality$category
 
-#Plot 
+#Plot the stacked barchart
+stackedplot <- ggplot(quality, aes(fill=category, y=reads, x=sample)) + 
+  labs(x="Sample",y="Number of reads")+
+  geom_bar(position="dodge", stat="identity")+
+  theme_classic()+
+  theme(axis.text.x = element_text(face="bold", size=10, angle=90))+
+  scale_fill_manual(values = wes_palette("Moonrise3", n = 3))
+
+stackedplot
+
+
+#Plot the percent stacked barchart
 
 qualityplot <- ggplot(quality, aes(fill=category, y=reads, x=sample)) + 
   labs(x="Sample",y="Number of reads")+
