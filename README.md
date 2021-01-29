@@ -19,6 +19,10 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Prerequisites**
 
+**Operative system**
+
+Linux 4.19.0-10-amd64
+
 **SOFTWARE**
 
 * [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
@@ -33,6 +37,9 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 * [Prodigal-2.6.3](https://github.com/hyattpd/Prodigal)
 * [Diamond-2.0.5](https://github.com/bbuchfink/diamond)	
 
+**R version**
+
+R version 4.0.2
 
 **R Libraries**
 
