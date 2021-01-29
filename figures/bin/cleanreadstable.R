@@ -1,13 +1,10 @@
-### Fit a table made with trimmomatic extracted information 
-###and plot the plotreads report
+### Fit a table made with trimmomatic extracted information and plot the plotreads report
 #Valeria Flores
 #19/01/2021
 
 
 #Libraries
 library(tidyverse)
-library(viridis)
-library(dplyr)
 
 
 #Load table

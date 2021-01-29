@@ -9,15 +9,17 @@
 
 Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) in peripheral areas of Mexico City (de Bauer y Hernández-Tejeda, 2007). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to tolerance to O<sub>3</sub> (Reyes-Galindo, 2019). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution (Pan *et al.* 2017).
 
-In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high O<sub>3</sub> concentrations and showed 2 different phenotypes (tolerant and damaged). 
+In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high O<sub>3</sub> concentrations that showed 2 different phenotypes (tolerant and damaged). 
 
 ## **Aims**
 
 1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir trees.
 2. To detect differential expression of fungal genes from tolerant and damaged fir trees. 
-3. To identify fungal genes putitive involved in the resistance to air pollution caused by (O<sub>3</sub>).
+3. To identify fungal genes putitive involved in the resistance to air pollution caused by O<sub>3</sub>.
 
 ## **Prerequisites**
+
+**SOFTWARE**
 
 * [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * [Trimmomatic-0.39](http://www.usadellab.org/cms/?page=trimmomatic)
@@ -26,10 +28,15 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 * [SPADES-3.14.1](https://cab.spbu.ru/software/spades/)
 * [MaxBin2-2.2.4-1](https://sourceforge.net/projects/maxbin2/)
 * [Kraken2](https://ccb.jhu.edu/software/kraken2/)
+* [krona 2.7.1](https://github.com/marbl/Krona/wiki)
 * [Kaiju-1.7.3](http://kaiju.binf.ku.dk)
 * [Prodigal-2.6.3](https://github.com/hyattpd/Prodigal)
 * [Diamond-2.0.5](https://github.com/bbuchfink/diamond)	
 
+
+**R Libraries**
+
+* [tidyverse](https://www.tidyverse.org)
 
 ## **Data**
 
@@ -40,7 +47,8 @@ In this project **16** samples in total were used:
 * **8** samples **tolerant**.
 * **8** samples **damaged**.  
 
-For more information about the samples see the file [**metadata/RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv).
+For more information about the samples see the file [**metadata/RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv)(modified from Veronica's repository).
+
 Where the columns:
 
 * **Sample_name:** name with which the samples are identified. 
@@ -71,12 +79,14 @@ Abies_fungal_endophytes-master
 ├── bin
 │   ├── 01_quality.sh
 │   ├── 02_removehost.sh
-│   ├── 03_assembly.sh
-│   ├── 04_binning.sh
-│   ├── 05_kraken.sh
-│   ├── 06_kaiju.sh
-│   ├── 07_prediction.sh
-│   ├── 08_annotation.sh
+│   ├── 03_krakenreads.sh
+│   ├── 04_kaijureads.sh
+│   ├── 05_assembly.sh
+│   ├── 06_binning.sh
+│   ├── 07_krakencontigs.sh
+│   ├── 08_kaijucontigs.sh
+│   ├── 09_prediction.sh
+│   ├── 10_annotation.sh
 │   └── README.md
 ├── figures
 │   ├── 01_filteredreads.jpeg
@@ -133,21 +143,23 @@ Abies_fungal_endophytes-master
 
 Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
 
-Also it contains the subfolder `tutorales` with the slides from each of the Master Project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
+Also it contains the subfolder `tutorales` with the slides from each Master project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
 
 ### `/bin`
 
 Folder with the scripts to perform the analysis:
 
-* **README.md**: Every step of the analysis detaily explained.
+* **README.md**: Every step of the analysis explained and details extra steps as conda environments creation and databases preparation.
 * **01_filter.sh:** Performs the quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
-* **04_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
-* **05_kraken.sh:** Assigns taxonomic profile to reads and bins using *Kraken*. :construction:**Work in progress**:construction:
-* **06_kaiju.sh:** Makes a taxonomic profile from reads and bins using *Kaiju*. :construction:**Work in progress**:construction:
-* **07_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
-* **08_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
+* **03_krakenreads.sh:** Makes a taxonomic profile from reads using *Kraken*. :construction:**Work in progress**:construction:
+* **04_kaijureads.sh:** Makes a taxonomic profile from reads using *Kaiju*. :construction:**Work in progress**:construction:
+* **05_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
+* **06_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
+* **07_krakencontigs.sh:** Makes a taxonomic profile from bins using *Kraken*. :construction:**Work in progress**:construction:
+* **08_kaijucontigs.sh:** Makes a taxonomic profile from bins using *Kaiju*. :construction:**Work in progress**:construction:
+* **09_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
+* **10_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
 
 ### `/figures`
 
@@ -166,8 +178,7 @@ Contains the [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv) table with in
 
 ### `/parkinsonlabtutorial`
 
-This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in this work. This folder will be deleted once the scripts are fully adapted.
-
+This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in this work. This folder will be deleted once the scripts are fully adapted. The tutorial has a README file that explain each step of the analysis, but it is not finished yet. The `/bin` folder has the phyton (made by the author) and adapted shell scripts. In the `/metadata` folder there are the *trimmomatic* reports.
 
 ### `/data`
 

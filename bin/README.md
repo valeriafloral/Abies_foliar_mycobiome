@@ -54,7 +54,7 @@ The [02_removehost.sh](./02_removehost.sh) script first make an index with the r
 ```
 sh 02_removehost.sh
 ```
-# Currently I'am working on the following steps, so the scripts 03-08 haven't been started, concluded, tested or approved.
+# Currently I'am working on the following steps, so the scripts 03-10 haven't been started, concluded, tested or approved.
 
 
 ## **Assign taxonomy using the reads**
@@ -62,6 +62,32 @@ sh 02_removehost.sh
 
 
 #### KRAKEN :construction:Work in progress:construction:
+For this part of tha analysis I used part of the Paolinelli *et al.* 2020 code that can be found in [**this**](https://bitbucket.org/quetjaune/rnaseq_malbec_082018/src/master/Malbec_metatranscriptomic_analysis.md) repository
+
+Download the indexed database containing all the NCBI genomes from archeas, bacteria, virus and fungi in NT DB. 
+
+```
+wget -c ftp://ftp.ccb.jhu.edu/pub/software/krakenuniq/Databases/nt/*
+```
+
+Prepare the file that will be used as a reference:
+```
+#krakenuniq-build --db microb_nt_db --kmer-len 31 --threads 10 --taxids-for-genomes --taxids-for-sequences --jellyfish-hash-size 6400M
+```
+
+Run the Kraken script **Work in progress**:
+
+```
+sh 03_krakenreads.sh
+```
+
+Make a Krona graph, first we have to update all the files regarding taxonomy or accesions IDs through the Krona's `updateTaxonomy.sh` and `updateAccession.sh`, later from Krakenuniq output (REPORTFILE.tsv) the next command is used for each sample:
+
+```
+ktImportTaxonomy -o m26_s6_kraken.krona.html -t 7 -s 6 REPORTFILE.tsv 
+```
+
+
 #### KAIJU :construction:Work in progress:construction:
 
 ## **Assign taxonomy using contigs**
@@ -73,4 +99,8 @@ sh 02_removehost.sh
 ## **Function**
 #### Gene prediction :construction:Work in progress:construction:
 #### Gene annotation :construction:Work in progress:construction:
+
+# References
+
+*  Paolinelli, M., Escoriaza, G., Cesari, C., Garcia-Lampasona, S., & Hernandez-Martinez, R. (2020). Metatranscriptomic approach for microbiome characterization and host gene expression evaluation for “Hoja de malvón” disease in Vitis vinifera cv. Malbec.
 
