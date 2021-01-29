@@ -98,13 +98,25 @@ Abies_fungal_endophytes-master
 ├── figures
 │   ├── 01_filteredreads.jpeg
 │   ├── 02_filteredreads.jpeg
+│   ├── 03_mapping.jpeg
 │   ├── Quality.md
-│   └── bin
-│       ├── cleanreadstable.R
-│       ├── extract_trimmomatic.sh
-│       └── quality_barplot.R
+│   ├── bin
+│   │   ├── 01_extract_trimmomatic.sh
+│   │   ├── 02_clean_reads_table.R
+│   │   ├── 03_quality_barplot.R
+│   │   ├── 04_extract_mapping.sh
+│   │   ├── 05_import_samtools_results.R
+│   │   └── 06_mapping_plot.R
+│   └── data
+│       ├── countmappedreads.txt
+│       ├── edited_count_map.csv
+│       ├── mapping.csv
+│       ├── plotreads.csv
+│       ├── table.txt
+│       └── trimmomatic.txt
 ├── metadata
 │   ├── RNA_sacredfir.csv
+│   ├── mapping.csv
 │   └── reports
 │       ├── R1_paired_multiqc_report.html
 │       ├── R1_unpaired_multiqc_report.html
