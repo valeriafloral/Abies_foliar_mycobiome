@@ -169,7 +169,7 @@ It is subgrouped in folders:
 * `bin` with the scripts that allow to make the figures. 
 * `data` contains the information to make the figures as processed standard outputs, intermediate and final tables. 
 
-The figures discussion will be put it in `.md` files. But until now, **26/01/2021** there is only one file ([Quality.md](figures/Quality.md)) with the `01_filteredreads.jpeg` and `02_filteredreads.jpeg` discussion. 
+The figures discussion will be put it in `.md` files. But until now, **28/01/2021** there is only one file ([Quality.md](figures/Quality.md)) with the `01_filteredreads.jpeg`, `02_filteredreads.jpeg` and `03_mapping.jpeg` discussion. 
   
 ### `/metadata`
 
