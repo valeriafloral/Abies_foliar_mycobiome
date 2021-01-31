@@ -9,8 +9,14 @@
 
 #Use concatenated files
 #Make the classification
-For i in tolerant damaged;
+for i in tolerant damaged;
 do krakenuniq --db ../../programas/kraken --fastq-input ../data/filter/outpus/${i}test.fastq --threads 12 --report-file ../data/reports/kraken${i}test.tsv > kraken${i}test.tsv;
 done
 
 ###Work in progress
+
+
+
+for i in tolerant damaged;
+do echo "../data/filter/outpus/${i}test.fastq";
+done
