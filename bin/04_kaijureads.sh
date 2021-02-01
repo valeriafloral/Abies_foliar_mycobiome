@@ -25,5 +25,5 @@ done
 
 # Concatenate the input
 for i in `ls ../data/reports/kaiju/ | grep ".tsv" | sed "s/_paired_classification.tsv//"| sed "s/_R1_unpaired_classification.tsv//" | sed "s/_R2_unpaired_//" | uniq`;
-cat ${i}__paired_classification.tsv ${i}_R1_unpaired_classification.tsv ${i}_R2_unpaired_classification.tsv;
+cat ../data/reports/kaiju/${i}__paired_classification.tsv ../data/reports/kaiju/${i}_R1_unpaired_classification.tsv ../data/reports/kaiju/${i}_R2_unpaired_classification.tsv;
 done
