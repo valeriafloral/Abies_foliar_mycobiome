@@ -4,7 +4,7 @@
 #SBATCH -n 6
 
 # Valeria Flores
-#27/01/2021
+#31/01/2021
 #Assign taxonomy to reads using Kraken2
 
 #Use concatenated files
