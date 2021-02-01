@@ -62,18 +62,34 @@ sh 02_removehost.sh
 
 
 #### KRAKEN :construction:Work in progress:construction:
+I have issues when trying to buil de kraken database with **Kraken2**, so I've decided to use **Krakenuniq**. The proble persisted, and I use an alternative way to build the database.
+
 For this part of tha analysis I used part of the Paolinelli *et al.* 2020 code that can be found in [**this**](https://bitbucket.org/quetjaune/rnaseq_malbec_082018/src/master/Malbec_metatranscriptomic_analysis.md) repository
 
-Download the indexed database containing all the NCBI genomes from archeas, bacteria, virus and fungi in NT DB. 
+Choose one folder to download the database
+```
+krakenuniq="../../programas/krakenuniq_db"
+```
+In the database folder, there must be at least 4 files:
+* **database.kdb:** Contains the k-mer to taxon mappings
+* **database.idx:** Contains minimizer offset locations in database.kdb
+* **taxonomy/nodes.dmp:** Taxonomy tree structure + ranks
+* **taxonomy/names.dmp:** Taxonomy names
+
+
+For download the `taxonomy/nodes.dmp`and the `taxonomy/names.dmp:`use the command:
+
+```
+krakenuniq-download --db $krakenuniq_db taxonomy
+```
+
+In the `krakenuniq_db` folder download the indexed database containing all the NCBI genomes from archeas, bacteria, virus and fungi in NT DB. This will download the `database.kbd` and the `database.idx`.
 
 ```
 wget -c ftp://ftp.ccb.jhu.edu/pub/software/krakenuniq/Databases/nt/*
 ```
 
-Prepare the file that will be used as a reference:
-```
-#krakenuniq-build --db microb_nt_db --kmer-len 31 --threads 10 --taxids-for-genomes --taxids-for-sequences --jellyfish-hash-size 6400M
-```
+If in the folder, there are the 4 files it is not necessary to run de `kraken-build` command. The kraken script can be runned. The `03_krakenreads.sh` runs with a subset. The complete script is not finished yet. 
 
 Run the Kraken script **Work in progress**:
 
