@@ -31,7 +31,7 @@ Linux 4.19.0-10-amd64
 * [samtools-1.10](http://www.htslib.org)
 * [SPADES-3.14.1](https://cab.spbu.ru/software/spades/)
 * [MaxBin2-2.2.4-1](https://sourceforge.net/projects/maxbin2/)
-* [Kraken2](https://ccb.jhu.edu/software/kraken2/)
+* [Krakenuniq v0.5.8](https://github.com/fbreitwieser/krakenuniq)
 * [krona 2.7.1](https://github.com/marbl/Krona/wiki)
 * [Kaiju-1.7.3](http://kaiju.binf.ku.dk)
 * [Prodigal-2.6.3](https://github.com/hyattpd/Prodigal)
