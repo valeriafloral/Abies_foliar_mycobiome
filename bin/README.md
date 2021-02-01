@@ -62,7 +62,7 @@ sh 02_removehost.sh
 
 
 #### KRAKEN :construction:Work in progress:construction:
-I have issues when trying to buil de kraken database with **Kraken2**, so I've decided to use **Krakenuniq**. The proble persisted, and I use an alternative way to build the database.
+As I was having issues when trying to build de kraken database with **Kraken2**, I've decided to use **Krakenuniq**. The problem persisted, so I use an alternative way to build the database.
 
 For this part of tha analysis I used part of the Paolinelli *et al.* 2020 code that can be found in [**this**](https://bitbucket.org/quetjaune/rnaseq_malbec_082018/src/master/Malbec_metatranscriptomic_analysis.md) repository
 
@@ -77,30 +77,58 @@ In the database folder, there must be at least 4 files:
 * **taxonomy/names.dmp:** Taxonomy names
 
 
-For download the `taxonomy/nodes.dmp`and the `taxonomy/names.dmp:`use the command:
+To download the `taxonomy/nodes.dmp` and the `taxonomy/names.dmp` use the command:
 
 ```
 krakenuniq-download --db $krakenuniq_db taxonomy
 ```
 
-In the `krakenuniq_db` folder download the indexed database containing all the NCBI genomes from archeas, bacteria, virus and fungi in NT DB. This will download the `database.kbd` and the `database.idx`.
+Download the indexed database containing all the NCBI genomes from archeas, bacteria, virus and fungi in NT DB in the `krakenuniq_db` folder. This command will download the `database.kbd` and the `database.idx`.
 
 ```
 wget -c ftp://ftp.ccb.jhu.edu/pub/software/krakenuniq/Databases/nt/*
 ```
 
-If in the folder, there are the 4 files it is not necessary to run de `kraken-build` command. The kraken script can be runned. The `03_krakenreads.sh` runs with a subset. The complete script is not finished yet. 
+If in the folder, there are the 4 files (`taxonomy/nodes.dmp`, `taxonomy/names.dmp`,`database.kbd` and `database.idx`) it is not necessary to run de `kraken-build` command. The kraken classification can be runned. The `03_krakenreads.sh` runs with a subset. The complete script is not finished yet. 
 
 Run the Kraken script **Work in progress**:
 
 ```
 sh 03_krakenreads.sh
 ```
+To graphic visualize the report use **Krona**.
 
-Make a Krona graph, first we have to update all the files regarding taxonomy or accesions IDs through the Krona's `updateTaxonomy.sh` and `updateAccession.sh`, later from Krakenuniq output (REPORTFILE.tsv) the next command is used for each sample:
+Create a variable with the folder in which **Krona** host the program files. I download **Krona** using **miniconda**, so, the **Krona** folder is in `~/miniconda3/envs/krona/opt/krona/taxonomy`.
 
 ```
-ktImportTaxonomy -o m26_s6_kraken.krona.html -t 7 -s 6 REPORTFILE.tsv 
+taxonomy="~/miniconda3/envs/krona/opt/krona/taxonomy"
+```
+Build the taxonomy:
+
+```
+ktUpdateTaxonomy.sh $taxonomy
+```
+
+Run krona ** This is a test command, the loop for all samples has not been tested **
+
+
+```
+for i in tolerant damaged;
+do ktImportTaxonomy ../data/reports/kraken/kraken${i}test.tsv -t 7 -s 6 -o ../data/reports/kraken/kraken${i}.html ;
+done
+```
+To run multiple samples I think I can run a loop with tolerant and damaged samples separately:
+
+```
+##Tolerant
+for i in TOLERANTSAMPLESNAMES;
+do ktImportTaxonomy -t 7 -s 6  ${i}.tsv -o toleratkrona.html;
+done
+
+###Damaged
+for i in DAMAGEDSAMPLESNAMES;
+do ktImportTaxonomy -t 7 -s 6  ${i}.tsv -o damagedkrona.html;
+done
 ```
 
 
