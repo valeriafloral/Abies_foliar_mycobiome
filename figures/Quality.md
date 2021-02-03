@@ -32,7 +32,7 @@ After the quality filter process, the reads were mapped to the *Abies balsamea* 
 
 In the **Figure 3** we can see that, among the samples and unpaired and paired reads, there are not more than 12% of the reads that do not map to the reference. According to the mapping process, almost the 90% of the reads were host transcripts. 
 
-Although the vast majority of *Abies* reads, there are still reads that may come from plan-associated microorganisms sources. So, the next workflow steps are needed to determine if taxonomy can be assigned by removing host reads.
+Although the vast majority of *Abies* reads, there are still reads that may come from plant-associated microorganisms sources. So, the next workflow steps are needed to determine if taxonomy can be assigned by removing host reads.
 
 
 

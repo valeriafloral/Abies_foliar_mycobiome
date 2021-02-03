@@ -15,19 +15,11 @@ done
 
 ###Work in progress
 
-#Krona visualize
-# Delete a symbolic link that is not correct
-rm -rf ~/miniconda3/envs/krona/opt/krona/taxonomy
-
-# we create a directory in our home where the krona database will live
-mkdir -p ~/krona/taxonomy
-
-# now we make a symbolic link to that directory
-ln -s ../../../programas/krona/taxonomy /LUSTRE/Genetica/valeria/miniconda3/envs/krona/opt/krona/taxonomy
+#Variable with krona taxonomy folder
+taxonomy="/LUSTRE/Genetica/valeria/miniconda3/envs/krona/opt/krona/taxonomy"
 
 #Build the taxonomy
 ktUpdateTaxonomy.sh /LUSTRE/Genetica/valeria/miniconda3/envs/krona/opt/krona/taxonomy
-
 
 #Run krona
 for i in tolerant damaged;
