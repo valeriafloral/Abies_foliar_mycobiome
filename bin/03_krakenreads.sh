@@ -4,11 +4,10 @@
 #SBATCH -n 6
 
 # Valeria Flores
-#31/01/2021
-#Assign taxonomy to reads using Kraken2
+#01/04/2021
+#Assign taxonomy to reads using Krakenuniq
 
-#Use concatenated files
-#Make the classification
-for i in tolerant damaged;
-do krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/filter/bulk/${i}.fastq --threads 12 --report-file ../data/reports/kraken${i}.tsv;
+#Make a tsv report for every sample
+for f in `ls ../data/taxonomy | grep ".fastq" | sed "s/.fastq//" | uniq`;
+do krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/taxonomy/${i}.fastq --threads 12 --hll-precision 18 --report-file ../data/reports/kraken/${i}_kraken.tsv;
 done
