@@ -9,5 +9,5 @@
 
 #Make a tsv report for every sample
 for f in `ls ../data/taxonomy | grep ".fastq" | sed "s/.fastq//" | uniq`;
-do krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/taxonomy/${i}.fastq --threads 12 --hll-precision 18 --report-file ../data/reports/kraken/${i}_kraken.tsv;
+do krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/taxonomy/${f}.fastq --threads 12 --hll-precision 18 --report-file ../data/reports/kraken/${f}_kraken.tsv;
 done
