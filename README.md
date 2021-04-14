@@ -171,7 +171,7 @@ Folder with the scripts to perform the analysis:
 * **README.md**: Every step of the analysis explained and details extra steps as conda environments creation and databases preparation.
 * **01_filter.sh:** Performs the quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_krakenreads.sh:** Makes a taxonomic profile from reads using *Kraken*. :construction:**Work in progress**:construction:
+* **03_krakenreads.sh:** Makes a taxonomic profile from reads using *Krakenuniq*.
 * **04_kaijureads.sh:** Makes a taxonomic profile from reads using *Kaiju*. :construction:**Work in progress**:construction:
 * **05_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
 * **06_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
@@ -188,7 +188,7 @@ It is subgrouped in folders:
 * `bin` with the scripts that allow to make the figures. 
 * `data` contains the information to make the figures as processed standard outputs, intermediate and final tables. 
 
-The figures discussion will be put it in `.md` files. But until now, **28/01/2021** there is only one file ([Quality.md](figures/Quality.md)) with the `01_filteredreads.jpeg`, `02_filteredreads.jpeg` and `03_mapping.jpeg` discussion. 
+The figures discussion will be put it in `.md` files. 
   
 ### `/metadata`
 
