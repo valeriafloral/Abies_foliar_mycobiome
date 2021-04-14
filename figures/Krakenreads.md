@@ -1,4 +1,4 @@
-#Clasificación de lecturas con Krakenuniq
+# Clasificación de lecturas con Krakenuniq
 
 
 Un gran porcentaje (más del 89%) de las lecturas de las muestras **tolerantes** (Figura 1) y **dañadas** (Figura 2) no tuvieron clasificación con el programa KrakenUniq *ver [bin/03_krakenreads.sh](./../bin/03_krakenreads.sh)*. 
