@@ -54,12 +54,7 @@ The [02_removehost.sh](./02_removehost.sh) script first make an index with the r
 ```
 sh 02_removehost.sh
 ```
-# Currently I'am working on the following steps, so the scripts 03-10 haven't been started, concluded, tested or approved.
-
-
 ## **Assign taxonomy using the reads**
-
-
 
 ### KrakenUniq
 
@@ -94,8 +89,6 @@ wget -c ftp://ftp.ccb.jhu.edu/pub/software/krakenuniq/Databases/nt/*
 ```
 
 If in the folder, there are the 4 files (`taxonomy/nodes.dmp`, `taxonomy/names.dmp`,`database.kbd` and `database.idx`) it is not necessary to run de `kraken-build` command. The kraken classification can be runned. The `03_krakenreads.sh` runs with a subset. The complete script is not finished yet. 
-
-
 
 ##### Taxonomic classification
 
@@ -167,6 +160,7 @@ do ktImportTaxonomy -t 7 -s 6  ${i}.tsv -o damagedkrona.html;
 done
 ```
 
+# Currently I'am working on the following steps, so the scripts 04-10 haven't been started, concluded, tested or approved.
 
 #### KAIJU :construction:Work in progress:construction:
 
