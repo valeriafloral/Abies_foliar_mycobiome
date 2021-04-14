@@ -61,7 +61,11 @@ sh 02_removehost.sh
 
 
 
-#### KRAKEN :construction:Work in progress:construction:
+### KrakenUniq
+
+##### Database building
+
+
 As I was having issues when trying to build de kraken database with **Kraken2**, I've decided to use **Krakenuniq**. The problem persisted, so I use an alternative way to build the database.
 
 For this part of tha analysis I used part of the Paolinelli *et al.* 2020 code that can be found in [**this**](https://bitbucket.org/quetjaune/rnaseq_malbec_082018/src/master/Malbec_metatranscriptomic_analysis.md) repository
@@ -91,12 +95,44 @@ wget -c ftp://ftp.ccb.jhu.edu/pub/software/krakenuniq/Databases/nt/*
 
 If in the folder, there are the 4 files (`taxonomy/nodes.dmp`, `taxonomy/names.dmp`,`database.kbd` and `database.idx`) it is not necessary to run de `kraken-build` command. The kraken classification can be runned. The `03_krakenreads.sh` runs with a subset. The complete script is not finished yet. 
 
-Run the Kraken script **Work in progress**:
+
+
+##### Taxonomic classification
+
+Create a new directory to save the remaining reads from the filtering process:
+
+```
+mkdir ../data/filter/bulk
+```
+
+Symbolic link to filtered samples:
+
+```
+ln -s ../outputs/*bulk* .
+```
+
+Make a directory to save concatenated files:
+
+```
+mkdir ../data/taxonomy
+```
+
+
+Concatenate paired, R1_unpaired and R2_unpaired filtered reads from every sample:
+
+```
+for f in `ls ../data/filter/bulk | grep ".fastq" | sed "s/_paired_bulk.fastq//" | sed "s/_R1_unpaired_bulk.fastq//" | sed "s/_R2_unpaired_bulk.fastq//"| uniq`;
+do cat ../data/filter/bulk/${f}_paired_bulk.fastq ../data/filter/bulk/${f}_R1_unpaired_bulk.fastq ../data/filter/bulk/${f}_R2_unpaired_bulk.fastq > ../data/taxonomy/${f}.fastq;
+done
+```
+
+Run the Kraken script:
 
 ```
 sh 03_krakenreads.sh
 ```
-To graphic visualize the report use **Krona**.
+
+##### Graphic visualizaion with **Krona**
 
 Create a variable with the folder in which **Krona** host the program files. I download **Krona** using **miniconda**, so, the **Krona** folder is in `~/miniconda3/envs/krona/opt/krona/taxonomy`.
 
