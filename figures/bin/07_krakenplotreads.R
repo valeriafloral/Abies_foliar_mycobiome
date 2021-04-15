@@ -73,8 +73,3 @@ krakendamaged <- ggplot(plotd, aes(fill= class, y=reads, x=sample)) +
   theme
 krakendamaged    
 
-
-###Group images
-
-ggarrange(krakentolerant, krakendamaged, labels = c("A", "B"),
-          common.legend = TRUE, legend = "bottom")
