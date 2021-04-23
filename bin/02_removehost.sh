@@ -30,7 +30,7 @@ done
 #Generate fastq outputs for all reads that did not map to the host reference genome (-f 4)
 #This is the datatset that is going to be used
 for f in `ls ../data/filter/outputs/ | grep ".fq.gz" | sed "s/_L007_R1_001_paired.fq.gz//"| sed "s/_L007_R2_001_paired.fq.gz//" | sed "s/_L007_R1_001_unpaired.fq.gz//"| sed "s/_L007_R2_001_unpaired.fq.gz//"| uniq`;
-do samtools fastq -n -f 4 -0 ../data/filter/outputs/${f}_paired_bulk.fastq ../data/filter/outputs/${f}_paired.bam;
+do samtools fastq -n -f 4 -1 ../data/filter/outputs/${f}_R1_paired_bulk.fastq -2 ../data/filter/outputs/${f}_R2_paired_bulk.fastq ../data/filter/outputs/${f}_paired.bam;
 samtools fastq -n -f 4 -0 ../data/filter/outputs/${f}_R1_unpaired_bulk.fastq ../data/filter/outputs/${f}_R1_unpaired.bam;
 samtools fastq -n -f 4 -0 ../data/filter/outputs/${f}_R2_unpaired_bulk.fastq ../data/filter/outputs/${f}_R2_unpaired.bam;
 done
