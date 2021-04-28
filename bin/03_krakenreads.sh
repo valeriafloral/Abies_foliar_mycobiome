@@ -7,7 +7,10 @@
 #23/04/2021
 #Assign taxonomy to reads using Krakenuniq
 
-#Assign taxonomy to reads using Krakenuniq and generate outputs analyse diversity and abundance
-for f in `ls ../data/taxonomy | grep ".fastq" | sed "s/.fastq//" | uniq`;
-do krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/taxonomy/${f}.fastq --threads 12 --hll-precision 18 --exact --report-file ../data/reports/kraken/reads/${f}_kraken_reads.report --output ../data/reports/kraken/reads/${f}_kraken_reads.kraken;
+#Assign taxonomy to reads using Krakenuniq for paired, r1. r2 and concatenated files
+for f in `ls ../data/filter/nonhost/ | grep ".fastq" | sed "s/_p_filtered.fastq//" | sed "s/_R1_filtered.fastq//" | sed "s/_R2_filtered.fastq//"| sed "s/_cat.fastq//" | uniq`;
+do krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/filter/nonhost/${f}_p_filtered.fastq --threads 12 --hll-precision 18 --exact --report-file ../data/reports/kraken/reads/${f}_kr_paired.report --output ../data/reports/kraken/reads/${f}_kr_paired.kraken;
+krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/filter/nonhost/${f}_R1_filtered.fastq --threads 12 --hll-precision 18 --exact --report-file ../data/reports/kraken/reads/${f}_kr_R1.report --output ../data/reports/kraken/reads/${f}_kr_R1.kraken;
+krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/filter/nonhost/${f}_R2_filtered.fastq --threads 12 --hll-precision 18 --exact --report-file ../data/reports/kraken/reads/${f}_kr_R2.report --output ../data/reports/kraken/reads/${f}_kr_R2.kraken;
+krakenuniq --db ../../programas/krakenuniq_db --fastq-input ../data/filter/nonhost/${f}_cat.fastq --threads 12 --hll-precision 18 --exact --report-file ../data/reports/kraken/reads/${f}_kr_cat.report --output ../data/reports/kraken/reads/${f}_kr_cat.kraken;
 done
