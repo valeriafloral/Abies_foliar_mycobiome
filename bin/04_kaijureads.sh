@@ -4,26 +4,27 @@
 #SBATCH -n 6
 
 # Valeria Flores
-#27/01/2021
+#31/05/2021
 #Assign taxonomy to reads using Kaiju
 ###Not tested yet
 
-#Database building
-#Create a directory in which the database will be host
-mkdir ../../programas/kaiju/kaijudb
-cd ../../programas/kaiju/kaijudb #See options to specify the output directory
+#Run kaiju _paired_classification
+for f in `ls ../data/filter/nonhost/ | grep ".fastq" | sed "s/_p_filtered.fastq//" | sed "s/_R1_filtered.fastq//" | sed "s/_R2_filtered.fastq//"| sed "s/_cat.fastq//" | uniq`;
+do kaiju -t ../../programas/kaiju_db/nodes.dmp -f ../../programas/kaiju_db/fungi/kaiju_db_fungi.fmi -i ../data/filter/nonhost/${f}_p_filtered.fastq -z 4 -o ../data/reports/kaiju/${f}_paired_kaiju.out;
+kaiju -t ../../programas/kaiju_db/nodes.dmp -f ../../programas/kaiju_db/fungi/kaiju_db_fungi.fmi -i ../data/filter/nonhost/${f}_R1_filtered.fastq -z 4 -o ../data/reports/kaiju/${f}_R1_unpaired_kaiju.out;
+kaiju -t ../../programas/kaiju_db/nodes.dmp -f ../../programas/kaiju_db/fungi/kaiju_db_fungi.fmi -i ../data/filter/nonhost/${f}_R2_filtered.fastq -z 4 -o ../data/reports/kaiju/${f}_R2_unpaired_kaiju.out;
+done
 
-#Make database
-kaiju-makedb -s nr_euk
 
-#Run kaijudb
-for i in `ls ../data/filter/outputs/bulk | grep ".fastq" | sed "s/_paired_bulk.fastq//"| sed "s/_R1_unpaired.fq.gz//" | sed "s/_R2_unpaired.fq.gz//" | uniq`;
-do kaiju ../../programas/kaiju/kaijudb/nodes.dmp -f ../../programas/kaiju/kaijudb/kaiju_db_nr_euk.fmi -i ../data/filter/outputs/bulk/${i}_paired_bulk.fastq -z 4 -o ../data/reports/kaiju/${i}_paired_classification.tsv;
-kaiju ../../programas/kaiju/kaijudb/nodes.dmp -f ../../programas/kaiju/kaijudb/kaiju_db_nr_euk.fmi -i ../data/filter/outputs/bulk/${i}_R1_unpaired.fq.gz -z 4 -o ../data/reports/kaiju/${i}_R1_unpaired_classification.tsv;
-kaiju ../../programas/kaiju/kaijudb/nodes.dmp -f ../../programas/kaiju/kaijudb/kaiju_db_nr_euk.fmi -i ../data/filter/outputs/bulk/${i}_R2_unpaired.fq.gz -z 4 -o ../data/reports/kaiju/${i}_R2_unpaired_classification.tsv;
+#Kaiju2table
+for f in `ls ../data/filter/nonhost/ | grep ".fastq" | sed "s/_p_filtered.fastq//" | sed "s/_R1_filtered.fastq//" | sed "s/_R2_filtered.fastq//"| sed "s/_cat.fastq//" | uniq`;
+do kaiju2table -t ../../programas/kaiju_db/nodes.dmp -n ../../programas/kaiju_db/names.dmp -r species -o ../data/reports/kaiju/${f}_paired_kaiju.tsv ../data/reports/kaiju/${f}_paired_kaiju.out -l superkingdom,phylum,class,order,family,genus,species;
+kaiju2table -t ../../programas/kaiju_db/nodes.dmp -n ../../programas/kaiju_db/names.dmp -r species -o ../data/reports/kaiju/${f}_R1_kaiju.tsv ../data/reports/kaiju/${f}_R1_unpaired_kaiju.out -l superkingdom,phylum,class,order,family,genus,species;
+kaiju2table -t ../../programas/kaiju_db/nodes.dmp -n ../../programas/kaiju_db/names.dmp -r species -o ../data/reports/kaiju/${f}_R2_kaiju.tsv ../data/reports/kaiju/${f}_R2_unpaired_kaiju.out -l superkingdom,phylum,class,order,family,genus,species;
 done
 
 # Concatenate the input
-for i in `ls ../data/reports/kaiju/ | grep ".tsv" | sed "s/_paired_classification.tsv//"| sed "s/_R1_unpaired_classification.tsv//" | sed "s/_R2_unpaired_//" | uniq`;
-cat ../data/reports/kaiju/${i}__paired_classification.tsv ../data/reports/kaiju/${i}_R1_unpaired_classification.tsv ../data/reports/kaiju/${i}_R2_unpaired_classification.tsv;
+for i in `ls ../data/reports/kaiju/ | grep ".out" | sed "s/_paired_kaiju.out//"| sed "s/_R1_unpaired_kaiju.out//" | sed "s/_R2_unpaired_kaiju.out//" | uniq`;
+do cat ../data/reports/kaiju/${i}_paired_kaiju.out ../data/reports/kaiju/${i}_R1_unpaired_kaiju.out ../data/reports/kaiju/${i}_R2_unpaired_kaiju.out > ../data/reports/kaiju/${i}_cat_kaiju.out;
+cat ../data/reports/kaiju/${i}_paired_kaiju.tsv ../data/reports/kaiju/${i}_R1_kaiju.tsv ../data/reports/kaiju/${i}_R2_kaiju.tsv > ${i}_cat_kaiju.tsv:
 done
