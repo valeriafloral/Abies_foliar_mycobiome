@@ -4,26 +4,24 @@
 #SBATCH -n 6
 
 # Valeria Flores
-#Last update 27/04/2021
+#Last update 28/05/2021
 #Remove Abies reads with BWA
 
 #Make host reference index
 bwa index -a bwtsw ../data/filter/reference/GGJG01.1.fasta
-samtools faidx ../data/filter/reference/GGJG01.1.fasta
-makeblastdb -in ../data/filter/reference/GGJG01.1.fasta -dbtype nucl
 
 #Map reads against host reference
 for f in `ls ../data/filter/trimmed/ | grep ".fq.gz" | sed "s/_L007_R1_001_paired.fq.gz//"| sed "s/_L007_R2_001_paired.fq.gz//" | sed "s/_L007_R1_001_unpaired.fq.gz//"| sed "s/_L007_R2_001_unpaired.fq.gz//"| uniq`;
-do bwa mem -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_paired.fq.gz ../data/filter/trimm/${f}_L007_R2_001_paired.fq.gz > ../data/filter/nonhost/${f}_paired.sam;
+do bwa mem -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_paired.fq.gz ../data/filter/trimmed/${f}_L007_R2_001_paired.fq.gz > ../data/filter/nonhost/${f}_paired.sam;
 bwa mem -aM -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R1_unpaired.sam;
 bwa mem -aM -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R2_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R2_unpaired.sam;
 done
 
 #Convert .sam to .bam using samtools
 for f in `ls ../data/filter/trimmed/ | grep ".fq.gz" | sed "s/_L007_R1_001_paired.fq.gz//"| sed "s/_L007_R2_001_paired.fq.gz//" | sed "s/_L007_R1_001_unpaired.fq.gz//"| sed "s/_L007_R2_001_unpaired.fq.gz//"| uniq`;
-do samtools view -bS ../data/filter/trimmed/${f}_paired.sam > ../data/filter/nonhost/${f}_paired.bam;
-samtools view -bS ../data/filter/trimmed/${f}_R1_unpaired.sam > ../data/filter/nonhost/${f}_R1_unpaired.bam;
-samtools view -bS ../data/filter/trimmed/${f}_R2_unpaired.sam > ../data/filter/nonhost/${f}_R2_unpaired.bam;
+do samtools view -bS ../data/filter/nonhost/${f}_paired.sam > ../data/filter/nonhost/${f}_paired.bam;
+samtools view -bS ../data/filter/nonhost/${f}_R1_unpaired.sam > ../data/filter/nonhost/${f}_R1_unpaired.bam;
+samtools view -bS ../data/filter/nonhost/${f}_R2_unpaired.sam > ../data/filter/nonhost/${f}_R2_unpaired.bam;
 done
 
 #Extract unmapped reads (non-host)
