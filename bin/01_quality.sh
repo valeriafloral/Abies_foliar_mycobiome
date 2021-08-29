@@ -41,5 +41,5 @@ done
 
 #Group the trimmed quality analysis with MultiQC
 for f in R1_paired R2_paired R1_unpaired R2_unpaired;
-do multiqc ../data/reports/trimmed/R1_paired -o ../data/reports/trimmed/${f}_paired;
+do multiqc ../data/reports/trimmed/${f} -o ../data/reports/trimmed/${f}_paired;
 done

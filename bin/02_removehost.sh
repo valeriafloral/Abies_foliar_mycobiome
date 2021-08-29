@@ -9,21 +9,19 @@
 
 #Make host reference index
 bwa index -a bwtsw ../data/filter/reference/GGJG01.1.fasta
-samtools faidx ../data/filter/reference/GGJG01.1.fasta
-makeblastdb -in ../data/filter/reference/GGJG01.1.fasta -dbtype nucl
 
 #Map reads against host reference
 for f in `ls ../data/filter/trimmed/ | grep ".fq.gz" | sed "s/_L007_R1_001_paired.fq.gz//"| sed "s/_L007_R2_001_paired.fq.gz//" | sed "s/_L007_R1_001_unpaired.fq.gz//"| sed "s/_L007_R2_001_unpaired.fq.gz//"| uniq`;
-do bwa mem -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_paired.fq.gz ../data/filter/trimm/${f}_L007_R2_001_paired.fq.gz > ../data/filter/nonhost/${f}_paired.sam;
+do bwa mem -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_paired.fq.gz ../data/filter/trimmed/${f}_L007_R2_001_paired.fq.gz > ../data/filter/nonhost/${f}_paired.sam;
 bwa mem -aM -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R1_unpaired.sam;
 bwa mem -aM -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R2_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R2_unpaired.sam;
 done
 
 #Convert .sam to .bam using samtools
 for f in `ls ../data/filter/trimmed/ | grep ".fq.gz" | sed "s/_L007_R1_001_paired.fq.gz//"| sed "s/_L007_R2_001_paired.fq.gz//" | sed "s/_L007_R1_001_unpaired.fq.gz//"| sed "s/_L007_R2_001_unpaired.fq.gz//"| uniq`;
-do samtools view -bS ../data/filter/trimmed/${f}_paired.sam > ../data/filter/nonhost/${f}_paired.bam;
-samtools view -bS ../data/filter/trimmed/${f}_R1_unpaired.sam > ../data/filter/nonhost/${f}_R1_unpaired.bam;
-samtools view -bS ../data/filter/trimmed/${f}_R2_unpaired.sam > ../data/filter/nonhost/${f}_R2_unpaired.bam;
+do samtools view -bS ../data/filter/nonhost/${f}_paired.sam > ../data/filter/nonhost/${f}_paired.bam;
+samtools view -bS ../data/filter/nonhost/${f}_R1_unpaired.sam > ../data/filter/nonhost/${f}_R1_unpaired.bam;
+samtools view -bS ../data/filter/nonhost/${f}_R2_unpaired.sam > ../data/filter/nonhost/${f}_R2_unpaired.bam;
 done
 
 #Extract unmapped reads (non-host)
@@ -41,8 +39,8 @@ done
 
 #Convert bam unpaired files into fastq
 for f in `ls ../data/filter/trimmed/ | grep ".fq.gz" | sed "s/_L007_R1_001_paired.fq.gz//"| sed "s/_L007_R2_001_paired.fq.gz//" | sed "s/_L007_R1_001_unpaired.fq.gz//"| sed "s/_L007_R2_001_unpaired.fq.gz//"| uniq`;
-do samtools bam2fq ../data/filter/nonhost/${f}_R1_up_um.bam > ../data/filter/nonhost/${f}_R1_UP_filtered.fastq;
-samtools bam2fq ../data/filter/nonhost/${f}_R2_up_um.bam > ../data/filter/nonhost/${f}_R2_UP_filtered.fastq;
+do samtools bam2fq ../data/filter/nonhost/${f}_R1_up_um.bam > ../data/filter/nonhost/${f}_R1_up_filtered.fastq;
+samtools bam2fq ../data/filter/nonhost/${f}_R2_up_um.bam > ../data/filter/nonhost/${f}_R2_up_filtered.fastq;
 done
 
 #Statistics
@@ -50,4 +48,14 @@ for f in `ls ../data/filter/trimmed/ | grep ".fq.gz" | sed "s/_L007_R1_001_paire
 do samtools stats ../data/filter/nonhost/${f}_paired.bam > ../data/reports/mapping/${f}_hostmap_paired.txt;
 samtools stats ../data/filter/nonhost/${f}_R1_unpaired.bam > ../data/reports/mapping/${f}_hostmap_R1_unpaired.txt;
 samtools stats ../data/filter/nonhost/${f}_R2_unpaired.bam > ../data/reports/mapping/${f}_hostmap_R2_unpaired.txt;
+done
+
+#Quality with FastQC
+for f in p_filtered.fastq R1_up_filtered.fastq R2_up_filtered.fastq;
+do fastqc ../data/filter/nonhost/*_${f} --outdir=../data/reports/nonhost;
+done
+
+#Group reports with multiQC
+for f in p_filtered_fastqc.html R1_up_filtered_fastqc.html R2_up_filtered_fastqc.html
+do multiqc ../data/reports/nonhost/*_${f} --outdir=../data/reports/nonhost;
 done
