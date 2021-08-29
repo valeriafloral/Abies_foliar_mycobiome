@@ -4,6 +4,8 @@
 #SBATCH -n 6
 
 # Valeria Flores
+
+
 #28/08/2021
 #Assign taxonomy to SPAdes assembled contigs using Krakenuniq
 
@@ -24,6 +26,3 @@ done
 
 #Combine
 combine_mpa.py -i ../data/reports/kraken2/*_k2_contigs_bracken.txt -o ../data/reports/kraken2/combined_sp_contigs_bracken.txt
-
-#Keep only clssified at species level
-grep -E "(s__)|(#Classification)" ../data/reports/kraken2/combined_sp_contigs_bracken.txt > ../data/reports/kraken2/contigs_kraken2.txt
