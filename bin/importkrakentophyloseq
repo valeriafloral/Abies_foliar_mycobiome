@@ -1,0 +1,162 @@
+#First, let’s count the occurrences of each taxon.
+
+cut -f3 DPVR13_S191.kraken  |sort -n |uniq -c > ranked
+head -n5 ranked
+
+#Now, let’s reverse the columns.
+
+cat ranked |while read a b; do echo $b$'\t'$a; done > DPVR13_S191.kraken_ranked
+rm ranked
+
+head -n5 DPVR13_S191.kraken_ranked
+
+
+cut -f1 DPVR10_S188.kraken_ranked |taxonkit lineage |\
+taxonkit reformat -f "{k};{p};{c};{o};{f};{g};{s};{S}" |\
+cut  -f1,3 > DPVR10_S188.lineage_table
+
+
+##############################################
+
+
+Creating lineage and rank tables
+
+Packages like Quiime2, MEGAN, Vegan or Phyloseq in R allows to obtain these diversity indexes.
+We will use Phyloseq, in order to do so, we need to generate an abundance matrix from the Kraken output.
+
+$ cd ~/dc_workshop/taxonomy
+$ head JP4D.kraken
+U       k141_55805      0       371     0:337
+U       k141_0  0       462     0:428
+U       k141_55806      0       353     0:319
+U       k141_55807      0       296     0:262
+C       k141_1  953     711     0:54 1224:2 0:152 28211:2 0:15 953:3 0:449
+U       k141_2  0       480     0:446
+C       k141_3  28384   428     0:6 1286:2 0:8 28384:14 0:11 1:3 0:350
+U       k141_4  0       302     0:268
+U       k141_5  0       714     0:680
+U       k141_6  0       662     0:628
+
+column	Description
+C	Classified or unclassified
+k141_0	FASTA header of the read(contig)
+1365647	Tax id
+416	Read length
+0:6 1286:2 0:8 28384:14 0:11	kmers hit to a taxonomic id E.g. 0:1 root 6 hit, 1286 has 2 hits, etc.
+First, let’s count the occurrences of each taxon.
+
+$ cut -f3 JP4D.kraken  |sort -n |uniq -c > ranked
+$ head -n5 ranked
+ 77818 0
+ 5 1
+ 562 2
+ 4 22
+ 2 32
+Now, let’s reverse the columns.
+
+$ cat ranked |while read a b; do echo $b$'\t'$a; done > JP4D.kraken_ranked
+$ rm ranked
+Let’s see our JP4D.kraken_ranked file.
+
+head -n5 JP4D.kraken_ranked
+0       77818
+1       5
+2       562
+22      4
+32      2
+Let’s repeat the process for JC1A sample.
+
+$ cut -f3 JC1A.kraken   |sort -n |uniq -c > ranked
+$ cat ranked |while read a b; do echo $b$'\t'$a; done > JC1A.kraken_ranked
+$ rm ranked
+Now we will use taxonkit to obtain the taxonomy classification of each read.
+In order to access to taxonkit and other packages prepared in an environment called metagenomics, we will call this environment from conda:
+
+conda activate metagenomics
+$ cut -f1 JP4D.kraken_ranked |taxonkit lineage |\
+taxonkit reformat -f "{k};{p};{c};{o};{f};{g};{s};{S}" |\
+cut  -f1,3 >JP4D.lineage_table
+Also, let’s obtaine a lineage table for JC1A sample.
+
+$ cut -f1 JC1A.kraken_ranked |taxonkit lineage |\
+taxonkit reformat -f "{k};{p};{c};{o};{f};{g};{s};{S}" | cut  -f1,3 >JC1A.lineage_table
+Errors are saved in JC1A.error and JP4D.error files. Common errors are deleted and merged.
+
+$ grep deleted JP4D.error
+The file contains one line with the word deleted.
+
+$ 04:29:50.903 [WARN] taxid 119065 was deleted
+We can remove this line by using a perl one liner.
+
+$ grep 119065 JP4D.kraken
+$ perl -ne 'print if !/119065/' JP4D.kraken >JP4D.kraken-wc
+$ grep 119065 JP4D.kraken-wc
+$
+And the line that contains 119065 is gone from the new file JP4D.kraken-wc.
+
+Now let’s see for the merged error in the JP4D error file.
+
+$ grep merged JP4D.error | cut -d' ' -f4,8 > JP4D.merged
+$ head -n5 JP4D.merged
+62928 418699
+335659 1404864
+354203 263377
+640511 2654982
+644968 694327
+And let’s substitute all the merged taxon by the corresponding new one.
+
+$ cat  JP4D.merged  | while read line;\
+ do\
+    original=$(echo $line | cut -d' ' -f1);\
+    new=$(echo $line  |cut -d' '  -f2);\
+    perl -p -i -e "s/$original/$new/" JP4D.kraken-wc;\
+     done
+$ cut -f3 JP4D.kraken-wc | sort -n | uniq -c > ranked
+$ cat ranked | while read a b; do echo $b$'\t'$a; done > JP4D.kraken_ranked-wc
+$ rm ranked
+With this new working copy of the proportion in taxonomy classification we can run again taxonkit to obtain the curated lineage table.
+
+$ cut -f1 JP4D.kraken_ranked-wc | taxonkit lineage |\
+  taxonkit reformat -f "{k};{p};{c};{o};{f};{g};{s};{S}" |\
+  cut  -f1,3 > JP4D.lineage_table-wc
+$ 10:34:06.833 [WARN] taxid 0 not found
+Next, we need to apply this process to our other sample: JC1A. We did not oobtained any deleted taxid, remember?
+
+04:31:28.340 [WARN] taxid 0 not found
+04:31:28.341 [WARN] taxid 335659 was merged into 1404864
+04:31:28.341 [WARN] taxid 644968 was merged into 694327
+04:31:28.342 [WARN] taxid 2109625 was merged into 2605946
+Result that can be verified, but let’s obtained the merged ones:
+
+$ grep deleted JC1A.error
+$ grep merged JC1A.error | cut -d' ' -f4,8 > JC1A.merged
+$ cp JC1A.kraken JC1A.kraken-wc
+$ cat  JC1A.merged  | while read line;\
+  do\
+    original=$(echo $line|cut -d' ' -f1);\
+    new=$( echo $line|cut -d' '  -f2);\
+    perl -p -i -e "s/$original/$new/" JC1A.kraken-wc;\
+  done
+$ cut -f3 JC1A.kraken-wc | sort -n | uniq -c > ranked
+$ cat ranked |while read a b; do echo $b$'\t'$a; done > JC1A.kraken_ranked-wc
+$ rm ranked
+$ cut -f1 JC1A.kraken_ranked-wc |taxonkit lineage |\
+  taxonkit reformat -f "{k};{p};{c};{o};{f};{g};{s};{S}" |\
+  cut  -f1,3 > JC1A.lineage_table-wc
+$ 10:34:06.833 [WARN] taxid 0 not found
+Finally, we need to add headers to our rank file and our lineage table.
+
+$ nano JC1A.kraken_ranked-wc
+ OTU  JC1A
+$ nano JC1A.lineage_table-wc
+OTU superkingdom	phylum	class	order	family	genus	species	subspecies	subspecies_2
+As a last cleaning step, we need to substitute the “,” separator in the csv file to “\t” After this step we have our tables ready for Phyloseq.
+
+$ perl -p -i -e 's/;/\t/g' *.lineage_table-wc
+$ head -n5 *.lineage_table-wc
+$ rm *.kraken-wc
+$ mkdir ../results
+$ mv *wc ../results/.
+$ rm *lineage* *ranked* *merged
+$ cp *kraken* ../results/.
+$ mv *report* ../results/.
