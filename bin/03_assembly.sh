@@ -11,3 +11,10 @@
 for f in `ls ../data/filter/nonhost/ | grep ".fastq" | sed "s/_p_filtered.fastq//" | sed "s/_R1_filtered.fastq//" | sed "s/_R2_filtered.fastq//"| sed "s/_cat.fastq//" | uniq`;
 do spades.py --rna --12 ../data/filter/nonhost/${f}_p_filtered.fastq --s1 ../data/filter/nonhost/${f}_R1_filtered.fastq --s2 ../data/filter/nonhost/${f}_R2_filtered.fastq -t 4 -k 21,33,55,77,99,111,127 -o ../data/assembly/${f}_assembly;
 done
+
+
+#Evaluate Assembly
+#conda activate metaquast
+for f in `ls ../data/assembly | grep "_assembly" | sed "s/_assembly//" | uniq`;
+do metaquast.py -t 4 ../data/assembly/${f}_assembly/transcripts.fasta -o ../data/reports/assemply/;
+done
