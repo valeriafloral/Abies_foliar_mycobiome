@@ -4,7 +4,11 @@
 #SBATCH -n 6
 
 # Valeria Flores
+<<<<<<< HEAD
 #Last update 28/05/2021
+=======
+#Last update 21/09/2021
+>>>>>>> 1e07323fd3955a16ced3deac7bc4aa0a468555dc
 #Remove Abies reads with BWA
 
 #Make host reference index
@@ -13,8 +17,8 @@ bwa index -a bwtsw ../data/filter/reference/GGJG01.1.fasta
 #Map reads against host reference
 for f in `ls ../data/filter/trimmed/ | grep ".fq.gz" | sed "s/_L007_R1_001_paired.fq.gz//"| sed "s/_L007_R2_001_paired.fq.gz//" | sed "s/_L007_R1_001_unpaired.fq.gz//"| sed "s/_L007_R2_001_unpaired.fq.gz//"| uniq`;
 do bwa mem -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_paired.fq.gz ../data/filter/trimmed/${f}_L007_R2_001_paired.fq.gz > ../data/filter/nonhost/${f}_paired.sam;
-bwa mem -aM -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R1_unpaired.sam;
-bwa mem -aM -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R2_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R2_unpaired.sam;
+bwa mem -a -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R1_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R1_unpaired.sam;
+bwa mem -a -t 4 ../data/filter/reference/GGJG01.1.fasta ../data/filter/trimmed/${f}_L007_R2_001_unpaired.fq.gz > ../data/filter/nonhost/${f}_R2_unpaired.sam;
 done
 
 #Convert .sam to .bam using samtools
