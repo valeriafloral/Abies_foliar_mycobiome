@@ -4,11 +4,7 @@
 #SBATCH -n 6
 
 # Valeria Flores
-<<<<<<< HEAD
-#Last update 28/05/2021
-=======
 #Last update 21/09/2021
->>>>>>> 1e07323fd3955a16ced3deac7bc4aa0a468555dc
 #Remove Abies reads with BWA
 
 #Make host reference index
@@ -63,3 +59,4 @@ done
 for f in p_filtered_fastqc.html R1_up_filtered_fastqc.html R2_up_filtered_fastqc.html
 do multiqc ../data/reports/nonhost/*_${f} --outdir=../data/reports/nonhost;
 done
+

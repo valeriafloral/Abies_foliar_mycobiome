@@ -17,11 +17,12 @@ done
 
 
 #Change bracken report to mpa report
+#Change bracken report to mpa report
 for f in `ls ../data/filter/nonhost/ | grep ".fastq" | sed "s/_p_filtered.fastq//" | sed "s/_R1_filtered.fastq//" | sed "s/_R2_filtered.fastq//"| sed "s/_cat.fastq//" | uniq`;
-do kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_R1_bracken_species.report -o ../data/reports/kraken2/${f}_k2_R1_bracken.txt --no-intermediate-ranks --read_count;
-kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_R2_bracken_species.report -o ../data/reports/kraken2/${f}_k2_R2_bracken.txt --no-intermediate-ranks --read_count;
-kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_paired_bracken_species.report -o ../data/reports/kraken2/${f}_k2_paired_bracken.txt --no-intermediate-ranks --read_count;
-kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_cat_bracken_species.report -o ../data/reports/kraken2/${f}_k2_cat_bracken.txt --no-intermediate-ranks --read_count;
+do kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_R1_bracken_species.report -o ../data/reports/kraken2/${f}_k2_R1_bracken.txt --no-intermediate-ranks --read_count --display-header;
+kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_R2_bracken_species.report -o ../data/reports/kraken2/${f}_k2_R2_bracken.txt --no-intermediate-ranks --read_count --display-header;
+kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_paired_bracken_species.report -o ../data/reports/kraken2/${f}_k2_paired_bracken.txt --no-intermediate-ranks --read_count --display-header;
+kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_reads_cat_bracken_species.report -o ../data/reports/kraken2/${f}_k2_cat_bracken.txt --no-intermediate-ranks --read_count --display-header;
 done
 
 #Estimate abundance with bracken
@@ -33,7 +34,3 @@ done
 for f in `ls ../data/filter/nonhost/ | grep ".fastq" | sed "s/_p_filtered.fastq//" | sed "s/_R1_filtered.fastq//" | sed "s/_R2_filtered.fastq//"| sed "s/_cat.fastq//" | uniq`;
 do kreport2mpa.py -r ../data/reports/kraken2/${f}_k2_contigs_bracken_species.report -o ../data/reports/kraken2/${f}_k2_contigs_bracken.txt --no-intermediate-ranks --read_count;
 done
-
-
-#Keep only clssified at species level
-grep -E "(s__)|(#Classification)" ../data/reports/kraken2/combined_sp_contigs_bracken.txt > ../data/reports/kraken2/contigs_kraken2.txt
