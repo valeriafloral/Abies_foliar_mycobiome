@@ -90,10 +90,10 @@ This repository has the following structure:
 ├── RNA_sacredfir.csv
 ├── analyses
 │   └── bin
-│       ├── 1_ObservedRichness.R
-│       ├── 2_CommunityComposition.R
-│       ├── 3_RelativeAbundance.R
-│       ├── 4_SpecifiOTU.R
+│       ├── 1_CommunityComposition.R
+│       ├── 2_SpecifiOTU.R
+│       ├── 3_ObservedRichness.R
+│       ├── 4_RelativeAbundance.R
 │       ├── 5_DE.R
 │       ├── assign_guild.R
 │       └── metabarcoding_phyloseq.R
@@ -122,10 +122,10 @@ Folder with downstream analyses from metabarcoding and metatranscriptomics.
 
 * **metabarcoding_phyloseq.R:** Script to parse classification outputs (Kaiju, Kraken-Bracken, and AMPtk)
 * **assign_guild.R:** Function to asign guild to phyloseq objects.
-* **1_ObservedRichness.R:** Script with GLM fitted to evaluate Observed richness by condition per dataset.
-* **2_CommunityComposition.R:** Script to visualize community composition with NMDS and ANOSIM test.
-* **3_RelativeAbundance.R:** Script to parse phyloseq and visualize class relative abundance with heatmaps and log2FoldChange with DESeq2.
-* **4_SpecifiOTU.R:** Script to evaluate IndVal with indicspecies.
+* **1_CommunityComposition.R:** Script to visualize community composition with NMDS and ANOSIM test.
+* **2_SpecifiOTU.R:** Script to evaluate IndVal with indicspecies.
+* **3_ObservedRichness.R:** Script with GLM fitted to evaluate Observed richness by condition per dataset.
+* **4_RelativeAbundance.R:** Script to parse phyloseq and visualize class relative abundance with heatmaps and log2FoldChange with DESeq2.
 * **5_DE.R:** Script to evaluate differential expression of ORFs.
 
 
