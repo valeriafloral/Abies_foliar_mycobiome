@@ -8,9 +8,9 @@ In this repository, you will find the workflow of a metatranscriptomics analysis
 
 ## **Aims**
 
-1. To characterize the diversity of fungal endophytes inside the leaves of tolerant and damaged fir trees.
-2. To detect differential expression of fungal genes from tolerant and damaged fir trees. 
-3. To identify fungal genes putitive involved in the resistance to air pollution caused by O<sub>3</sub>.
+1. To characterize the diversity of fungal endophytes inside asymptomatic and symptomatic sacred fir needles.
+2. To detect differential expression of fungal genes from asymptomatic and symptomatic sacred fir needles. 
+3. To identify fungal genes putitive involved in the abscence of visible foliar O<sub>3</sub>-related symptoms.
 
 ## **Prerequisites**
 
