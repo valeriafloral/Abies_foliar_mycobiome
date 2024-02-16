@@ -66,6 +66,8 @@ Where the columns:
 
 ## **Workflow**
 
+We used metabarcoding an metatranscriptomics approaches as follow:
+
 ![](workflow.png)
 
 ## **Repository structure**
