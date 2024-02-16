@@ -2,7 +2,7 @@
 
 
 
-Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) populations in peripheral areas of Mexico City (de Bauer y Hernández-Tejeda, 2007). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to O<sub>3</sub>-related symptoms (Reyes-Galindo, 2019). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution (Pan *et al.* 2017).
+Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) populations in peripheral areas of Mexico City (de Bauer y Hernández-Tejeda, 2007). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related the presence of O<sub>3</sub>-related symptoms (Reyes-Galindo, 2019). Due to their effects on plant resistance to abiotic stresses, it is very likely that fungi present in fir leaves are involved in resistance to air pollution (Pan *et al.* 2017).
 
 In this repository, you will find the workflow of a metatranscriptomics analysis from *Abies religiosa* indivuals exposed to high O<sub>3</sub> concentrations that showed 2 different phenotypes (symptomatic and asymptomatic). 
 
@@ -20,21 +20,21 @@ Linux 4.19.0-10-amd64
 
 **SOFTWARE**
 
-* **AMPtk v1.3.0**
-* **FastQC v0.11.8**
-* **MultiQC v1.0.dev0**
-* **BWA-MEM v0.7.17**
-* **samtools-1.10**
-* **SPAdes v3.13.0** 
-* **QUAST v5.0.2**
-* **Trinity v2.8.5**
-* **RSEM v1.3.3**
-* **metaquast v3.2**
-* **Kraken2 v.2.1.2**
-* **Bracken**
-* **Kaiju v1.8.0**
-* **Transdecoder v.5.5.0**
-* **Salmon v1.8.0**
+* [**AMPtk v1.3.0**](https://amptk.readthedocs.io/en/latest/index.html)
+* [**FastQC v0.11.8**](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+* [**MultiQC v1.0.dev0**](https://multiqc.info/)
+* [**BWA-MEM v0.7.17**](https://bio-bwa.sourceforge.net/)
+* [**samtools-1.10**](https://samtools.sourceforge.net/)
+* [**SPAdes v3.13.0**](https://github.com/ablab/spades)
+* [**QUAST v5.0.2**](https://quast.sourceforge.net/)
+* [**Trinity v2.8.5**](https://github.com/trinityrnaseq/trinityrnaseq/wiki)
+* [**RSEM v1.3.3**](https://github.com/deweylab/RSEM)
+* [**metaquast v3.2**](https://quast.sourceforge.net/metaquast.html)
+* [**Kraken2 v.2.1.2**](https://ccb.jhu.edu/software/kraken2/)
+* [**Bracken**](https://ccb.jhu.edu/software/bracken/)
+* [**Kaiju v1.8.0**](https://bioinformatics-centre.github.io/kaiju/)
+* [**TransDecoder v.5.5.0**](https://github.com/TransDecoder/TransDecoder)
+* [**Salmon v1.8.0**](https://combine-lab.github.io/salmon/)
 
 **R version**
 
@@ -143,13 +143,13 @@ Folder with the scripts to perform the transcriptmics analysis:
 * **README.md**: Every step of the analysis explained and details extra steps as conda environments creation and databases preparation.
 * **01_quality.sh:** Performs the quality analysis with FastQC and multiQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_assembly.sh:** Assembly of reads for each sample using metaSPADEs.
+* **03_assembly.sh:** Perfors assembly of reads for each sample using metaSPADEs.
 * **04_krakenreads.sh:** Makes a taxonomic profile from reads using *Kraken2* and estimates abundance with Bracken.
 * **05_krakencontigs.sh:** Makes a taxonomic profile from contigs using *Kraken2* and estimates abundance with Bracken.
 * **06_kaijureads.sh:** Makes a taxonomic profile from reads using *Kaiju*.
 * **07_kaijucontigs.sh:** Makes a taxonomic profile from contigs using *Kaiju*.
-* **08_coassembly.sh:** Perform a coassambly with every sample with Trinity.
-* **09_prediction.sh:** Predict ORFs using Transdecoder.
+* **08_coassembly.sh:** Performs a coassambly with every sample with Trinity.
+* **09_prediction.sh:** Predicts ORFs using Transdecoder.
 * **10_mapping.sh:** Estimate transcription of predicted ORF for every sample to coassebly using Salmon.
   
 
