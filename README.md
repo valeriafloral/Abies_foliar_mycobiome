@@ -1,10 +1,5 @@
 # <div align="center"> Foliar mycobiome communities remains unaltered under urban air-pollution but differentially express stress-related genes </div>
 
-### <div align="center">  :construction::construction::construction::construction: REPOSITORY UNDER CONSTRUCTION :construction::construction::construction::construction: </div>
-
-
-
-
 
 
 Air pollution by tropospheric ozone (O<sub>3</sub>) is causing the strong decline of sacred fir (*Abies religiosa*) populations in peripheral areas of Mexico City (de Bauer y Hernández-Tejeda, 2007). However, within high contaminated zones, variation in the level of damage to air pollution was detected among fir individuals. These results suggest that there is genetic variability related to O<sub>3</sub>-related symptoms (Reyes-Galindo, 2019). Due to their effects on plant resistance to abiotic stresses, it is very likely that endophytic fungi present inside fir leaves are involved in resistance to air pollution (Pan *et al.* 2017).
@@ -25,17 +20,21 @@ Linux 4.19.0-10-amd64
 
 **SOFTWARE**
 
-* [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-* [Trimmomatic-0.39](http://www.usadellab.org/cms/?page=trimmomatic)
-* [BWA-0.7.17](http://bio-bwa.sourceforge.net)
-* [samtools-1.10](http://www.htslib.org)
-* [SPADES-3.14.1](https://cab.spbu.ru/software/spades/)
-* [MaxBin2-2.2.4-1](https://sourceforge.net/projects/maxbin2/)
-* [Krakenuniq v0.5.8](https://github.com/fbreitwieser/krakenuniq)
-* [krona 2.7.1](https://github.com/marbl/Krona/wiki)
-* [Kaiju-1.7.3](http://kaiju.binf.ku.dk)
-* [Prodigal-2.6.3](https://github.com/hyattpd/Prodigal)
-* [Diamond-2.0.5](https://github.com/bbuchfink/diamond)	
+* **AMPtk v1.3.0**
+* **FastQC v0.11.8**
+* **MultiQC v1.0.dev0**
+* **BWA-MEM v0.7.17**
+* **samtools-1.10**
+* **SPAdes v3.13.0** 
+* **QUAST v5.0.2**
+* **Trinity v2.8.5**
+* **RSEM v1.3.3**
+* **metaquast v3.2**
+* **Kraken2 v.2.1.2**
+* **Bracken**
+* **Kaiju v1.8.0**
+* **Transdecoder v.5.5.0**
+* **Salmon v1.8.0**
 
 **R version**
 
@@ -43,7 +42,15 @@ R version 4.0.2
 
 **R Libraries**
 
-* [tidyverse](https://www.tidyverse.org)
+* **phyloseq** 
+* **ggvenn v0.1.9** 
+* **microbiome v1.13.12** 
+* **vegan v2.5-7**
+* **eulerr v6.1.1** 
+* **gplot2 v3.4.2** 
+* **DESeq2 v.40.1**
+* **indicspecies v1.7.13** 
+* **Ampvis2 v2.8.3**
 
 ## **Data**
 
@@ -51,17 +58,18 @@ The data comes from Veronica Reyes Galindo's project [***Abies* vs ozone**](http
 
 In this project **10** samples in total were used:
 
-* **5** samples **tolerant**.
-* **5** samples **damaged**.  
+* **5** samples **Asymptomatic**.
+* **5** samples **Symptomatic**.  
 
-For more information about the samples see the file [**metadata/RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv)(modified from Veronica's repository).
+For more information about the samples see the file [**./RNA\_sacredfir.csv**](./RNA_sacredfir.csv)(modified from Reyes-Galindo's repository).
 
 Where the columns:
 
-* **Sample_name:** name with which the samples are identified. 
-* **Condition:** tree condition(tolerant or damaged).
-* **Seasson:** seasson in which the sample was collected (high O<sub>3</sub> concentration (*Contingency*) or middle O<sub>3</sub> concentration).
+* **Sample\_name\_RNA:** name with which the samples are identified. 
+* **Sample\_name\_metabarcoding:** name with which the samples are identified. 
+* **Condition:** tree condition (Symptomatic or asymptomatic).
 * **Year:** year of sample collection.
+* **Individual:** ID of tree of which needles were collected
 
 
 ## **Workflow**
@@ -76,165 +84,79 @@ This repository has the following structure:
 
 
 ```
-
-Abies_fungal_endophytes-master
+.
 ├── LICENSE
 ├── README.md
-├── archive
-│   ├── Tutorales
-│   │   └── 0_Tutoral.pdf
-│   ├── findfungi.pdf
-│   └── metawf.png
-├── bin
-│   ├── 01_quality.sh
-│   ├── 02_removehost.sh
-│   ├── 03_krakenreads.sh
-│   ├── 04_kaijureads.sh
-│   ├── 05_assembly.sh
-│   ├── 06_binning.sh
-│   ├── 07_krakencontigs.sh
-│   ├── 08_kaijucontigs.sh
-│   ├── 09_prediction.sh
-│   ├── 10_annotation.sh
-│   └── README.md
-├── figures
-│   ├── 01_filteredreads.jpeg
-│   ├── 02_filteredreads.jpeg
-│   ├── 03_mapping.jpeg
-│   ├── Quality.md
-│   ├── bin
-│   │   ├── 01_extract_trimmomatic.sh
-│   │   ├── 02_clean_reads_table.R
-│   │   ├── 03_quality_barplot.R
-│   │   ├── 04_extract_mapping.sh
-│   │   ├── 05_import_samtools_results.R
-│   │   └── 06_mapping_plot.R
-│   └── data
-│       ├── countmappedreads.txt
-│       ├── edited_count_map.csv
-│       ├── mapping.csv
-│       ├── plotreads.csv
-│       ├── table.txt
-│       └── trimmomatic.txt
-├── metadata
-│   ├── RNA_sacredfir.csv
-│   ├── mapping.csv
-│   └── reports
-│       ├── R1_paired_multiqc_report.html
-│       ├── R1_unpaired_multiqc_report.html
-│       ├── R2_paired_multiqc_report.html
-│       ├── R2_unpaired_multiqc_report.html
-│       ├── raw_multiqc_report.html
-│       └── trimmomatic.txt
-├── parkinsonlabtutorial
-│   ├── README.md
-│   ├── bin
-│   │   ├── python_scripts
-│   │   │   ├── 1_BLAT_Filter.py
-│   │   │   ├── 2_Infernal_Filter.py
-│   │   │   ├── 3_Reduplicate.py
-│   │   │   ├── 4_Constrain_Classification.py
-│   │   │   ├── 5_Contig_Map.py
-│   │   │   ├── 6_BWA_Gene_Map.py
-│   │   │   ├── 6_modified.py
-│   │   │   ├── 7_Diamond_Protein_Map.py
-│   │   │   ├── 8_Gene_EC_Map.py
-│   │   │   └── 9_RPKM.py
-│   │   └── shell_scripts
-│   │       ├── 0_quality.sh
-│   │       ├── 1_duplicate.sh
-│   │       ├── 2_vector.sh
-│   │       ├── 3_host.sh
-│   │       ├── 4_removerrna.sh
-│   │       ├── 5_rereplication.sh
-│   │       └── unpaired.sh
-│   └── metadata
-│       └── fastqc
-│           ├── mouse1_fastqc.html
-│           ├── mouse1_fastqc.zip
-│           ├── mouse1_mRNA_fastqc.html
-│           ├── mouse1_mRNA_fastqc.zip
-│           ├── mouse1_trimmed_fastqc.html
-│           └── mouse1_trimmed_fastqc.zip
+├── RNA_sacredfir.csv
+├── analyses
+│   └── bin
+│       ├── 1_ObservedRichness.R
+│       ├── 2_CommunityComposition.R
+│       ├── 3_RelativeAbundance.R
+│       ├── 4_SpecifiOTU.R
+│       ├── 5_DE.R
+│       ├── assign_guild.R
+│       └── metabarcoding_phyloseq.R
+├── metabarcoding
+│   └── bin
+│       └── amptk.sh
+├── metatranscriptomics
+│   └── bin
+│       ├── 01_quality.sh
+│       ├── 02_removehost.sh
+│       ├── 03_assembly.sh
+│       ├── 04_krakenreads.sh
+│       ├── 05_krakencontigs.sh
+│       ├── 06_kaijureads.sh
+│       ├── 07_kaijucontigs.sh
+│       ├── 08_coassembly.sh
+│       ├── 09_prediction.sh
+│       ├── 10_mapping.sh
+│       └── README.md
 └── workflow.png
 
 ```
 
-### `/archive`
+### `/analyses`
+Folder with downstream analyses from metabarcoding and metatranscriptomics.
 
-Contains the slides from a [seminar](./archive/findfungi.pdf) were I spoke about the approaches to look for fungal signals in RNA-Seq data and the [Diagram](./archive/metawf.png) that I made to review the typical workflow followed in most of the metatranscriptomics analyses.
+* **metabarcoding_phyloseq.R:** Script to parse classification outputs (Kaiju, Kraken-Bracken, and AMPtk)
+* **assign_guild.R:** Function to asign guild to phyloseq objects.
+* **1_ObservedRichness.R:** Script with GLM fitted to evaluate Observed richness by condition per dataset.
+* **2_CommunityComposition.R:** Script to visualize community composition with NMDS and ANOSIM test.
+* **3_RelativeAbundance.R:** Script to parse phyloseq and visualize class relative abundance with heatmaps and log2FoldChange with DESeq2.
+* **4_SpecifiOTU.R:** Script to evaluate IndVal with indicspecies.
+* **5_DE.R:** Script to evaluate differential expression of ORFs.
 
-Also it contains the subfolder `tutorales` with the slides from each Master project evaluations. By **26/01/2021** only the first ([**0_Tutoral.pdf**](./archive/Tutorales/0_Tutoral.pdf)) has been presented.
 
-### `/bin`
+### `/metabarcoding`
+#### `/metatranscriptomics/bin`
+Folder with scripts to perfor clustering and taxonomy assignment with AMPtk.
 
-Folder with the scripts to perform the analysis:
+* **amptk.sh:** Script to perform clustering (97% simmilarity) and taxonomy assignment against UNITE database. 
+
+### `/metatranscriptomics`
+#### `/metatranscriptomics/bin`
+
+Folder with the scripts to perform the transcriptmics analysis:
 
 * **README.md**: Every step of the analysis explained and details extra steps as conda environments creation and databases preparation.
-* **01_filter.sh:** Performs the quality analysis with FastQC, adapters deletion and paired-end read merging with *Trimmomatic*.
+* **01_quality.sh:** Performs the quality analysis with FastQC and multiQC, adapters deletion and paired-end read merging with *Trimmomatic*.
 * **02_removehost.sh:** Deletes host reads with BWA by mapping the paired and unpaired reads to the reference transcriptome and saves the unmapped reads (paired and unpaired) with *samtools*.
-* **03_krakenreads.sh:** Makes a taxonomic profile from reads using *Krakenuniq*.
-* **04_kaijureads.sh:** Makes a taxonomic profile from reads using *Kaiju*. :construction:**Work in progress**:construction:
-* **05_assembly.sh:** Assamblies the reads into contigs using *metaSPADES*. :construction:**Work in progress**:construction:
-* **06_binning.sh:** Groups the contigs into bins with *MaxBin*. :construction:**Work in progress**:construction:
-* **07_krakencontigs.sh:** Makes a taxonomic profile from bins using *Kraken*. :construction:**Work in progress**:construction:
-* **08_kaijucontigs.sh:** Makes a taxonomic profile from bins using *Kaiju*. :construction:**Work in progress**:construction:
-* **09_prediction.sh:** Predicts the genes using *Prodigal*. :construction:**Work in progress**:construction:
-* **10_annotation.sh:** Annotates the predicted genes by comparing them against the Non-Redundant (NR) protein database. :construction:**Work in progress**:construction:
-
-### `/figures`
-
-This folder was made to enclose the `.jpeg` or `.tiff` images that result from each step of the analysis. 
-
-It is subgrouped in folders:
-* `bin` with the scripts that allow to make the figures. 
-* `data` contains the information to make the figures as processed standard outputs, intermediate and final tables. 
-
-The figures discussion will be put it in `.md` files. 
-  
-### `/metadata`
-
-
-Contains the [**RNA_sacredfir.csv**](./metadata/RNA_sacredfir.csv) table with information about the samples, and the subfolder `reports` with the reports from *Trimmomatic* and *multiqc* analyses. 
-
-### `/parkinsonlabtutorial`
-
-This folder was made to follow the [Parkinson's Lab tutorial](https://github.com/ParkinsonLab/Metatranscriptome-Workshop). Some of tutorial steps are gonna be used in this work. This folder will be deleted once the scripts are fully adapted. The tutorial has a README file that explain each step of the analysis, but it is not finished yet. The `/bin` folder has the phyton (made by the author) and adapted shell scripts. In the `/metadata` folder there are the *trimmomatic* reports.
-
-### `/data`
-
-This folder is in the `.gitignore` file, so it is not visible in this repository. This folder should contain the raw data and the subsequent analysis outputs. The content will remain hidden until publication. Once published the data will be available on [**OSF**](https://osf.io/xur7g/)(**PRIVATE PROJECT TEMPORARELY!!!!**).
-
-<details>
-<summary><b>To run the complete analysis I suggest you to subdivide this folder into the following structure:</b></summary>
-<br>
-<pre>
+* **03_assembly.sh:** Assembly of reads for each sample using metaSPADEs.
+* **04_krakenreads.sh:** Makes a taxonomic profile from reads using *Kraken2* and estimates abundance with Bracken.
+* **05_krakencontigs.sh:** Makes a taxonomic profile from contigs using *Kraken2* and estimates abundance with Bracken.
+* **06_kaijureads.sh:** Makes a taxonomic profile from reads using *Kaiju*.
+* **07_kaijucontigs.sh:** Makes a taxonomic profile from contigs using *Kaiju*.
+* **08_coassembly.sh:** Perform a coassambly with every sample with Trinity.
+* **09_prediction.sh:** Predict ORFs using Transdecoder.
+* **10_mapping.sh:** Estimate transcription of predicted ORF for every sample to coassebly using Salmon.
   
 
-data
-├── assembly
-├── binning
-├── filter
-│   ├── adapters
-│   ├── outputs
-│   └── reference
-├── function
-│   ├── annotation
-│   └── prediction
-├── raw
-├── reports
-│   ├── mapped
-│   └── trimmed
-└── taxonomy
-    ├── kaiju
-    │   ├── contigs
-    │   └── reads
-    └── kraken
-        ├── contigs
-        └── reads
+### Data availability
 
-</pre>
-</details>
+Raw data and parsed outputs to perform downstream analyses are not currently available in this repository. The content will remain hidden until publication. Once published the data will be available on [**OSF**](https://osf.io/xur7g/) (**PRIVATE PROJECT TEMPORARELY**). If you need the data or any other information, please contact: valeriaflores@ciencias.unam.mx. 
+
 
 
 ## **References**
