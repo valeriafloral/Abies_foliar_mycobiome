@@ -94,7 +94,8 @@ This repository has the following structure:
 │       ├── 2_SpecifiOTU.R
 │       ├── 3_ObservedRichness.R
 │       ├── 4_RelativeAbundance.R
-│       ├── 5_DE.R
+│       ├── 5_Guild.R
+│       ├── 6_DE.R
 │       ├── assign_guild.R
 │       └── metabarcoding_phyloseq.R
 ├── metabarcoding
@@ -126,7 +127,8 @@ Folder with downstream analyses from metabarcoding and metatranscriptomics.
 * **2_SpecifiOTU.R:** Script to evaluate IndVal with indicspecies.
 * **3_ObservedRichness.R:** Script with GLM fitted to evaluate Observed richness by condition per dataset.
 * **4_RelativeAbundance.R:** Script to parse phyloseq and visualize class relative abundance with heatmaps and log2FoldChange with DESeq2.
-* **5_DE.R:** Script to evaluate differential expression of ORFs.
+* **5_Guild.R:** Script to perform guild composition analyses.
+* **6_DE.R:** Script to evaluate differential expression of ORFs.
 
 
 ### `/metabarcoding`
