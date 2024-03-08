@@ -363,3 +363,162 @@ fungaldiff <- merge(description, fungaldiff, by="query")
 
 write.table(fungaldiff, "cogdifferentiallyexpressed.txt", sep= "\t")
 
+####Differential expression analysis
+dds <- DESeqDataSetFromTximport(txi,
+                                colData = samples, design = ~Condition) #222060 (transcripts maped)
+
+dds$Condition
+colnames(dds)
+dds <- dds[(rownames(dds) %in% fungalcog$query), ] #89184 fungal and cog category
+
+#keep only rows that have at leats 10 reads total
+keep <- rowSums(counts(dds)) >= 10
+dds <- dds[keep,]
+
+#Establecer valores de referencia
+dds$Condition <- relevel(dds$Condition, ref= "Symptomatic")
+
+#Análisis de expresión diferencial
+dds <- DESeq(dds)
+res <- results(dds)
+head(dds, tidy= TRUE)
+
+#Resumen de nuestro análisis
+summary(res, alpha= 0.10)
+
+res$pvalue
+
+#Extraer counts
+counts <- as.data.frame(counts(dds,normalized=TRUE))
+counts <- rownames_to_column(counts, var= "query")
+
+#Relacionar cuentas de cada query con cada cog
+
+#Quedarse con el primer hit de cada categoría
+fungalcog$cog <- substr(fungalcog$COG_category, 1, 1)
+cog <- subset(fungalcog, select=c(query, cog))
+
+
+countlarge <- pivot_longer(counts, -query, names_to = "sampleID", values_to = "Count")
+
+#Merge counts con cog
+categories <- merge(countlarge, cog, by="query")
+
+suma <- categories %>% 
+  group_by(cog, sampleID) %>% 
+  summarise(Count=sum(Count))
+
+
+wide <- pivot_wider(suma, names_from = cog, values_from = Count)
+wide <- column_to_rownames(wide, var="sampleID")
+
+cogmatrix <- as.matrix(wide)
+order <- c("DPVR1_S179", "DPVR2_S180", "DPVR3_S181", "DPVR4_S182", "DPVR5_S183", "DPVR6_S184", "DPVR7_S185", "DPVR8_S186", "DPVR9_S187", "DPVR10_S188")
+
+# Reorder rows according to desired order
+cogmatrix <- cogmatrix[order, , drop = FALSE]
+
+example_NMDS <- metaMDS(cogmatrix, distance="bray")
+stressplot(example_NMDS)
+plot(example_NMDS)
+
+
+# Order the dataframe by the specific order in Column1
+samples <- samples[order(match(samples$sampleID, order)), ]
+analisis<-anosim(cogmatrix, samples$Condition, distance="bray",permutations=9999)
+analisis
+
+cognmds <- as.data.frame(scores(example_NMDS, display = "sites"))
+cognmds <- rownames_to_column(cognmds, var="sampleID")
+cognmds <- merge(cognmds, samples, by="sampleID")
+
+
+
+treat <- c(rep("Asymptomatic",5),rep("Symptomatic",5))
+ordiplot(example_NMDS)
+ordispider(example_NMDS,groups=treat,col="grey90",label=F)
+orditorp(example_NMDS,display="species",col="red",air=0.01)
+orditorp(example_NMDS,display="sites",
+         air=0.01,cex=0.9)
+
+
+ggplot(cognmds, aes(x = NMDS1, y = NMDS2)) + 
+  geom_point(size = 4, aes(colour = Condition, fill = Condition)) +  
+  stat_ellipse(aes(fill = Condition), alpha = 0.2, geom = "polygon") +
+  theme(axis.text.y = element_text(colour = "black", size = 12, face = "bold"), 
+        axis.text.x = element_text(colour = "black", face = "bold", size = 12), 
+        axis.title.x = element_text(face = "bold", size = 14, colour = "black"), 
+        axis.title.y = element_text(face = "bold", size = 14, colour = "black"),
+        panel.background = element_blank(), 
+        panel.border = element_rect(colour = "black", fill = NA, size = 1.2)) +
+  labs(x = "NMDS1", y = "NMDS2") +
+  scale_color_manual(values = c("darkolivegreen", "chocolate3")) +
+  scale_fill_manual(values = c("darkolivegreen", "chocolate3")) +
+  scale_x_continuous(limits = c(-0.1, 0.15)) +  # Change x-axis scale
+  scale_y_continuous(limits = c(-0.056, 0.06))    # Change y-axis scale
+
+
+#####Log2FC cog
+#Extraer log2Foldchange
+df <- as.data.frame(res)
+df <- rownames_to_column(df, var="query")
+logcat <- merge(df, cog, by="query")
+logcat$cog <- as.factor(logcat$cog)
+
+cogcat <- read.delim("classifier_count.txt", sep="\t")
+cogcat$Description <- paste(cogcat$LETTER, cogcat$DESCRIPTION, sep=": ")
+cogcaat <- subset(cogcat, select=c("LETTER", "Description"))
+colnames(cogcaat)[1] <- "cog"
+
+
+logcat <- merge(logcat, cogcaat, by="cog")
+table(logcat$cog)
+
+dif <- subset(logcat, padj < 0.10)
+table(dif$cog)
+
+# Remove rows with NA values in the 'col' column
+logcat_filtered <- logcat[!is.na(logcat$padj), ]
+logcat_filtered <- subset(logcat_filtered, cog %in% c("B", "C", "E", "G", "I", "O", "P", "Q", "S", "T"))
+
+# Plotting with filtered data
+ggplot(logcat_filtered, aes(x = cog, y = log2FoldChange, fill = Description)) + 
+  geom_boxplot() +
+  geom_point(alpha=0.3, aes(colour = (padj < 0.1)), 
+             position = position_jitter(height = .2, width = .5)) +
+  scale_colour_manual(values = c("black", "red"))+
+  guides(fill = guide_legend(ncol = 1), color="none") +
+  theme_minimal()
+
+
+set.seed(30)
+P50 <-  createPalette(30,  c("#00ffff", "#ff00ff", "#ffff00"), M=1000)
+P50 <- sortByHue(P50)
+P50 <- as.vector(t(matrix(P50, ncol=4)))
+
+ggplot(logcat_filtered, aes(x = cog, y = log2FoldChange, fill = Description)) + 
+  geom_point(size = 3, 
+             position = position_jitter(height = .01, width = .25), alpha=0.3, color="gray88") +
+  geom_point(data = subset(logcat_filtered, padj < 0.1), 
+             aes(colour = (padj < 0.1)), size = 3, alpha = 0.6) +  # Increase alpha for red dots
+  geom_boxplot(outlier.shape = NA, alpha = 0.5, show.legend = FALSE) +
+  scale_colour_manual(values = c("red", "gray88")) +
+  scale_fill_manual(values = P50)+
+  guides(color = "none", fill = guide_legend(ncol = 1, title.position = "top",
+                                             keywidth = unit(1, "cm"),
+                                             keyheight = unit(1, "cm"),
+                                             override.aes = list(shape = 22,
+                                                                 size = 10)), ) +
+  geom_hline(yintercept = 0, linetype = "dotted", color = "blue", size = 1) +
+  coord_flip() +
+  theme_minimal() +
+  labs(x = "COG category",  # Custom x-axis label
+       y = bquote(log[2]*"FC"))+
+  theme(
+    legend.text = element_text(size = 9, face = "bold"),  # Adjust legend text size and weight
+    legend.title = element_text(size = 14, face = "bold"),  # Adjust legend title size and weight
+    axis.text = element_text(size = 12, face = "bold"),  # Adjust axis text size and weight
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(vjust=2.5)# Adjust axis title size and weight# Adjust axis title size and weight
+  )
+

@@ -157,7 +157,7 @@ Folder with the scripts to perform the transcriptmics analysis:
 
 ### Data availability
 
-Raw data and parsed outputs to perform downstream analyses are not currently available in this repository. The content will remain hidden until publication. Once published the data will be available on [**OSF**](https://osf.io/xur7g/) (**PRIVATE PROJECT TEMPORARELY**). If you need the data or any other information, please contact: valeriaflores@ciencias.unam.mx. 
+Raw data and parsed outputs to perform downstream analyses are not currently available in this repository. The content will remain hidden until publication. Once published the data will be available on [**OSF**](https://osf.io/xur7g/) (**TEMPORARELY PRIVATE PROJECT**). If you need the data or any other information, please contact: valeriaflores@ciencias.unam.mx. 
 
 
 
