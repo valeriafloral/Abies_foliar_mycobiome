@@ -273,9 +273,6 @@ sum(symcog$count)
 
 
 
-
-
-
 ####
 #Agrupar por condición
 conditioncog <- large %>% group_by(Condition, query, COG_category) %>% 
@@ -417,7 +414,7 @@ order <- c("DPVR1_S179", "DPVR2_S180", "DPVR3_S181", "DPVR4_S182", "DPVR5_S183",
 
 # Reorder rows according to desired order
 cogmatrix <- cogmatrix[order, , drop = FALSE]
-
+set.seed(4235421)
 example_NMDS <- metaMDS(cogmatrix, distance="bray")
 stressplot(example_NMDS)
 plot(example_NMDS)
@@ -432,7 +429,8 @@ cognmds <- as.data.frame(scores(example_NMDS, display = "sites"))
 cognmds <- rownames_to_column(cognmds, var="sampleID")
 cognmds <- merge(cognmds, samples, by="sampleID")
 
-
+adon <- adonis2(cogmatrix~ Condition, distance="bray", data = samples)
+adon
 
 treat <- c(rep("Asymptomatic",5),rep("Symptomatic",5))
 ordiplot(example_NMDS)

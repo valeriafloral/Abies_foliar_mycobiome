@@ -40,6 +40,9 @@ sampledf <- data.frame(sample_data(bin_table))
 m1 <- anosim(raup_dist, sampledf$Condition, permutations = 999)
 m1
 
+adonis2(raup_dist~ Condition, data = sampledf)
+
+
 #NMDS Plot
 nmds_metabarcoding <- plot_ordination(bin_table, phylo_rel_nmds, type= "samples", color = "Condition") + 
   geom_point(size = 4) +
@@ -85,6 +88,8 @@ sampledf <- data.frame(sample_data(bin_table))
 m1 <- anosim(raup_dist, sampledf$Condition, permutations = 999)
 m1
 summary(m1)
+
+adonis2(raup_dist~ Condition, data = sampledf)
 
 #NMDS Plot
 nmds_rna <- plot_ordination(bin_table, phylo_rel_nmds, type= "samples", color = "Condition") + 
