@@ -441,7 +441,7 @@ orditorp(example_NMDS,display="sites",
 
 
 ggplot(cognmds, aes(x = NMDS1, y = NMDS2)) + 
-  geom_point(size = 4, aes(colour = Condition, fill = Condition)) +  
+  geom_point(size = 4, aes(colour = Condition, shape= Condition, fill = Condition)) +  
   stat_ellipse(aes(fill = Condition), alpha = 0.2, geom = "polygon") +
   theme(axis.text.y = element_text(colour = "black", size = 12, face = "bold"), 
         axis.text.x = element_text(colour = "black", face = "bold", size = 12), 
@@ -454,6 +454,42 @@ ggplot(cognmds, aes(x = NMDS1, y = NMDS2)) +
   scale_fill_manual(values = c("darkolivegreen", "chocolate3")) +
   scale_x_continuous(limits = c(-0.1, 0.15)) +  # Change x-axis scale
   scale_y_continuous(limits = c(-0.056, 0.06))    # Change y-axis scale
+
+
+# Reorder rows according to desired order
+dis <- cogmatrix[order, , drop = FALSE]
+dis <- vegdist(dis, "bray")
+
+
+# Order the dataframe by the specific order in Column1
+samples <- samples[order(match(samples$sampleID, order)), ]
+groups <- as.factor(samples$Condition)
+
+
+## Calculate multivariate dispersions
+mod <- betadisper(dis, groups)
+mod$call
+
+sd_of_dispersions <- tapply(dis, groups, sd)
+
+mod$group.distances
+mod$sdev
+permutest(mod)
+
+## Perform test
+anova(mod)
+
+## Permutation test for F
+pmod <- permutest(mod, permutations = 99, pairwise = TRUE)
+
+## Tukey's Honest Significant Differences
+(mod.HSD <- TukeyHSD(mod))
+plot(mod.HSD)
+
+## Has permustats() method
+pstat <- permustats(pmod)
+densityplot(pstat, scales = list(x = list(relation = "free")))
+qqmath(pstat, scales = list(relation = "free"))
 
 
 #####Log2FC cog
